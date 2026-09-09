@@ -1,0 +1,842 @@
+{
+  "schemaVersion": "2.0",
+  "planCode": "B",
+  "tripTitle": "北海道8天7夜｜乃之風2晚→登別Grand Hotel→界ポロト→札幌3晚",
+  "tripDate": "12/24 — 12/31（年份待確認）",
+  "coordinatePolicy": {
+    "googleMapsCoordinatesVerified": false,
+    "navigationNotice": "座標多來自地圖服務列示值，非入口保證；pending者導航以名稱搜尋。"
+  },
+  "notes": [
+    {
+      "label": "方案",
+      "text": "方案B：12/26預計入住登別Grand Hotel，12/27前往白老界ポロト。"
+    },
+    {
+      "label": "尚未成立",
+      "text": "Grand Hotel預計入住；訂房是否完成、12/26皇冠假日取消及素食安排仍須分別確認。"
+    },
+    {
+      "label": "住宿",
+      "text": "12/24-25乃之風；12/26登別Grand Hotel；12/27界ポロト；12/28-30札幌皇冠假日。"
+    },
+    {
+      "label": "素食風險",
+      "text": "若四晚均訂含餐方案，涉及三間溫泉旅館：乃之風、Grand Hotel、界ポロト。每間的晚餐與早餐均須確認；不是四家飯店。"
+    },
+    {
+      "label": "交通",
+      "text": "12/26需巴士→JR→巴士三段轉乘，冬季帶行李負擔較大。"
+    }
+  ],
+  "days": [
+    {
+      "day": 0,
+      "title": "方案B 全行程",
+      "subtitle": "12/24—12/31｜改住登別",
+      "badge": "ALL",
+      "color": "#1565c0"
+    },
+    {
+      "day": 1,
+      "title": "抵達・前往洞爺湖",
+      "subtitle": "12/24｜新千歲→洞爺湖",
+      "badge": "D1",
+      "color": "#c62828"
+    },
+    {
+      "day": 2,
+      "title": "洞爺湖・有珠山",
+      "subtitle": "12/25｜乃之風第2晚",
+      "badge": "D2",
+      "color": "#2e7d32"
+    },
+    {
+      "day": 3,
+      "title": "洞爺湖→登別・Grand Hotel",
+      "subtitle": "12/26｜地獄谷・溫泉",
+      "badge": "D3",
+      "color": "#e65100"
+    },
+    {
+      "day": 4,
+      "title": "登別→白老・界ポロト",
+      "subtitle": "12/27｜ウポポイ",
+      "badge": "D4",
+      "color": "#e65100"
+    },
+    {
+      "day": 5,
+      "title": "白老→札幌",
+      "subtitle": "12/28｜札幌連住第1晚",
+      "badge": "D5",
+      "color": "#6a1b9a"
+    },
+    {
+      "day": 6,
+      "title": "小樽一日遊",
+      "subtitle": "12/29｜札幌連住第2晚",
+      "badge": "D6",
+      "color": "#00838f"
+    },
+    {
+      "day": 7,
+      "title": "札幌自由日",
+      "subtitle": "12/30｜札幌連住第3晚",
+      "badge": "D7",
+      "color": "#1565c0"
+    },
+    {
+      "day": 8,
+      "title": "退房・回程",
+      "subtitle": "12/31｜新千歲",
+      "badge": "D8",
+      "color": "#455a64"
+    }
+  ],
+  "spots": [
+    {
+      "id": "b1-airport",
+      "day": 1,
+      "name": "新千歲機場",
+      "type": "transport",
+      "time": "依航班",
+      "description": "抵達後前往洞爺湖。",
+      "lat": 42.7875,
+      "lng": 141.6798,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "sta-chitose"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
+    },
+    {
+      "id": "b1-toyasta",
+      "day": 1,
+      "name": "JR洞爺站",
+      "type": "transport",
+      "time": "下午",
+      "description": "轉巴士或接駁前往溫泉街。",
+      "lat": 42.5505,
+      "lng": 140.7635,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "sta-toya"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
+    },
+    {
+      "id": "b1-nonokaze",
+      "placeKey": "nonokaze",
+      "day": 1,
+      "name": "乃之風リゾート",
+      "type": "hotel",
+      "time": "入住・晚餐",
+      "description": "洞爺湖第1晚。",
+      "address": "北海道虻田郡洞爺湖町洞爺湖温泉29-1",
+      "meat": "一般餐食依訂房方案。",
+      "veg": "須取得飯店書面確認。",
+      "lat": 42.565785,
+      "lng": 140.822304,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "nonokaze"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
+    },
+    {
+      "id": "b2-usuzan",
+      "day": 2,
+      "name": "有珠山纜車",
+      "type": "sight",
+      "time": "上午",
+      "description": "天候允許時前往。",
+      "lat": 42.538962,
+      "lng": 140.860076,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "usuzan"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Usuzan+Ropeway"
+    },
+    {
+      "id": "b2-bear",
+      "day": 2,
+      "name": "昭和新山熊牧場",
+      "type": "sight",
+      "time": "中午",
+      "description": "營業時間須確認。",
+      "optional": true,
+      "lat": 42.5413,
+      "lng": 140.8584,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "bear"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Showa+Shinzan+Bear+Ranch"
+    },
+    {
+      "id": "b2-meguriya",
+      "day": 2,
+      "name": "めぐりや Meguriya",
+      "type": "food",
+      "time": "午餐候選",
+      "description": "洞爺湖溫泉街Vegan對應咖啡廳。",
+      "address": "北海道虻田郡洞爺湖町洞爺湖温泉40-11 LESTEL TOYA 1F",
+      "meat": "未確認有葷食選項。",
+      "veg": "有Vegan餐點資訊。",
+      "lat": 42.56546490660434,
+      "lng": 140.82160755767225,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "meguriya"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meguriya+LESTEL+TOYA"
+    },
+    {
+      "id": "b2-cruise",
+      "day": 2,
+      "name": "洞爺湖汽船",
+      "type": "sight",
+      "time": "下午備選",
+      "description": "冬季班次須確認。",
+      "optional": true,
+      "lat": 42.5639,
+      "lng": 140.8151,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "cruise"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toyako+Kisen"
+    },
+    {
+      "id": "b2-nonokaze",
+      "placeKey": "nonokaze",
+      "day": 2,
+      "name": "乃之風リゾート",
+      "type": "hotel",
+      "time": "住宿",
+      "description": "洞爺湖第2晚。",
+      "lat": 42.565785,
+      "lng": 140.822304,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "nonokaze"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
+    },
+    {
+      "id": "b3-toyasta",
+      "day": 3,
+      "name": "JR洞爺站",
+      "type": "transport",
+      "time": "上午",
+      "description": "乃之風退房後，前往洞爺站搭乘往登別方向的JR。巴士及鐵路班次另行確認，不使用前往札幌的飯店接駁。",
+      "lat": 42.55078062606708,
+      "lng": 140.7635598,
+      "coordinateStatus": "source_listed",
+      "coordinateNote": "本次未重新核實洞爺站座標，改用站名搜尋。",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
+    },
+    {
+      "id": "b3-nobosta",
+      "day": 3,
+      "name": "JR登別站",
+      "type": "transport",
+      "time": "中午前後",
+      "description": "抵達後轉路線巴士或計程車前往登別溫泉與Grand Hotel。轉乘時間依實際時刻表安排。",
+      "lat": 42.452058,
+      "lng": 141.180399,
+      "coordinateStatus": "source_listed",
+      "coordinateNote": "地圖來源列示的車站位置，非特定出口。",
+      "coordinateCheckedOn": "2026-09-08",
+      "sourceRefs": [
+        "noboribetsu-station-location"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Station+Hokkaido"
+    },
+    {
+      "id": "b3-grand-luggage",
+      "day": 3,
+      "name": "登別Grand Hotel・寄放行李",
+      "type": "hotel",
+      "time": "抵達溫泉街後",
+      "description": "先詢問是否可於入住前寄放行李，再外出用餐與散步。寄放服務及正式入住時間須以飯店回覆為準。",
+      "placeKey": "noboribetsu-grand",
+      "address": "北海道登別市登別温泉町154",
+      "lat": 42.49226668945842,
+      "lng": 141.14213612090361,
+      "coordinateStatus": "source_listed",
+      "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
+      "coordinateCheckedOn": "2026-09-08",
+      "sourceRefs": [
+        "noboribetsu-grand-official"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Grand+Hotel+154+Noboribetsuonsencho",
+      "bookingStatus": "user_planned_not_verified"
+    },
+    {
+      "id": "b3-rikka",
+      "day": 3,
+      "name": "ゆのまちつけもり 六花",
+      "type": "food",
+      "time": "午餐候選",
+      "description": "前往地獄谷前的午餐候選。須先確認當日營業及能否提供符合本人限制的素食正餐；未確認前另備午餐。",
+      "address": "北海道登別市登別温泉町30",
+      "meat": "一般餐點依當日菜單。",
+      "veg": "素食餐點、蛋奶及五辛限制須向店家確認。",
+      "lat": 42.492586587957184,
+      "lng": 141.14330560187344,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "rikka"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ゆのまちつけもり六花+登別温泉町30"
+    },
+    {
+      "id": "b3-jigokudani",
+      "day": 3,
+      "name": "登別地獄谷",
+      "type": "sight",
+      "time": "下午",
+      "description": "只走當日開放的遊客步道與觀景空間。本次查到的火山觀測點不能當作遊客入口，因此不填入入口座標；使用店名搜尋後確認遊客動線。",
+      "lat": 42.49775362192924,
+      "lng": 141.14867092883614,
+      "coordinateStatus": "source_listed",
+      "coordinateNote": "尚未核實遊客入口或展望台的精確座標。",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Jigokudani"
+    },
+    {
+      "id": "b3-grand-stay",
+      "day": 3,
+      "name": "登別Grand Hotel・入住與泡湯",
+      "type": "hotel",
+      "time": "下午返回・晚餐・住宿",
+      "description": "Day 3最後一站，供Day 4跨日導航使用。入住、晚餐及早餐是否包含，依實際訂房方案。目前僅記錄預計入住，未核實訂房已完成。",
+      "meat": "一般餐食依已購買的住宿方案。",
+      "veg": "須確認晚餐與翌日早餐的素食供應；不能僅憑自助餐有蔬菜便視為已安排。",
+      "placeKey": "noboribetsu-grand",
+      "address": "北海道登別市登別温泉町154",
+      "lat": 42.49226668945842,
+      "lng": 141.14213612090361,
+      "coordinateStatus": "source_listed",
+      "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
+      "coordinateCheckedOn": "2026-09-08",
+      "sourceRefs": [
+        "noboribetsu-grand-official"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Grand+Hotel+154+Noboribetsuonsencho",
+      "bookingStatus": "user_planned_not_verified"
+    },
+    {
+      "id": "b4-nobosta",
+      "day": 4,
+      "name": "JR登別站",
+      "type": "transport",
+      "time": "上午",
+      "description": "從登別Grand Hotel退房後前往登別站，再搭適合班次前往白老。巴士及JR班次須另外確認。",
+      "lat": 42.452058,
+      "lng": 141.180399,
+      "coordinateStatus": "source_listed",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Station+Hokkaido",
+      "coordinateNote": "地圖來源列示的車站位置，非特定出口。",
+      "coordinateCheckedOn": "2026-09-08",
+      "sourceRefs": [
+        "noboribetsu-station-location"
+      ]
+    },
+    {
+      "id": "b4-shiraoi",
+      "day": 4,
+      "name": "JR白老站",
+      "type": "transport",
+      "time": "中午",
+      "description": "登別至白老特急約20分鐘（概略值）。",
+      "lat": 42.5546,
+      "lng": 141.36,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "sta-shiraoi"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shiraoi+Station+Hokkaido"
+    },
+    {
+      "id": "b4-upopoy",
+      "day": 4,
+      "name": "ウポポイ 民族共生象徴空間",
+      "type": "sight",
+      "time": "下午候選",
+      "description": "ポロト湖畔、鄰近飯店。冬季開館時間與年末休館須先查官網。",
+      "optional": true,
+      "lat": 42.557943304659005,
+      "lng": 141.3635170288739,
+      "coordinateStatus": "source_listed",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Upopoy+National+Ainu+Museum+Shiraoi"
+    },
+    {
+      "id": "b4-poroto",
+      "placeKey": "poroto",
+      "day": 4,
+      "name": "星野集團 界 ポロト",
+      "type": "hotel",
+      "time": "入住・晚餐",
+      "description": "白老町。素食會席需事前申請並取得確認。",
+      "address": "北海道白老郡白老町若草町1-1018-94",
+      "meat": "一般會席料理依方案。",
+      "veg": "官方有素食會席與早餐申請；須於期限前完成。",
+      "lat": 42.560247,
+      "lng": 141.361886,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "poroto",
+        "poroto-dining"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
+    },
+    {
+      "id": "b5-poroto-out",
+      "placeKey": "poroto",
+      "day": 5,
+      "name": "界 ポロト 早餐・退房",
+      "type": "onsen",
+      "time": "上午",
+      "description": "泡湯早餐後退房，返回札幌。",
+      "lat": 42.560247,
+      "lng": 141.361886,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "poroto"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
+    },
+    {
+      "id": "b5-crowne",
+      "placeKey": "crowne",
+      "day": 5,
+      "name": "ANA札幌皇冠假日酒店",
+      "type": "hotel",
+      "time": "下午入住",
+      "description": "12/28-30連住第1晚。",
+      "address": "北海道札幌市中央区北3条西1丁目2-9",
+      "lat": 43.065797,
+      "lng": 141.355064,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "crowne"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
+    },
+    {
+      "id": "b5-chandama",
+      "placeKey": "chandama",
+      "day": 5,
+      "name": "Spice Dining Chandama",
+      "type": "food",
+      "time": "晚餐候選",
+      "description": "印度料理，地址為北3條西7丁目。",
+      "address": "北海道札幌市中央区北3条西7丁目1-1 緑苑ビルB1F",
+      "meat": "一般咖哩及肉類餐點。",
+      "veg": "素食選項須確認高湯、乳製品與五辛。",
+      "lat": 43.0639,
+      "lng": 141.345181,
+      "coordinateStatus": "building_reference",
+      "sourceRefs": [
+        "chandama"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spice+Dining+Chandama+Sapporo"
+    },
+    {
+      "id": "b5-terra",
+      "placeKey": "terra",
+      "day": 5,
+      "name": "Farm to Table TERRA",
+      "type": "food",
+      "time": "晚餐備案",
+      "description": "位於飯店1樓。",
+      "address": "北海道札幌市中央区南9条西2丁目2-10 1F",
+      "meat": "一般餐點依當日菜單。",
+      "veg": "需確認當日素食選項。",
+      "lat": 43.049421,
+      "lng": 141.356766,
+      "coordinateStatus": "building_reference",
+      "sourceRefs": [
+        "terra"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farm+to+Table+TERRA+Sapporo"
+    },
+    {
+      "id": "b6-canal",
+      "day": 6,
+      "name": "小樽運河",
+      "type": "sight",
+      "time": "上午",
+      "description": "札幌往返小樽一日遊。",
+      "lat": 43.199446,
+      "lng": 141.001838,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "canal"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Canal"
+    },
+    {
+      "id": "b6-sankaku",
+      "day": 6,
+      "name": "小樽三角市場",
+      "type": "food",
+      "time": "午餐候選",
+      "description": "市場非單一餐廳，未核實可提供完整素食正餐。",
+      "address": "北海道小樽市稲穂3-10-16",
+      "meat": "海鮮餐點依各攤商。",
+      "veg": "不可假定蕎麥麵或漬物為素食。",
+      "lat": 43.199033,
+      "lng": 140.993877,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "sankaku"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Sankaku+Market"
+    },
+    {
+      "id": "b6-musicbox",
+      "day": 6,
+      "name": "小樽音樂盒堂 本館",
+      "type": "sight",
+      "time": "下午",
+      "description": "堺町一帶散策。",
+      "lat": 43.190591,
+      "lng": 141.007674,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "musicbox"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Music+Box+Museum"
+    },
+    {
+      "id": "b6-letao",
+      "day": 6,
+      "name": "LeTAO 本店",
+      "type": "food",
+      "time": "下午茶",
+      "description": "甜點店，非素食正餐選項。",
+      "address": "北海道小樽市堺町7-16",
+      "meat": "一般甜點。",
+      "veg": "須確認蛋奶、明膠等成分。",
+      "lat": 43.191224,
+      "lng": 141.007369,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "letao"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=LeTAO+Main+Store+Otaru"
+    },
+    {
+      "id": "b6-veggy",
+      "day": 6,
+      "name": "Holistic Bio Cafe Veggy Way",
+      "type": "food",
+      "time": "下午餐候選",
+      "description": "全植物性咖啡廳；查得傍晚結束營業。精確座標待確認。",
+      "address": "北海道札幌市中央区大通西27丁目2-3 円山桂和West27 1F",
+      "meat": "不提供葷食。",
+      "veg": "Vegan餐點；忌五辛者須另問。",
+      "lat": 43.056374249752196,
+      "lng": 141.31677437116386,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "veggy"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Holistic+Bio+Cafe+Veggy+Way+Sapporo"
+    },
+    {
+      "id": "b6-crowne",
+      "placeKey": "crowne",
+      "day": 6,
+      "name": "ANA札幌皇冠假日酒店",
+      "type": "hotel",
+      "time": "住宿",
+      "description": "連住第2晚。",
+      "lat": 43.065797,
+      "lng": 141.355064,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "crowne"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
+    },
+    {
+      "id": "b7-ichiryuan",
+      "day": 7,
+      "name": "らーめん札幌一粒庵",
+      "type": "food",
+      "time": "午餐候選",
+      "description": "ホクレンビル地下1樓；素食餐點是否供應與需否預約須確認。",
+      "address": "北海道札幌市中央区北4条西1丁目 ホクレンビルB1F",
+      "meat": "一般拉麵。",
+      "veg": "須確認無肉無魚介高湯。",
+      "lat": 43.06688,
+      "lng": 141.35399,
+      "coordinateStatus": "building_reference",
+      "sourceRefs": [
+        "ichiryuan"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen+Sapporo+Ichiryuan"
+    },
+    {
+      "id": "b7-redbrick",
+      "day": 7,
+      "name": "北海道廳舊本廳舍",
+      "type": "sight",
+      "time": "上午候選",
+      "description": "開放狀態與年末休館須確認。",
+      "optional": true,
+      "lat": 43.063941,
+      "lng": 141.347961,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "redbrick"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Former+Hokkaido+Government+Office"
+    },
+    {
+      "id": "b7-beer",
+      "day": 7,
+      "name": "札幌啤酒博物館",
+      "type": "sight",
+      "time": "室內備案",
+      "description": "年末休館可能。",
+      "optional": true,
+      "lat": 43.07157,
+      "lng": 141.368686,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "beer"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Beer+Museum"
+    },
+    {
+      "id": "b7-tanuki",
+      "day": 7,
+      "name": "狸小路・伴手禮",
+      "type": "sight",
+      "time": "下午",
+      "description": "最後採買。",
+      "lat": 43.057256,
+      "lng": 141.353104,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "tanuki"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanukikoji+Shopping+Street"
+    },
+    {
+      "id": "b7-crowne",
+      "placeKey": "crowne",
+      "day": 7,
+      "name": "ANA札幌皇冠假日酒店",
+      "type": "hotel",
+      "time": "住宿",
+      "description": "連住第3晚。",
+      "lat": 43.065797,
+      "lng": 141.355064,
+      "coordinateStatus": "source_listed",
+      "sourceRefs": [
+        "crowne"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
+    },
+    {
+      "id": "b8-sapsta",
+      "day": 8,
+      "name": "JR札幌站",
+      "type": "transport",
+      "time": "上午",
+      "description": "退房後前往車站，預留冬季延誤時間。",
+      "lat": 43.0685,
+      "lng": 141.3507,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "sta-sapporo"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Station"
+    },
+    {
+      "id": "b8-airport",
+      "day": 8,
+      "name": "新千歲機場・回程",
+      "type": "transport",
+      "time": "依航班",
+      "description": "建議起飛前3小時抵達航廈。",
+      "lat": 42.7875,
+      "lng": 141.6798,
+      "coordinateStatus": "area_reference",
+      "sourceRefs": [
+        "sta-chitose"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
+    }
+  ],
+  "excludedItems": [
+    {
+      "name": "Vegetable Cafe Lyra",
+      "reason": "查得已閉店。"
+    },
+    {
+      "name": "12/26 札幌皇冠假日",
+      "reason": "方案B需取消該晚，取消費依訂房條件。"
+    },
+    {
+      "name": "乃之風接駁車",
+      "reason": "方案B改走巴士＋JR＋巴士，不使用接駁。"
+    }
+  ],
+  "sources": {
+    "nonokaze": {
+      "title": "NAVITIME｜乃の風リゾート",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jBahJOOPLJZ8EyT7LRX8BRDAm3KPlkM0vpsr9FSeA_qmIiuCo1zWQcwzrToqxtoAyZTMaKVgeojrDpVR-JC0C1CHLR-8FOv9wMjf35rZayEfYTjdkKWouSPdyhg5JhfTm1z6wJdZUmENOjU="
+    },
+    "crowne": {
+      "title": "NAVITIME｜ANAクラウンプラザホテル札幌",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJmaR390Em6dNX7YuOr9aoRCG7b0ph7_eSV6CzNiy0LDzSDzJ_Q583pwBvUOkXIHbgOQCynCNfVxMYdpM5W8Ejda0EZfvemfBXvVG1-9V7FNuiN3E6pnyvbkU96z4cEY4W3Y8kVCPh9LMh"
+    },
+    "poroto": {
+      "title": "NAVITIME｜界 ポロト",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESaMPGaYJar42oT1qRnLXFIrFMY1lW66dItcVPPbNTVh_Moo6ZLFewlzkqeVINpp-oBcPyEeq4lE4Gy2juqTBJK8X8jOHwa8Skvz0ZrA2KA0VsZGYnlTarxdNemcXqUySxEiOIK5fOsJpaWTQuAw=="
+    },
+    "poroto-dining": {
+      "title": "星野リゾート｜界 ポロト餐食",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQXdQp1P34Hj3g0Rn3vJg50grSJivz7YgQUwBX1MSQrASDzqV0ZO5XXnPasgqgimaUg3s5tLPOEAEG_3-DHECHpPjnEdduxwBa5-OvzgXOI_mck64HNbM2IOLFF20N5TgXYaKaWNgaY0FgQImJDPo="
+    },
+    "chandama": {
+      "title": "NAVITIME｜チャンダマ",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiMqNrrTsTyfl5F7P1CjAN2FD3eHKorh80coOEeHLlKMY66XZJw6wOO1S8aIP0fAqGC7DoV-a2juI4Y-wKRUzGLjL6SBl0mtsGIXBrb-Wa25LdQOKifArAm74Uy5fUMPe1LKVNx2QQuA=="
+    },
+    "terra": {
+      "title": "NAVITIME｜Farm to Table TERRA",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEa58xtbftFeeZigg7GnMYYEiKsL0cpOiIIN20YQl310UK3bHbUjqMpixfRpox6KiUkRpmM3nQG5GxVEfVhklhKZl4Q7Mp4bYL6a6kLzoFtw0xfWfk7Yy8TYD-wgFQh8Ez75ImEwDw1g5TRg=="
+    },
+    "meguriya": {
+      "title": "洞爺湖溫泉觀光協會｜めぐりや",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnmS73SwJ_7XzKFl9-C1HO1FhUgvpizlLhyOVBjDvYfPitZSWye-iaCZnSuVV1F-_IGS1s4ydwrFLfgohYvPK69I5LM5n8jGbYC3_AeyigMdHOlX1SrpOQdMbC0r_twA=="
+    },
+    "rikka": {
+      "title": "登別溫泉觀光協會｜ゆのまちつけもり六花",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhA_7Yd6KKhzBvvnIN4ph21k8TKHsEx1VeQ-mHoeCa2s_mcWOVt6PQyfpj7DZo36G-QWt9R9xEtUZ1BtPYvcFA8WRvnjGAQu6n4ByLmYNEkmL0m_dHvNaSAqOIzNuqEMMaRFP9"
+    },
+    "veggy": {
+      "title": "NAVITIME｜Veggy Way",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdP_XzqDrGqdfanXiGLhG1Nfuw-hizrsNAo0jTVIJtzZ44D-vTMk8BHXjaDTDP2TrqyNrTb3uC5BKh-3nRIRL1QQvf9pJALrS8Wczsb97zZyEFZcaG-Oq0NJY3GUIPnEKUhLetDgc8KW5aJge4yrEIyDhZTswSvJ_gu5p4Cm1QQcloHl_3c7iivbE="
+    },
+    "ichiryuan": {
+      "title": "NAVITIME｜一粒庵",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg7ArPgIm6cyJP-qJZO5ca20TiNyRTB_bigROnXyfub0Cxqp2J_IezL6y65nEoJBKLy94gDVpp8IVtstoBcy9G39GlhSNoOLXAL3J-iUgqPofU1x7VxhhEV_jGUIHMWlrr954jLAwmD-XBurPr"
+    },
+    "sankaku": {
+      "title": "NAVITIME｜小樽三角市場",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ1zDhyaAe2rCpN1UXBDnV10HpLL43oqhXbiaX0ax6f3JMm9Kry4u0i6kCf_EXrMNpcjq86GbqdB8psC-w6sMtvouOee3H0gxFK83kjK0jPPAt2fzx9T_eISHqW4ID6fYUV4l0Wrieaveb_IRqEg=="
+    },
+    "letao": {
+      "title": "NAVITIME｜ルタオ本店",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqInpdKOrqxrczwLjqXphbllmTQPUM-QgZuwzlWUh-6462B9guNQWioBXom8vfGwvOZ0_xSf5mrCeynGgsenUH9ZlJgGYvaGoHW4SStXjADbXRT1Lbnt8v_fCyLyrQuZcz5r1xGxJMdgBxxX4="
+    },
+    "canal": {
+      "title": "NAVITIME｜小樽運河",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF21RVKJuVsCLTXE4xyHFXxP6Iih21LCiW1yakWT3ba-WNPIeN9S1AQV9Etj90jxuMSD5tOl2eeSMyOLBrIt_OClXglJIP-EohX4OAebLibVBk_q_I193UUl-08-tiXL9ZXKA08eDzV6_o_tU8="
+    },
+    "musicbox": {
+      "title": "NAVITIME｜小樽オルゴール堂 本館",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAQayaiJpQbH8toIJMP500mdXMh6_QHOL5euj_ufNnuDnap76C1heuupcPSJzrTTNvq9NrFYjRF-RRegdj6T1vxob_RT86TR4tIQxKTIdu3QUC_X_2Itld6YZa1d0s7q6r9NqfXlXBVcQMk80="
+    },
+    "usuzan": {
+      "title": "NAVITIME｜有珠山ロープウェイ",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uAoTS07xHJuWG_4gUL8-PKRhI6T7LlYhlVAzoX27gvtlnYjYD0oMqN-s_2VARVR98sxH2GRN73PBfVdn894DYgNNirKXL3mnijEwetpaT2wCck302VuHFX28n74MzdlcYV0MnYld"
+    },
+    "bear": {
+      "title": "NAVITIME｜昭和新山熊牧場",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmFUikHycJHlwqBteari2U64TuQryfmys_e3tj29Ra1TG0bIey7KY2bt4iHGmxDwRJBzazYDF3DGqObeIOiHdj7CITk775RpxxmRO7Db8rKC6a74PShaMuBvq-Ql527PaeSP-i9EcYfgATsvYoKw=="
+    },
+    "cruise": {
+      "title": "NAVITIME｜洞爺湖汽船",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeGlN_RuAfIQx_eALqSKAeqXXqN17FoI_7W-JCrVyVSGQOvyTclu8MDl0Wg9_2PF6rdshLqAyG1vwn_TRS1OfGfqbQaN4kkFlzCwhk3lTODQaKSJ_MLxhjQTb2FCZM92T7q3KlhqLfN_16cA=="
+    },
+    "tanuki": {
+      "title": "NAVITIME｜狸小路商店街",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNmMkZk4kRf_Z1RQLlmrrnb1oPkmP8oQ9bl1mLmVApgt9VhyIutLhntwaWQXTifVN6J-r7aeHN915gXOQla8Hfje15EWSBrHKVK6gbQmGzv52knhfNeu3qKfgdaZvHJj9Vo-m3V6XD7kuzaLU="
+    },
+    "redbrick": {
+      "title": "NAVITIME｜北海道庁旧本庁舎",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOsMROoR37bL-WZXo3ZB75ETJxUNsBJGW-koQF9pJhLtwHWavSJL8Y-ZXBICFq6wky60rUSg0fpHPTfNpphvbctyZUxapGnnUCJSpq_ycohbCUIPz6TxTbAn3fJU5Q_KR1E4qJD4u5mE6xyzc="
+    },
+    "beer": {
+      "title": "NAVITIME｜サッポロビール博物館",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrbNcYY-qL3UT0CTAiTSntx7_ab9wmjXvJCyK6kY9UVyFI7CdMmGH5t7ANenOQfFyILX3oLM87As72v2xFyupVg8gpzzS0PFjVP5WAIoErBj6GRSBSQDWpT0AccXubfrVd0_lnFIASzzUXz3J"
+    },
+    "sta-sapporo": {
+      "title": "MapFan｜札幌駅",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
+    },
+    "sta-shiraoi": {
+      "title": "NAVITIME｜白老駅",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ1YaArogfTq_unvejcmWuoh5st_OuCrP450uojIvKzMKONIDqKv5LbzJobgTNNdisIukoBadBrzwEZzrDNYHNo0-Vdjq165ECHxpXNH1DkSONTeKYZN3qMp_w8XDHa0IHElsl8ZcB"
+    },
+    "sta-toya": {
+      "title": "MapFan｜洞爺駅",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMiqBK05gfyCNeEXLyQLQOoar5n-zAK5xpgLPHcRvO3TH_VZ23hWZrMozh83PWHWFfFTyAzu2BmmFPGkEK7g0-DOHg9TQCJtRghZR9v0HuREB8E5eM7iQQMbDgzA=="
+    },
+    "sta-chitose": {
+      "title": "MapFan｜新千歳空港駅",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
+    },
+    "noboribetsu-grand-official": {
+      "title": "登別Grand Hotel官方｜地址及交通",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbtdyFTfYKBCMe8rphCiPfpIqznByQU_eMKpaq1Eth3VxAe5V8Pan6hGjdbQebN3HUZnd-oUn8Tn8ld1FXnbV_y1V4Hef24VbkTolVX5C8jBLiMm0fcdGqtVuoM7k="
+    },
+    "noboribetsu-station-location": {
+      "title": "NAVITIME｜登別站座標",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFluoAlfFCcVM8_AsO9fZpizNYcylvFM_dUN5PbnoYBUrlnMQMgFVYjn5bueoqPcQOtBGC6jg3b4s3l3FsWsPalP8dlYR2X2N5kyz2IsfJCcHgK1p5O7ci2mzO2jxchEUq_PCYXhVVj"
+    },
+    "oyunuma-location": {
+      "title": "NAVITIME｜大湯沼景點位置",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3IRFiAwbOA4rDehsBtIvhJaEOopdnc0XACim-gcQUfKNoshyh5XYhABGa3n0zZ7vMCnH89xZE8XqO84nh5I0zVzEJ9cSDLMfit1SW9T69hHU07wPCYh77SEoQJ8WpBbRvj0ED30SH5tXY2lg="
+    },
+    "oyunuma-winter": {
+      "title": "自然公園財團｜大湯沼冬季交通資訊",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZiqwbV-6boRUIV9vE7uqEeDFEKp15Xatm1HdpIQiFAbvnsmh6SxYjs-rHlc7ygpidHMpyZLi_faByANuU0PrzaCbA5fzUfc9vJrO7_6qNyQQhfvHHq-Zk1xonKTN3A0tD7Zu13g=="
+    }
+  },
+  "coordinateUpdateDate": "2026-09-08",
+  "optionalExcursions": [
+    {
+      "id": "b3-oyunuma",
+      "day": 3,
+      "name": "大湯沼",
+      "type": "sight",
+      "time": "非固定行程",
+      "optional": true,
+      "description": "景點位置已取得，但不是步道入口或足湯。冬季道路及停車場可能封閉；未確認當日合法開放動線前，不加入導航。",
+      "lat": 42.502537,
+      "lng": 141.147624,
+      "coordinateStatus": "area_reference",
+      "navigationEnabled": false,
+      "sourceRefs": [
+        "oyunuma-location",
+        "oyunuma-winter"
+      ],
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼+登別"
+    },
+    {
+      "id": "b3-footbath",
+      "day": 3,
+      "name": "大湯沼川天然足湯",
+      "type": "onsen",
+      "time": "非固定行程",
+      "optional": true,
+      "description": "與大湯沼不同地點，不能共用座標。足湯位置及冬季可通行步道尚待核實。",
+      "lat": null,
+      "lng": null,
+      "coordinateStatus": "pending",
+      "navigationEnabled": false,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼川天然足湯+登別"
+    }
+  ]
+}
