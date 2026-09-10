@@ -390,9 +390,9 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offs
 
 .fbtn{min-height:44px;padding:7px 14px}
 
-.sidebar{width:100%;height:100%;min-width:auto;min-height:0;max-height:none;border-right:none;border-bottom:none}
+.sidebar{width:100%;height:auto;min-width:auto;min-height:0;max-height:none;border-right:none;border-bottom:none}
 
-.mapwrap{width:100%;height:100%;min-height:0}
+.mapwrap{width:100%;height:auto;min-height:0}
 
 .main[data-mobile-view="list"] .mapwrap{display:none}
 
@@ -940,17 +940,12 @@ function setMobileView(view){
 
   });
 
-  if(selectedView === 'map'){
-
-    requestAnimationFrame(() => {
-
-      map.invalidateSize();
-
-      if(document.getElementById('routeView').hidden) fitMap();
-
-    });
-
-  }
+  if (selectedView === 'map') {
+  setTimeout(() => {
+    map.invalidateSize(true);
+    fitMap();
+  }, 100);
+}
 
 }
 
