@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>北海道冬季溫泉行程</title>
+
+<link rel="stylesheet" href=https://unpkg.com/leaflet@1.9.4/dist/leaflet.css/>
+
+<script src=https://unpkg.com/leaflet@1.9.4/dist/leaflet.js></script>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+:root{
+
+  --ink:#17313c;
+
+  --muted:#52676f;
+
+  --primary:#0b6574;
+
+  --primary-strong:#084d58;
+
+  --primary-soft:#e4f2f3;
+
+  --accent:#c75b2c;
+
+  --surface:#ffffff;
+
+  --canvas:#edf3f2;
+
+  --line:#cbd8d7;
+
+  --focus:#ffb703;
+
+  --shadow:0 4px 16px rgba(18,57,64,.1);
+
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{font-size:17px}
+
+body{font-family:'Noto Sans TC',sans-serif;background:linear-gradient(180deg,#eaf3f2 0,#f8faf9 55%,#edf3f2 100%);color:var(--ink);height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden;line-height:1.55}
+
+button,a{-webkit-tap-highlight-color:transparent}
+
+button:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+ 
+
+.top-bar{background:#123f4a;padding:11px 18px;min-height:64px;display:flex;align-items:center;gap:12px;flex-shrink:0;border-bottom:4px solid #e6a13a;box-shadow:0 2px 10px rgba(8,48,57,.18);z-index:200}
+
+.brand-mark{font-size:1.45rem;line-height:1;flex-shrink:0}
+
+.top-bar h1{font-size:1.04rem;line-height:1.35;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:0}
+
+.top-bar .tmeta{font-size:.82rem;color:#e6f3f4;margin-left:auto;white-space:nowrap;font-weight:500}
+
+ 
+
+.day-tabs{background:var(--surface);display:flex;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);flex-shrink:0;box-shadow:0 1px 5px rgba(18,57,64,.06);z-index:199}
+
+.day-tabs::-webkit-scrollbar{display:none}
+
+.dtab{flex-shrink:0;min-height:60px;padding:8px 16px;cursor:pointer;font-size:.88rem;color:#5f7076;border-bottom:4px solid transparent;transition:background-color .2s,color .2s;text-align:center;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit}
+
+.dtab:hover{color:var(--primary-strong);background:#f0f7f7}
+
+.dtab.active{color:var(--primary-strong);border-bottom-color:#e08734;background:var(--primary-soft);font-weight:800}
+
+.dtab .dd{font-weight:800;font-size:.92rem}
+
+.dtab .dl{font-size:.76rem;color:#53666e;margin-top:1px}
+
+ 
+
+.fbar{background:#f7faf9;padding:8px 12px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line);flex-shrink:0}
+
+.fbar::-webkit-scrollbar{display:none}
+
+.fbtn{flex-shrink:0;min-height:44px;padding:7px 15px;border-radius:22px;border:1px solid #aebfbd;background:#fff;color:#3c535b;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit}
+
+.fbtn:hover{border-color:var(--primary);color:var(--primary-strong);background:var(--primary-soft)}
+
+.fbtn.active{background:var(--primary);border-color:var(--primary);color:#fff;box-shadow:0 2px 8px rgba(11,101,116,.2)}
+
+ 
+
+.mobile-views{display:none}
+
+.main{display:flex;flex:1;overflow:hidden}
+
+.sidebar{width:440px;min-width:350px;background:var(--surface);display:flex;flex-direction:column;border-right:1px solid var(--line);flex-shrink:0}
+
+.shdr{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:11px;background:#f8fbfa}
+
+.dbadge{width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.9rem;color:#fff;flex-shrink:0;box-shadow:0 2px 7px rgba(18,57,64,.18)}
+
+.dtitle{font-size:1.05rem;font-weight:800;color:var(--ink)}
+
+.dsub{font-size:.85rem;color:var(--primary-strong);margin-top:1px;font-weight:600}
+
+ 
+
+.dayroute{padding:10px 14px;background:#eef6f6;border-bottom:1px solid #c9dede;font-size:.85rem;flex-shrink:0;line-height:1.5}
+
+.dayroute a{color:var(--primary-strong);font-weight:800;text-underline-offset:3px}
+
+.dayroute .rnote{color:#586d74;margin-top:4px;font-size:.78rem}
+
+ 
+
+.slist{flex:1;overflow-y:auto;padding:10px;background:var(--canvas);scrollbar-color:#8ca7a5 transparent}
+
+.slist::-webkit-scrollbar{width:8px}
+
+.slist::-webkit-scrollbar-thumb{background:#8ca7a5;border-radius:4px}
+
+ 
+
+.scard{padding:14px;margin-bottom:10px;border-radius:8px;border:1px solid #cfdad9;background:#fff;cursor:pointer;transition:background-color .2s,border-color .2s,box-shadow .2s;box-shadow:0 1px 3px rgba(18,57,64,.05)}
+
+.scard:hover{background:#f1f8f7;border-color:#79a9aa}
+
+.scard.active{background:#e7f4f4;border-color:var(--primary);box-shadow:var(--shadow)}
+
+.scard.nocoord{border-left:4px solid #f0a500}
+
+.stime{font-size:.84rem;color:var(--primary-strong);font-weight:800}
+
+.sname{font-size:1.05rem;font-weight:800;color:#14282f;margin:4px 0}
+
+.sdesc{font-size:.91rem;color:#455c64;line-height:1.65}
+
+.saddr{font-size:.82rem;color:#566b72;margin-top:5px;line-height:1.55}
+
+ 
+
+.tbadge{display:inline-block;padding:2px 8px;border-radius:8px;font-size:.76rem;font-weight:800;margin-left:6px}
+
+.t-sight{background:#e3f2fd;color:#1565c0}
+
+.t-food{background:#fff3e0;color:#e65100}
+
+.t-hotel{background:#f3e5f5;color:#7b1fa2}
+
+.t-transport{background:#e0f7fa;color:#00838f}
+
+.t-onsen{background:#e8f5e9;color:#2e7d32}
+
+ 
+
+.fdbox{margin-top:8px;padding:8px 10px;background:#fff8e1;border-radius:6px;border:1px solid #e6c861}
+
+.fr{font-size:.85rem;line-height:1.55}
+
+.fm{color:#c62828}
+
+.fv{color:#2e7d32}
+
+ 
+
+.cstat{font-size:.78rem;margin-top:8px}
+
+.cstat.ok{color:#52676f}
+
+.cstat.warn{color:#b45309;font-weight:600}
+
+ 
+
+.actions{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+
+.actions a,.actions button{min-height:44px;font-size:.86rem;text-decoration:none;padding:8px 12px;border-radius:6px;line-height:1.45;display:inline-flex;align-items:center;font-family:inherit;cursor:pointer}
+
+.actions button{appearance:none}
+
+ 
+
+/* 提高權重，蓋過 Leaflet 的 .leaflet-container a */
+
+.actions a.a-place,
+
+.leaflet-popup-content .actions a.a-place{
+
+  color:#1565c0;
+
+  background:#e3f2fd;
+
+  border:1px solid #bbdefb;
+
+}
+
+ 
+
+.actions a.a-nav,
+
+.leaflet-popup-content .actions a.a-nav{
+
+  color:#ffffff;
+
+  background:#1565c0;
+
+  font-weight:600;
+
+}
+
+ 
+
+.actions a.a-nav.weak,
+
+.leaflet-popup-content .actions a.a-nav.weak{
+
+  color:#3d2b00;
+
+  background:#f0a500;
+
+}
+
+ 
+
+.actions a.a-nav-in,
+
+.leaflet-popup-content .actions a.a-nav-in{
+
+  color:#1565c0;
+
+  background:#ffffff;
+
+  border:1.5px solid #1565c0;
+
+  font-weight:600;
+
+}
+
+ 
+
+.actions a.a-nav-in.weak,
+
+.leaflet-popup-content .actions a.a-nav-in.weak{
+
+  color:#7a4b00;
+
+  background:#fff8e1;
+
+  border-color:#f0a500;
+
+}
+
+.actions .a-embed,
+
+.leaflet-popup-content .actions .a-embed{
+
+  color:#263238;
+
+  background:#ffffff;
+
+  border:1px solid #90a4ae;
+
+  font-weight:600;
+
+}
+
+.actions a:hover,.actions button:hover{opacity:.85}
+
+.a-nav.weak{background:#f0a500}
+
+.navnote{font-size:.78rem;color:#914608;margin-top:7px;line-height:1.5}
+
+ 
+
+.snav{padding:9px 12px calc(9px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;gap:9px;flex-shrink:0;background:#fff}
+
+.nbtn{flex:1;min-height:48px;padding:8px;border-radius:8px;border:1px solid #72aeb2;background:var(--primary-soft);color:var(--primary-strong);font-size:.95rem;font-weight:800;cursor:pointer;font-family:inherit}
+
+.nbtn:hover{background:#cbe6e7}
+
+ 
+
+.mapwrap{flex:1;position:relative}
+
+#map{width:100%;height:100%;z-index:1}
+
+.route-view{position:absolute;inset:0;z-index:650;background:#fff;display:flex;flex-direction:column}
+
+.route-view[hidden]{display:none}
+
+.route-head{min-height:68px;padding:9px 12px 9px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;background:#fff}
+
+.route-copy{min-width:0;flex:1}
+
+.route-kicker{font-size:.72rem;color:#5c7077;font-weight:800}
+
+.route-title{font-size:.95rem;color:var(--ink);font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+
+.route-tools{display:flex;align-items:center;gap:6px;flex-shrink:0}
+
+.route-open{min-height:44px;font-size:.82rem;color:var(--primary-strong);text-decoration:none;border:1px solid #72aeb2;border-radius:6px;padding:8px 10px;font-weight:800;white-space:nowrap;display:inline-flex;align-items:center}
+
+.route-close{width:44px;height:44px;border:1px solid #aabbbb;border-radius:6px;background:#fff;color:#344c54;font-size:1.35rem;line-height:1;cursor:pointer}
+
+.route-close:hover{background:#eceff1}
+
+.route-frame{width:100%;flex:1;min-height:200px;border:0;background:#f5f7fa}
+
+.mapwrap.route-open .legend{display:none}
+
+.legend{position:absolute;bottom:14px;right:14px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:8px;padding:10px 13px;z-index:500;font-size:.78rem;color:#40575f;box-shadow:var(--shadow)}
+
+.legend div{margin-bottom:4px;display:flex;align-items:center;gap:6px}
+
+.ldot{width:11px;height:11px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+
+ 
+
+.notes-panel{position:relative;z-index:700;flex-shrink:0;background:#fff9e8;border-top:1px solid #e1bc4d;color:#624b12}
+
+.notes-panel summary{min-height:48px;padding:8px 16px;display:flex;align-items:center;gap:9px;cursor:pointer;list-style:none;font-size:.88rem;font-weight:800}
+
+.notes-panel summary::-webkit-details-marker{display:none}
+
+.notes-panel summary::before{content:'!';width:25px;height:25px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#b84e25;color:#fff;font-weight:900}
+
+.notes-panel summary::after{content:'+';margin-left:auto;font-size:1.25rem;line-height:1;color:#7a5415}
+
+.notes-panel[open] summary::after{content:'−'}
+
+.notes-count{font-size:.76rem;color:#795d22;font-weight:600}
+
+.nbar{position:absolute;left:0;right:0;bottom:100%;background:#fff9e8;border-top:1px solid #e1bc4d;padding:12px 16px;font-size:.82rem;color:#624b12;display:grid;gap:9px;max-height:min(42vh,320px);overflow-y:auto;line-height:1.6;box-shadow:0 -8px 22px rgba(70,55,16,.14)}
+
+.nbar strong{color:#a3441d}
+
+ 
+
+.leaflet-popup-content-wrapper{border-radius:12px!important}
+
+.leaflet-popup-content{font-family:'Noto Sans TC',sans-serif!important;font-size:.9rem!important;line-height:1.6!important;margin:12px 14px!important;max-width:310px}
+
+.leaflet-popup-content .pn{font-weight:800;font-size:1.02rem;margin-bottom:4px}
+
+.leaflet-popup-content .pt{font-size:.78rem;padding:3px 8px;border-radius:8px;display:inline-block;margin-bottom:6px;background:#e8f1f1;color:#344f57}
+
+.leaflet-popup-content .pd{color:#40575f;font-size:.86rem}
+
+.leaflet-control-zoom a{width:44px!important;height:44px!important;line-height:44px!important;font-size:1.35rem!important}
+
+ 
+
+.loading{position:fixed;inset:0;background:#f5f7fa;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:9999;padding:24px;text-align:center}
+
+.spinner{width:38px;height:38px;border:4px solid #e0e0e0;border-top-color:#1565c0;border-radius:50%;animation:spin .8s linear infinite}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+ 
+
+@media(max-width:900px){
+
+.mobile-views{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:7px 10px;background:#fff;border-bottom:1px solid var(--line);flex-shrink:0}
+
+.view-btn{min-height:46px;border:1px solid #9db3b2;border-radius:8px;background:#fff;color:#3d555c;font:800 .92rem 'Noto Sans TC',sans-serif;cursor:pointer}
+
+.view-btn.active{color:#fff;background:var(--primary);border-color:var(--primary);box-shadow:0 2px 7px rgba(11,101,116,.2)}
+
+.main{flex-direction:column;min-height:0}
+
+.top-bar{min-height:70px;padding:7px 12px;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:'mark title' 'mark date';column-gap:9px;row-gap:0}
+
+.brand-mark{grid-area:mark;font-size:1.25rem}
+
+.top-bar h1{grid-area:title;align-self:end}
+
+.top-bar .tmeta{grid-area:date;align-self:start;margin-left:0}
+
+.top-bar h1{font-size:1rem}
+
+.top-bar .tmeta{font-size:.75rem}
+
+.dtab{min-width:72px;min-height:58px;padding:7px 12px}
+
+.fbar{padding:7px 10px}
+
+.fbtn{min-height:44px;padding:7px 14px}
+
+.sidebar{width:100%;height:100%;min-width:auto;min-height:0;max-height:none;border-right:none;border-bottom:none}
+
+.mapwrap{width:100%;height:100%;min-height:0}
+
+.main[data-mobile-view="list"] .mapwrap{display:none}
+
+.main[data-mobile-view="map"] .sidebar{display:none}
+
+.shdr{padding:10px 12px}
+
+.dbadge{width:44px;height:44px}
+
+.scard{padding:13px}
+
+.scard .actions>*{flex:1 1 calc(50% - 4px);justify-content:center;text-align:center}
+
+.route-head{min-height:68px;padding:8px 10px}
+
+.route-title{font-size:.9rem}
+
+.legend{display:none}
+
+.notes-panel summary{min-height:48px;padding:7px 12px}
+
+.nbar{padding:11px 13px;font-size:.8rem;max-height:45vh}
+
+}
+
+ 
+
+@media(prefers-reduced-motion:reduce){
+
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+ 
+
+<div class="loading" id="loading">
+
+  <div class="spinner"></div>
+
+  <p id="loadingMsg">載入行程資料中…</p>
+
+</div>
+
+ 
+
+<div class="top-bar">
+
+  <span class="brand-mark" aria-hidden="true">❄️</span>
+
+  <h1 id="tripTitle">載入中…</h1>
+
+  <div class="tmeta" id="tripDate"></div>
+
+</div>
+
+ 
+
+<nav class="day-tabs" id="dayTabs" aria-label="日期導覽"></nav>
+
+ 
+
+<div class="fbar" id="filterBar"></div>
+
+ 
+
+<div class="mobile-views" role="group" aria-label="手機畫面切換">
+
+  <button class="view-btn active" type="button" data-view="list" aria-pressed="true">☰ 行程</button>
+
+  <button class="view-btn" type="button" data-view="map" aria-pressed="false">⌖ 地圖</button>
+
+</div>
+
+ 
+
+<div class="main" id="mainView" data-mobile-view="list">
+
+  <div class="sidebar">
+
+    <div class="shdr">
+
+      <div class="dbadge" id="hBadge" style="background:linear-gradient(135deg,#1565c0,#42a5f5)">ALL</div>
+
+      <div>
+
+        <div class="dtitle" id="hTitle">—</div>
+
+        <div class="dsub" id="hSub">—</div>
+
+      </div>
+
+    </div>
+
+    <div class="dayroute" id="dayRoute" hidden></div>
+
+    <div class="slist" id="sList"></div>
+
+    <div class="snav">
+
+      <button class="nbtn" id="prevBtn" type="button">◀ 上一站</button>
+
+      <button class="nbtn" id="nextBtn" type="button">下一站 ▶</button>
+
+    </div>
+
+  </div>
+
+  <div class="mapwrap">
+
+    <div id="map"></div>
+
+    <section class="route-view" id="routeView" aria-label="Google Maps 路線" hidden>
+
+      <div class="route-head">
+
+        <div class="route-copy">
+
+          <div class="route-kicker">GOOGLE MAPS 路線</div>
+
+          <div class="route-title" id="routeTitle">—</div>
+
+        </div>
+
+        <div class="route-tools">
+
+          <a class="route-open" id="routeOpen" href="#" target="_blank" rel="noopener noreferrer">開啟導航 ↗</a>
+
+          <button class="route-close" id="routeClose" type="button" aria-label="關閉頁內路線" title="關閉頁內路線">×</button>
+
+        </div>
+
+      </div>
+
+      <iframe class="route-frame" id="routeFrame" title="Google Maps 路線" src="about:blank" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </section>
+
+    <div class="legend">
+
+      <div><span class="ldot" style="background:#1565c0"></span>景點</div>
+
+      <div><span class="ldot" style="background:#e65100"></span>餐廳</div>
+
+      <div><span class="ldot" style="background:#7b1fa2"></span>住宿</div>
+
+      <div><span class="ldot" style="background:#00838f"></span>交通</div>
+
+      <div><span class="ldot" style="background:#2e7d32"></span>溫泉</div>
+
+      <div style="margin-top:3px;color:#1565c0;font-weight:600">圓內數字＝Day</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+ 
+
+<details class="notes-panel" id="notesPanel">
+
+  <summary>重要提醒 <span class="notes-count" id="notesCount"></span></summary>
+
+  <div class="nbar" id="notesBar"></div>
+
+</details>
+
+ 
+
+<script>
+
+'use strict';
+
+ 
+
+const TC = {sight:'#1565c0', food:'#e65100', hotel:'#7b1fa2', transport:'#00838f', onsen:'#2e7d32'};
+
+const TL = {sight:'景點', food:'餐廳', hotel:'住宿', transport:'交通', onsen:'溫泉'};
+
+const TB = {sight:'t-sight', food:'t-food', hotel:'t-hotel', transport:'t-transport', onsen:'t-onsen'};
+
+ 
+
+const FILTERS = [
+
+  {key:'all', label:'📍 全部'},
+
+  {key:'sight', label:'🏔 景點'},
+
+  {key:'food', label:'🍽 餐廳'},
+
+  {key:'hotel', label:'🏨 住宿'},
+
+  {key:'transport', label:'✈ 交通'},
+
+  {key:'onsen', label:'♨ 溫泉'}
+
+];
+
+ 
+
+let DATA = null;
+
+let spots = [];
+
+let days = [];
+
+let cDay = 0;
+
+let cFil = 'all';
+
+let cIdx = -1;
+
+let fList = [];
+
+let markers = [];
+
+ 
+
+/* ---------- 地圖 ---------- */
+
+const map = L.map('map', {zoomControl:true}).setView([42.9, 141.1], 8);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+  attribution:'© <a href=https://www.openstreetmap.org/copyright>OpenStreetMap</a>',
+
+  maxZoom:19
+
+}).addTo(map);
+
+ 
+
+/* ---------- 工具 ---------- */
+
+function hasCoordinates(s){
+
+  return Number.isFinite(s.lat) && Number.isFinite(s.lng) &&
+
+         s.lat >= -90 && s.lat <= 90 && s.lng >= -180 && s.lng <= 180;
+
+}
+
+ 
+
+function coordinateLabel(s){
+
+  if(!hasCoordinates(s)) return '座標待補：未建立圖釘，導航用名稱搜尋';
+
+  const labels = {
+
+    source_listed:'來源列示座標；非入口保證',
+
+    building_reference:'建築參考位置；請確認入口',
+
+    area_reference:'區域參考位置',
+
+    pending:'已有座標，但尚待核實'
+
+  };
+
+  const st = typeof s.coordinateStatus === 'string' ? s.coordinateStatus.trim() : '';
+
+  if(Object.prototype.hasOwnProperty.call(labels, st)) return labels[st];
+
+  if(!st) return '已有座標，但未提供核對狀態';
+
+  return '無法辨識座標狀態：' + st;
+
+}
+
+ 
+
+function safeLink(url){
+
+  try{
+
+    const u = new URL(url);
+
+    return ['https:','http:'].includes(u.protocol) ? u.href : null;
+
+  }catch{ return null; }
+
+}
+
+ 
+
+function mapsQuery(s){
+
+  if(s.googleMapsUrl){
+
+    try{
+
+      const query = new URL(s.googleMapsUrl).searchParams.get('query');
+
+      if(query) return query;
+
+    }catch{}
+
+  }
+
+  if(s.address) return s.name + ' ' + s.address;
+
+  if(hasCoordinates(s)) return s.lat + ',' + s.lng;
+
+  return s.name || '';
+
+}
+
+ 
+
+function defaultMode(a, b){
+
+  const far = ['transport','hotel'];
+
+  return (far.includes(a.type) || far.includes(b.type)) ? 'transit' : 'walking';
+
+}
+
+ 
+
+function directionsUrl(a, b, mode){
+
+  const origin = mapsQuery(a);
+
+  const destination = mapsQuery(b);
+
+  if(!origin || !destination) return null;
+
+  const p = new URLSearchParams({
+
+    api:'1', origin, destination,
+
+    travelmode: mode || defaultMode(a, b)
+
+  });
+
+  return 'https://www.google.com/maps/dir/?' + p.toString();
+
+}
+
+ 
+
+function directionsEmbedUrl(a, b, mode){
+
+  const origin = mapsQuery(a);
+
+  const destination = mapsQuery(b);
+
+  if(!origin || !destination) return null;
+
+  const modeCodes = {driving:'d', walking:'w', transit:'r', bicycling:'b'};
+
+  const p = new URLSearchParams({
+
+    output:'embed',
+
+    hl:'zh-TW',
+
+    saddr:origin,
+
+    daddr:destination,
+
+    dirflg:modeCodes[mode || defaultMode(a, b)] || 'd'
+
+  });
+
+  return 'https://www.google.com/maps?' + p.toString();
+
+}
+
+ 
+
+/* 找出「前一天的最後一個點」
+
+   以完整行程 spots 為準，不受目前的日期／類型篩選影響，
+
+   因為實際移動不會因為畫面篩選而改變。 */
+
+function lastSpotOfPreviousDay(spot){
+
+  const prevDays = spots.filter(s => s.day < spot.day).map(s => s.day);
+
+  if(!prevDays.length) return null;              // Day 1 或更早沒有資料
+
+  const prevDay = Math.max(...prevDays);
+
+  const list = spots.filter(s => s.day === prevDay);
+
+  const hotels = list.filter(s => s.type === 'hotel');
+
+  return hotels.length ? hotels[hotels.length - 1] : (list[list.length - 1] || null);
+
+}
+
+ 
+
+/* 判斷是否為當前清單中該日的第一個項目 */
+
+function isFirstOfDay(i){
+
+  return i === 0 || fList[i - 1].day !== fList[i].day;
+
+}
+
+ 
+
+function dayRouteUrl(list){
+
+  const pts = list.filter(hasCoordinates);
+
+  if(pts.length < 2) return null;
+
+  const p = new URLSearchParams({
+
+    api:'1',
+
+    origin: mapsQuery(pts[0]),
+
+    destination: mapsQuery(pts[pts.length-1]),
+
+    travelmode:'driving'
+
+  });
+
+  const way = pts.slice(1,-1).slice(0,8).map(mapsQuery).join('|');
+
+  if(way) p.set('waypoints', way);
+
+  return 'https://www.google.com/maps/dir/?' + p.toString();
+
+}
+
+ 
+
+function makeLink(url, text, cls){
+
+  const a = document.createElement('a');
+
+  a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+
+  a.textContent = text;
+
+  if(cls) a.className = cls;
+
+  a.addEventListener('click', e => e.stopPropagation());
+
+  return a;
+
+}
+
+ 
+
+function makeButton(text, cls, handler){
+
+  const button = document.createElement('button');
+
+  button.type = 'button';
+
+  button.textContent = text;
+
+  if(cls) button.className = cls;
+
+  button.addEventListener('click', e => {
+
+    e.stopPropagation();
+
+    handler();
+
+  });
+
+  return button;
+
+}
+
+ 
+
+function showEmbeddedDirections(a, b, mode){
+
+  const embedUrl = safeLink(directionsEmbedUrl(a, b, mode));
+
+  const openUrl = safeLink(directionsUrl(a, b, mode));
+
+  if(!embedUrl || !openUrl) return;
+
+ 
+
+  document.getElementById('routeTitle').textContent = a.name + ' → ' + b.name;
+
+  document.getElementById('routeOpen').href = openUrl;
+
+  const frame = document.getElementById('routeFrame');
+
+  frame.title = a.name + ' 到 ' + b.name + '的 Google Maps 路線';
+
+  frame.src = embedUrl;
+
+  document.getElementById('routeView').hidden = false;
+
+  document.querySelector('.mapwrap').classList.add('route-open');
+
+  if(window.matchMedia('(max-width:900px)').matches) setMobileView('map');
+
+  map.closePopup();
+
+}
+
+ 
+
+function closeEmbeddedDirections(){
+
+  const view = document.getElementById('routeView');
+
+  if(view.hidden) return;
+
+  view.hidden = true;
+
+  document.getElementById('routeFrame').src = 'about:blank';
+
+  document.querySelector('.mapwrap').classList.remove('route-open');
+
+}
+
+ 
+
+function setMobileView(view){
+
+  const selectedView = view === 'map' ? 'map' : 'list';
+
+  document.getElementById('mainView').dataset.mobileView = selectedView;
+
+  document.querySelectorAll('.view-btn').forEach(button => {
+
+    const active = button.dataset.view === selectedView;
+
+    button.classList.toggle('active', active);
+
+    button.setAttribute('aria-pressed', String(active));
+
+  });
+
+  if(selectedView === 'map'){
+
+    requestAnimationFrame(() => {
+
+      map.invalidateSize();
+
+      if(document.getElementById('routeView').hidden) fitMap();
+
+    });
+
+  }
+
+}
+
+ 
+
+/* ---------- 標記 ---------- */
+
+function mkIcon(type, day, active){
+
+  const c = TC[type] || '#1565c0';
+
+  const sz = active ? 38 : 28;
+
+  return L.divIcon({
+
+    className:'',
+
+    html:'<div style="width:'+sz+'px;height:'+sz+'px;border-radius:50%;background:'+c+
+
+         ';border:'+(active?'3px solid #ff9800':'2.5px solid #fff')+
+
+         ';display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:'+
+
+         (active?14:11)+'px;font-family:\'Noto Sans TC\',sans-serif;box-shadow:0 2px 6px rgba(0,0,0,.3)">'+day+'</div>',
+
+    iconSize:[sz,sz], iconAnchor:[sz/2,sz/2], popupAnchor:[0,-(sz/2+4)]
+
+  });
+
+}
+
+ 
+
+function popupContent(s, next){
+
+  const box = document.createElement('div');
+
+  const add = (t, cls) => { if(!t) return; const d=document.createElement('div'); d.className=cls; d.textContent=t; box.appendChild(d); };
+
+  add(s.name, 'pn');
+
+  add('D' + s.day + ' ' + (s.time || ''), 'pt');
+
+  add(s.description, 'pd');
+
+  add(s.address, 'pd');
+
+  add(s.meat, 'pd');
+
+  add(s.veg, 'pd');
+
+  add(coordinateLabel(s), 'pd');
+
+ 
+
+  const wrap = document.createElement('div');
+
+  wrap.className = 'actions';
+
+  const place = safeLink(s.googleMapsUrl);
+
+  if(place) wrap.appendChild(makeLink(place, '在 Google Maps 開啟', 'a-place'));
+
+  const idx = fList.indexOf(s);
+
+  const prevEnd = (idx >= 0 && isFirstOfDay(idx)) ? lastSpotOfPreviousDay(s) : null;
+
+  if(prevEnd){
+
+    const modeIn = defaultMode(prevEnd, s);
+
+    const urlIn = safeLink(directionsUrl(prevEnd, s, modeIn));
+
+    if(urlIn){
+
+      const weakIn = !hasCoordinates(prevEnd) || !hasCoordinates(s);
+
+      wrap.appendChild(makeLink(urlIn, '← 從前一天最後一站導航', 'a-nav-in' + (weakIn?' weak':'')));
+
+      wrap.appendChild(makeButton('頁內查看此段', 'a-embed', () => showEmbeddedDirections(prevEnd, s, modeIn)));
+
+    }
+
+  }
+
+  if(next){
+
+    const modeOut = defaultMode(s, next);
+
+    const nav = safeLink(directionsUrl(s, next, modeOut));
+
+    if(nav){
+
+      const weak = !hasCoordinates(s) || !hasCoordinates(next);
+
+      wrap.appendChild(makeLink(nav, '導航到下一站', 'a-nav' + (weak?' weak':'')));
+
+      wrap.appendChild(makeButton('頁內查看此段', 'a-embed', () => showEmbeddedDirections(s, next, modeOut)));
+
+    }
+
+  }
+
+  if(wrap.children.length) box.appendChild(wrap);
+
+  return box;
+
+}
+
+ 
+
+function renderMarkers(){
+
+  markers.forEach(m => { if(m) map.removeLayer(m); });
+
+  markers = new Array(fList.length).fill(null);
+
+ 
+
+  fList.forEach((s, i) => {
+
+    if(!hasCoordinates(s)) return;
+
+    const next = (fList[i+1] && fList[i+1].day === s.day) ? fList[i+1] : null;
+
+    const m = L.marker([s.lat, s.lng], {
+
+      icon: mkIcon(s.type, s.day, i === cIdx),
+
+      zIndexOffset: i === cIdx ? 1000 : 0
+
+    }).addTo(map);
+
+    m.bindPopup(popupContent(s, next), {maxWidth:300});
+
+    m.bindTooltip(s.name, {direction:'top', offset:[0,-16]});
+
+    m.on('click', () => selectSpot(i));
+
+    markers[i] = m;
+
+  });
+
+}
+
+ 
+
+function fitMap(){
+
+  const sel = fList[cIdx];
+
+  if(sel && hasCoordinates(sel)){ map.setView([sel.lat, sel.lng], 16, {animate:true}); return; }
+
+  const vis = markers.filter(Boolean);
+
+  if(!vis.length){ map.setView([42.9,141.1], 8); return; }
+
+  map.fitBounds(L.featureGroup(vis).getBounds(), {padding:[35,35], maxZoom:15, animate:true});
+
+}
+
+ 
+
+/* ---------- 清單 ---------- */
+
+function buildCard(s, i, next){
+
+  const card = document.createElement('div');
+
+  card.className = 'scard' + (i === cIdx ? ' active' : '') + (hasCoordinates(s) ? '' : ' nocoord');
+
+  card.addEventListener('click', () => selectSpot(i));
+
+ 
+
+  const time = document.createElement('div');
+
+  time.className = 'stime';
+
+  time.textContent = 'D' + s.day + ' ' + (s.time || '');
+
+  const badge = document.createElement('span');
+
+  badge.className = 'tbadge ' + (TB[s.type] || '');
+
+  badge.textContent = TL[s.type] || s.type;
+
+  time.appendChild(badge);
+
+  card.appendChild(time);
+
+ 
+
+  const name = document.createElement('div');
+
+  name.className = 'sname';
+
+  name.textContent = s.name;
+
+  card.appendChild(name);
+
+ 
+
+  if(s.description){
+
+    const d = document.createElement('div');
+
+    d.className = 'sdesc'; d.textContent = s.description;
+
+    card.appendChild(d);
+
+  }
+
+  if(s.address){
+
+    const a = document.createElement('div');
+
+    a.className = 'saddr'; a.textContent = s.address;
+
+    card.appendChild(a);
+
+  }
+
+  if(s.meat || s.veg){
+
+    const box = document.createElement('div');
+
+    box.className = 'fdbox';
+
+    if(s.meat){ const r=document.createElement('div'); r.className='fr fm'; r.textContent=s.meat; box.appendChild(r); }
+
+    if(s.veg){ const r=document.createElement('div'); r.className='fr fv'; r.textContent=s.veg; box.appendChild(r); }
+
+    card.appendChild(box);
+
+  }
+
+ 
+
+  const st = document.createElement('div');
+
+  st.className = 'cstat ' + (hasCoordinates(s) ? 'ok' : 'warn');
+
+  st.textContent = coordinateLabel(s);
+
+  card.appendChild(st);
+
+ 
+
+  const actions = document.createElement('div');
+
+  actions.className = 'actions';
+
+ 
+
+  const place = safeLink(s.googleMapsUrl);
+
+  if(place) actions.appendChild(makeLink(place, 'Google Maps 開啟 ↗', 'a-place'));
+
+ 
+
+  let weakNav = false;
+
+ 
+
+  /* ① 每天第一站：從前一天最後一個點導航過來 */
+
+  const prevEnd = isFirstOfDay(i) ? lastSpotOfPreviousDay(s) : null;
+
+  if(prevEnd){
+
+    const urlIn = safeLink(directionsUrl(prevEnd, s));
+
+    if(urlIn){
+
+      const weakIn = !hasCoordinates(prevEnd) || !hasCoordinates(s);
+
+      if(weakIn) weakNav = true;
+
+      const modeIn = defaultMode(prevEnd, s) === 'transit' ? '大眾運輸' : '步行';
+
+      actions.appendChild(
+
+        makeLink(urlIn,
+
+          '← 從「' + prevEnd.name + '」導航到這裡（' + modeIn + '）',
+
+          'a-nav-in' + (weakIn ? ' weak' : ''))
+
+      );
+
+      actions.appendChild(
+
+        makeButton('頁內查看此段', 'a-embed', () => showEmbeddedDirections(prevEnd, s, defaultMode(prevEnd, s)))
+
+      );
+
+    }
+
+  }
+
+ 
+
+  /* ② 導航到同一天的下一站 */
+
+  if(next){
+
+    const urlOut = safeLink(directionsUrl(s, next));
+
+    if(urlOut){
+
+      const weakOut = !hasCoordinates(s) || !hasCoordinates(next);
+
+      if(weakOut) weakNav = true;
+
+      const modeOut = defaultMode(s, next) === 'transit' ? '大眾運輸' : '步行';
+
+      actions.appendChild(
+
+        makeLink(urlOut,
+
+          '→ 導航到「' + next.name + '」（' + modeOut + '）',
+
+          'a-nav' + (weakOut ? ' weak' : ''))
+
+      );
+
+      actions.appendChild(
+
+        makeButton('頁內查看此段', 'a-embed', () => showEmbeddedDirections(s, next, defaultMode(s, next)))
+
+      );
+
+    }
+
+  }
+
+ 
+
+  if(actions.children.length) card.appendChild(actions);
+
+ 
+
+  if(weakNav){
+
+    const w = document.createElement('div');
+
+    w.className = 'navnote';
+
+    w.textContent = '此處有地點未確認座標，導航以名稱搜尋，請先核對再出發。';
+
+    card.appendChild(w);
+
+  }
+
+ 
+
+  return card;
+
+}
+
+ 
+
+function renderList(){
+
+  fList = spots.filter(s => (cDay === 0 || s.day === cDay) && (cFil === 'all' || s.type === cFil));
+
+ 
+
+  const el = document.getElementById('sList');
+
+  el.replaceChildren();
+
+ 
+
+  if(!fList.length){
+
+    const p = document.createElement('div');
+
+    p.style.cssText = 'padding:2rem;text-align:center;color:#999;font-size:.85rem';
+
+    p.textContent = '此篩選條件下沒有項目。';
+
+    el.appendChild(p);
+
+    renderMarkers();
+
+    renderDayRoute();
+
+    return;
+
+  }
+
+ 
+
+  fList.forEach((s, i) => {
+
+    const next = (fList[i+1] && fList[i+1].day === s.day) ? fList[i+1] : null;
+
+    el.appendChild(buildCard(s, i, next));
+
+  });
+
+ 
+
+  renderMarkers();
+
+  renderDayRoute();
+
+}
+
+ 
+
+function renderDayRoute(){
+
+  const box = document.getElementById('dayRoute');
+
+  box.replaceChildren();
+
+ 
+
+  const url = cDay === 0 ? null : safeLink(dayRouteUrl(fList));
+
+  if(!url){ box.hidden = true; return; }
+
+ 
+
+  box.hidden = false;
+
+  box.appendChild(makeLink(url, '🗺 用 Google Maps 開啟本日路線（駕車模式）'));
+
+  const note = document.createElement('div');
+
+  note.className = 'rnote';
+
+  note.textContent = '多點路線僅支援駕車模式，只供順序參考；未確認座標的點不會納入。';
+
+  box.appendChild(note);
+
+}
+
+ 
+
+/* ---------- 互動 ---------- */
+
+function selectSpot(i){
+
+  if(!Number.isInteger(i) || i < 0 || i >= fList.length) return;
+
+  cIdx = i;
+
+  map.closePopup();
+
+  renderList();
+
+ 
+
+  const s = fList[i];
+
+  const m = markers[i];
+
+  if(m && hasCoordinates(s)){
+
+    map.setView([s.lat, s.lng], 16, {animate:false});
+
+    m.openPopup();
+
+  }else{
+
+    document.getElementById('hSub').textContent = '此地點座標待確認，請用卡片內的 Google Maps 連結。';
+
+  }
+
+  const card = document.querySelectorAll('.scard')[i];
+
+  if(card) card.scrollIntoView({behavior:'smooth', block:'nearest'});
+
+  if(window.matchMedia('(max-width:900px)').matches) setMobileView('map');
+
+}
+
+ 
+
+function nav(dir){
+
+  if(!fList.length) return;
+
+  let n = cIdx + dir;
+
+  if(n < 0) n = fList.length - 1;
+
+  if(n >= fList.length) n = 0;
+
+  selectSpot(n);
+
+}
+
+ 
+
+function setDay(d){
+
+  closeEmbeddedDirections();
+
+  cDay = d; cIdx = -1;
+
+  document.querySelectorAll('.dtab').forEach(t => {
+
+    const on = Number(t.dataset.day) === d;
+
+    t.classList.toggle('active', on);
+
+    t.setAttribute('aria-current', on ? 'true' : 'false');
+
+  });
+
+  const info = days.find(x => x.day === d) || days[0] || {};
+
+  const badge = document.getElementById('hBadge');
+
+  badge.textContent = info.badge || 'ALL';
+
+  if(info.color) badge.style.background = 'linear-gradient(135deg,' + info.color + ',' + info.color + 'cc)';
+
+  document.getElementById('hTitle').textContent = info.title || '';
+
+  document.getElementById('hSub').textContent = info.subtitle || '';
+
+  renderList();
+
+  fitMap();
+
+}
+
+ 
+
+function setFilter(f){
+
+  closeEmbeddedDirections();
+
+  cFil = f; cIdx = -1;
+
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.toggle('active', b.dataset.f === f));
+
+  renderList();
+
+  fitMap();
+
+}
+
+ 
+
+/* ---------- 載入 ---------- */
+
+async function loadData(){
+
+  try{
+
+    const res = await fetch('./spots.json', {cache:'no-store'});
+
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+
+    DATA = await res.json();
+
+ 
+
+    const fullTripTitle = DATA.tripTitle || '行程表';
+
+    const tripTitle = fullTripTitle.split('｜')[0].trim() || fullTripTitle;
+
+    document.getElementById('tripTitle').textContent = tripTitle;
+
+    document.getElementById('tripTitle').title = fullTripTitle;
+
+    document.getElementById('tripDate').textContent = DATA.tripDate || '';
+
+    document.title = fullTripTitle;
+
+ 
+
+    const nb = document.getElementById('notesBar');
+
+    const notes = Array.isArray(DATA.notes) ? DATA.notes : [];
+
+    document.getElementById('notesCount').textContent = notes.length + ' 則';
+
+    notes.forEach(n => {
+
+      const sp = document.createElement('span');
+
+      const b = document.createElement('strong');
+
+      b.textContent = (n.label || '') + '：';
+
+      sp.appendChild(b);
+
+      sp.appendChild(document.createTextNode(n.text || ''));
+
+      nb.appendChild(sp);
+
+    });
+
+ 
+
+    days = Array.isArray(DATA.days) ? DATA.days : [];
+
+    const tabs = document.getElementById('dayTabs');
+
+    days.forEach(d => {
+
+      const btn = document.createElement('button');
+
+      btn.type = 'button';
+
+      btn.className = 'dtab' + (d.day === 0 ? ' active' : '');
+
+      btn.dataset.day = String(d.day);
+
+ 
+
+      const l1 = document.createElement('div');
+
+      l1.className = 'dd';
+
+      l1.textContent = d.day === 0 ? '全部' : ('Day ' + d.day);
+
+      btn.appendChild(l1);
+
+ 
+
+      if(d.day !== 0 && d.subtitle){
+
+        const l2 = document.createElement('div');
+
+        l2.className = 'dl';
+
+        l2.textContent = String(d.subtitle).split('｜')[0];
+
+        btn.appendChild(l2);
+
+      }
+
+      btn.addEventListener('click', () => setDay(d.day));
+
+      tabs.appendChild(btn);
+
+    });
+
+ 
+
+    const fb = document.getElementById('filterBar');
+
+    FILTERS.forEach(f => {
+
+      const b = document.createElement('button');
+
+      b.type = 'button';
+
+      b.className = 'fbtn' + (f.key === 'all' ? ' active' : '');
+
+      b.dataset.f = f.key;
+
+      b.textContent = f.label;
+
+      b.addEventListener('click', () => setFilter(f.key));
+
+      fb.appendChild(b);
+
+    });
+
+ 
+
+    spots = Array.isArray(DATA.spots) ? DATA.spots : [];
+
+ 
+
+    document.getElementById('prevBtn').addEventListener('click', () => nav(-1));
+
+    document.getElementById('nextBtn').addEventListener('click', () => nav(1));
+
+    document.getElementById('routeClose').addEventListener('click', closeEmbeddedDirections);
+
+    document.querySelectorAll('.view-btn').forEach(button => {
+
+      button.addEventListener('click', () => setMobileView(button.dataset.view));
+
+    });
+
+    document.addEventListener('keydown', e => {
+
+      if(e.key === 'Escape') closeEmbeddedDirections();
+
+      if(['ArrowRight','ArrowDown'].includes(e.key)){ e.preventDefault(); nav(1); }
+
+      if(['ArrowLeft','ArrowUp'].includes(e.key)){ e.preventDefault(); nav(-1); }
+
+    });
+
+ 
+
+    setDay(0);
+
+    document.getElementById('loading').style.display = 'none';
+
+ 
+
+  }catch(err){
+
+    console.error(err);
+
+    const box = document.getElementById('loading');
+
+    box.replaceChildren();
+
+    const t = document.createElement('p');
+
+    t.style.cssText = 'color:#c62828;font-weight:700';
+
+    t.textContent = '無法載入 spots.json';
+
+    const d = document.createElement('p');
+
+    d.style.cssText = 'color:#616161;font-size:.85rem;margin-top:8px;line-height:1.6';
+
+    d.textContent = '請確認檔案與 index.html 同一資料夾，並透過本地伺服器或已部署網址開啟（直接雙擊開啟會因瀏覽器限制失敗）。';
+
+    const e2 = document.createElement('p');
+
+    e2.style.cssText = 'color:#9e9e9e;font-size:.75rem;margin-top:10px';
+
+    e2.textContent = '錯誤訊息：' + err.message;
+
+    box.append(t, d, e2);
+
+  }
+
+}
+
+ 
+
+loadData();
+
+</script>
+
+</body>
+
+</html>
