@@ -53,8 +53,8 @@
     },
     {
       "day": 3,
-      "title": "洞爺湖→登別・Grand Hotel",
-      "subtitle": "12/26｜地獄谷・溫泉",
+      "title": "洞爺湖→支笏湖鶴雅水之歌",
+      "subtitle": "12/26｜支笏湖・溫泉",
       "badge": "D3",
       "color": "#e65100"
     },
@@ -228,106 +228,92 @@
     {
       "id": "b3-toyasta",
       "day": 3,
-      "name": "JR洞爺站",
+      "name": "新千歲機場",
       "type": "transport",
       "time": "上午",
-      "description": "乃之風退房後，前往洞爺站搭乘往登別方向的JR。巴士及鐵路班次另行確認，不使用前往札幌的飯店接駁。",
-      "lat": 42.55078062606708,
-      "lng": 140.7635598,
-      "coordinateStatus": "source_listed",
-      "coordinateNote": "本次未重新核實洞爺站座標，改用站名搜尋。",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
-    },
-    {
-      "id": "b3-nobosta",
-      "day": 3,
-      "name": "JR登別站",
-      "type": "transport",
-      "time": "中午前後",
-      "description": "抵達後轉路線巴士或計程車前往登別溫泉與Grand Hotel。轉乘時間依實際時刻表安排。",
-      "lat": 42.452058,
-      "lng": 141.180399,
-      "coordinateStatus": "source_listed",
-      "coordinateNote": "地圖來源列示的車站位置，非特定出口。",
-      "coordinateCheckedOn": "2026-09-08",
+      "description": "乃之風退房後，搭乘飯店接駁前往新千歲機場。",
+      "lat": 42.7875,
+      "lng": 141.6798,
+      "coordinateStatus": "area_reference",
       "sourceRefs": [
-        "noboribetsu-station-location"
+        "sta-chitose"
       ],
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Station+Hokkaido"
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
     },
+
     {
-      "id": "b3-grand-luggage",
-      "day": 3,
-      "name": "登別Grand Hotel・寄放行李",
-      "type": "hotel",
-      "time": "抵達溫泉街後",
-      "description": "先詢問是否可於入住前寄放行李，再外出用餐與散步。寄放服務及正式入住時間須以飯店回覆為準。",
-      "placeKey": "noboribetsu-grand",
-      "address": "北海道登別市登別温泉町154",
-      "lat": 42.49226668945842,
-      "lng": 141.14213612090361,
-      "coordinateStatus": "source_listed",
-      "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
-      "coordinateCheckedOn": "2026-09-08",
-      "sourceRefs": [
-        "noboribetsu-grand-official"
-      ],
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Grand+Hotel+154+Noboribetsuonsencho",
-      "bookingStatus": "user_planned_not_verified"
-    },
+    "id": "b3-mizunouta-luggage",
+    "day": 3,
+    "name": "支笏湖鶴雅休閒渡假溫泉SPA飯店 水之謌・寄放行李",
+    "type": "hotel",
+    "time": "抵達溫泉街後",
+    "description": "先詢問是否可於入住前寄放行李，再外出用餐與散步。寄放服務及正式入住時間須以飯店回覆為準。",
+    "placeKey": "shikotsuko-mizunouta",
+    "address": "北海道千歳市支笏湖温泉",
+    "lat": 42.7303,
+    "lng": 141.3855,
+    "coordinateStatus": "source_listed",
+    "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
+    "coordinateCheckedOn": "2026-09-13",
+    "sourceRefs": [
+      "mizunouta-official"
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
+    "bookingStatus": "user_planned_not_verified"
+  },
     {
-      "id": "b3-rikka",
-      "day": 3,
-      "name": "ゆのまちつけもり 六花",
-      "type": "food",
-      "time": "午餐候選",
-      "description": "前往地獄谷前的午餐候選。須先確認當日營業及能否提供符合本人限制的素食正餐；未確認前另備午餐。",
-      "address": "北海道登別市登別温泉町30",
-      "meat": "一般餐點依當日菜單。",
-      "veg": "素食餐點、蛋奶及五辛限制須向店家確認。",
-      "lat": 42.492586587957184,
-      "lng": 141.14330560187344,
-      "coordinateStatus": "source_listed",
-      "sourceRefs": [
-        "rikka"
-      ],
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ゆのまちつけもり六花+登別温泉町30"
-    },
-    {
-      "id": "b3-jigokudani",
-      "day": 3,
-      "name": "登別地獄谷",
-      "type": "sight",
-      "time": "下午",
-      "description": "只走當日開放的遊客步道與觀景空間。本次查到的火山觀測點不能當作遊客入口，因此不填入入口座標；使用店名搜尋後確認遊客動線。",
-      "lat": 42.49775362192924,
-      "lng": 141.14867092883614,
-      "coordinateStatus": "source_listed",
-      "coordinateNote": "尚未核實遊客入口或展望台的精確座標。",
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Jigokudani"
-    },
-    {
-      "id": "b3-grand-stay",
-      "day": 3,
-      "name": "登別Grand Hotel・入住與泡湯",
-      "type": "hotel",
-      "time": "下午返回・晚餐・住宿",
-      "description": "Day 3最後一站，供Day 4跨日導航使用。入住、晚餐及早餐是否包含，依實際訂房方案。目前僅記錄預計入住，未核實訂房已完成。",
-      "meat": "一般餐食依已購買的住宿方案。",
-      "veg": "須確認晚餐與翌日早餐的素食供應；不能僅憑自助餐有蔬菜便視為已安排。",
-      "placeKey": "noboribetsu-grand",
-      "address": "北海道登別市登別温泉町154",
-      "lat": 42.49226668945842,
-      "lng": 141.14213612090361,
-      "coordinateStatus": "source_listed",
-      "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
-      "coordinateCheckedOn": "2026-09-08",
-      "sourceRefs": [
-        "noboribetsu-grand-official"
-      ],
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Noboribetsu+Grand+Hotel+154+Noboribetsuonsencho",
-      "bookingStatus": "user_planned_not_verified"
-    },
+    "id": "b3-hekisui",
+    "day": 3,
+    "name": "食事處 碧水",
+    "type": "food",
+    "time": "午餐候選",
+    "description": "前往湖畔步道前的午餐候選，以支笏湖名產姬鱒（紅鮭）料理與日式定食為主。須先確認當日營業狀況；未確認前另備午餐方案。",
+    "address": "北海道千歳市支笏湖温泉",
+    "meat": "姬鱒料理、日式定食依當日菜單。",
+    "veg": "素食餐點及飲食限制須向店家確認。",
+    "lat": 42.7300,
+    "lng": 141.3850,
+    "coordinateStatus": "source_listed",
+    "sourceRefs": [
+      "hekisui"
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hekisui+Shikotsuko"
+  },
+  {
+    "id": "b3-shikotsuko-sight",
+    "day": 3,
+    "name": "支笏湖遊客中心與山線鐵橋",
+    "type": "sight",
+    "time": "下午",
+    "description": "造訪遊客中心了解支笏湖火山與生態背景，並沿湖畔步道散步至紅色的歷史建築山線鐵橋觀賞湖景。",
+    "lat": 42.7305,
+    "lng": 141.3860,
+    "coordinateStatus": "source_listed",
+    "coordinateNote": "尚未核實遊客中心或鐵橋入口的精確座標。",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsuko+Visitor+Center"
+  },
+  {
+    "id": "b3-mizunouta-stay",
+    "day": 3,
+    "name": "支笏湖鶴雅休閒渡假溫泉SPA飯店 水之謌・入住與泡湯",
+    "type": "hotel",
+    "time": "下午返回・晚餐・住宿",
+    "description": "Day 3最後一站，供Day 4跨日導航使用。入住、晚餐及早餐是否包含，依實際訂房方案。目前僅記錄預計入住，未核實訂房已完成。",
+    "meat": "一般餐食依已購買的住宿方案（如自助餐或和風懷石）。",
+    "veg": "須確認晚餐與翌日早餐的素食供應；不能僅憑自助餐有蔬菜便視為已安排。",
+    "placeKey": "shikotsuko-mizunouta",
+    "address": "北海道千歳市支笏湖温泉",
+    "lat": 42.7303,
+    "lng": 141.3855,
+    "coordinateStatus": "source_listed",
+    "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
+    "coordinateCheckedOn": "2026-09-13",
+    "sourceRefs": [
+      "mizunouta-official"
+    ],
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
+    "bookingStatus": "user_planned_not_verified"
+  }
     {
       "id": "b4-nobosta",
       "day": 4,
