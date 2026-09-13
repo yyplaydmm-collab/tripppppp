@@ -337,7 +337,7 @@
       "name": "JR白老站",
       "type": "transport",
       "time": "中午",
-      "description": "千歳至白老特急約20分鐘（概略值）。",
+      "description": "千歳至白老特急約40分鐘（概略值）。 但坐不到45分",
       "lat": 42.5546,
       "lng": 141.36,
       "coordinateStatus": "area_reference",
