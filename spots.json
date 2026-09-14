@@ -283,37 +283,7 @@
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
 
     },
-
-    {
-
-      "id": "b1-toyasta",
-
-      "day": 1,
-
-      "name": "JR洞爺站",
-
-      "type": "transport",
-
-      "time": "下午",
-
-      "description": "轉巴士或接駁前往溫泉街。",
-
-      "lat": 42.5505,
-
-      "lng": 140.7635,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "sta-toya"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
-
-    },
-
+    
     {
 
       "id": "b1-nonokaze",
