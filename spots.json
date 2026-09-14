@@ -280,7 +280,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
 
     },
 
@@ -310,7 +310,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
 
     },
 
@@ -348,7 +348,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
 
     },
 
@@ -378,7 +378,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=洞爺湖温泉イルミネーショントンネル+にぎわい広場
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=洞爺湖温泉イルミネーショントンネル+にぎわい広場"
 
     },
 
@@ -408,7 +408,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Usuzan+Ropeway
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Usuzan+Ropeway"
 
     },
 
@@ -440,7 +440,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Showa+Shinzan+Bear+Ranch
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Showa+Shinzan+Bear+Ranch"
 
     },
 
@@ -476,7 +476,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Meguriya+LESTEL+TOYA
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meguriya+LESTEL+TOYA"
 
     },
 
@@ -508,7 +508,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Toyako+Kisen
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toyako+Kisen"
 
     },
 
@@ -540,7 +540,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
 
     },
 
@@ -642,7 +642,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
 
     },
 
@@ -682,7 +682,7 @@
 
     ],
 
-    "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
 
     "bookingStatus": "user_planned_not_verified"
 
@@ -720,7 +720,7 @@
 
     ],
 
-    "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Hekisui+Shikotsuko
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hekisui+Shikotsuko"
 
   },
 
@@ -746,7 +746,7 @@
 
     "coordinateNote": "尚未核實遊客中心或鐵橋入口的精確座標。",
 
-    "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Lake+Shikotsuko+Visitor+Center
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsuko+Visitor+Center"
 
   },
 
@@ -788,7 +788,7 @@
 
     ],
 
-    "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
 
     "bookingStatus": "user_planned_not_verified"
 
@@ -814,7 +814,7 @@
 
       "coordinateStatus": "source_listed",
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Chitose+Station+Hokkaido,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chitose+Station+Hokkaido",
 
       "coordinateNote": "地圖來源列示的車站位置，非特定出口。",
 
@@ -854,7 +854,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shiraoi+Station+Hokkaido
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shiraoi+Station+Hokkaido"
 
     },
 
@@ -880,7 +880,7 @@
 
       "coordinateStatus": "source_listed",
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Upopoy+National+Ainu+Museum+Shiraoi
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Upopoy+National+Ainu+Museum+Shiraoi"
 
     },
 
@@ -920,7 +920,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
 
     },
 
@@ -952,7 +952,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
 
     },
 
@@ -986,7 +986,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
 
     },
 
@@ -1024,7 +1024,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Spice+Dining+Chandama+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spice+Dining+Chandama+Sapporo"
 
     },
 
@@ -1062,7 +1062,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Farm+to+Table+TERRA+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farm+to+Table+TERRA+Sapporo"
 
     },
 
@@ -1092,7 +1092,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Otaru+Canal
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Canal"
 
     },
 
@@ -1128,7 +1128,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Otaru+Sankaku+Market
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Sankaku+Market"
 
     },
 
@@ -1158,7 +1158,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Otaru+Music+Box+Museum
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Music+Box+Museum"
 
     },
 
@@ -1194,7 +1194,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=LeTAO+Main+Store+Otaru
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=LeTAO+Main+Store+Otaru"
 
     },
 
@@ -1230,7 +1230,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Holistic+Bio+Cafe+Veggy+Way+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Holistic+Bio+Cafe+Veggy+Way+Sapporo"
 
     },
 
@@ -1262,7 +1262,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
 
     },
 
@@ -1298,7 +1298,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Ramen+Sapporo+Ichiryuan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen+Sapporo+Ichiryuan"
 
     },
 
@@ -1330,7 +1330,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Former+Hokkaido+Government+Office
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Former+Hokkaido+Government+Office"
 
     },
 
@@ -1362,7 +1362,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Sapporo+Beer+Museum
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Beer+Museum"
 
     },
 
@@ -1392,7 +1392,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Tanukikoji+Shopping+Street
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanukikoji+Shopping+Street"
 
     },
 
@@ -1424,7 +1424,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
 
     },
 
@@ -1454,7 +1454,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Sapporo+Station
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Station"
 
     },
 
@@ -1484,7 +1484,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
 
     }
 
@@ -1524,7 +1524,7 @@
 
       "title": "洞爺湖溫泉觀光協會｜洞爺湖温泉イルミネーショントンネル",
 
-      "url": https://www.laketoya.com/event/illumination/
+      "url": "https://www.laketoya.com/event/illumination/"
 
     },
 
@@ -1532,7 +1532,7 @@
 
       "title": "NAVITIME｜乃の風リゾート",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jBahJOOPLJZ8EyT7LRX8BRDAm3KPlkM0vpsr9FSeA_qmIiuCo1zWQcwzrToqxtoAyZTMaKVgeojrDpVR-JC0C1CHLR-8FOv9wMjf35rZayEfYTjdkKWouSPdyhg5JhfTm1z6wJdZUmENOjU=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jBahJOOPLJZ8EyT7LRX8BRDAm3KPlkM0vpsr9FSeA_qmIiuCo1zWQcwzrToqxtoAyZTMaKVgeojrDpVR-JC0C1CHLR-8FOv9wMjf35rZayEfYTjdkKWouSPdyhg5JhfTm1z6wJdZUmENOjU="
 
     },
 
@@ -1540,7 +1540,7 @@
 
       "title": "NAVITIME｜ANAクラウンプラザホテル札幌",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJmaR390Em6dNX7YuOr9aoRCG7b0ph7_eSV6CzNiy0LDzSDzJ_Q583pwBvUOkXIHbgOQCynCNfVxMYdpM5W8Ejda0EZfvemfBXvVG1-9V7FNuiN3E6pnyvbkU96z4cEY4W3Y8kVCPh9LMh
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJmaR390Em6dNX7YuOr9aoRCG7b0ph7_eSV6CzNiy0LDzSDzJ_Q583pwBvUOkXIHbgOQCynCNfVxMYdpM5W8Ejda0EZfvemfBXvVG1-9V7FNuiN3E6pnyvbkU96z4cEY4W3Y8kVCPh9LMh"
 
     },
 
@@ -1548,7 +1548,7 @@
 
       "title": "NAVITIME｜界 ポロト",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESaMPGaYJar42oT1qRnLXFIrFMY1lW66dItcVPPbNTVh_Moo6ZLFewlzkqeVINpp-oBcPyEeq4lE4Gy2juqTBJK8X8jOHwa8Skvz0ZrA2KA0VsZGYnlTarxdNemcXqUySxEiOIK5fOsJpaWTQuAw==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESaMPGaYJar42oT1qRnLXFIrFMY1lW66dItcVPPbNTVh_Moo6ZLFewlzkqeVINpp-oBcPyEeq4lE4Gy2juqTBJK8X8jOHwa8Skvz0ZrA2KA0VsZGYnlTarxdNemcXqUySxEiOIK5fOsJpaWTQuAw=="
 
     },
 
@@ -1556,7 +1556,7 @@
 
       "title": "星野リゾート｜界 ポロト餐食",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQXdQp1P34Hj3g0Rn3vJg50grSJivz7YgQUwBX1MSQrASDzqV0ZO5XXnPasgqgimaUg3s5tLPOEAEG_3-DHECHpPjnEdduxwBa5-OvzgXOI_mck64HNbM2IOLFF20N5TgXYaKaWNgaY0FgQImJDPo=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQXdQp1P34Hj3g0Rn3vJg50grSJivz7YgQUwBX1MSQrASDzqV0ZO5XXnPasgqgimaUg3s5tLPOEAEG_3-DHECHpPjnEdduxwBa5-OvzgXOI_mck64HNbM2IOLFF20N5TgXYaKaWNgaY0FgQImJDPo="
 
     },
 
@@ -1564,7 +1564,7 @@
 
       "title": "NAVITIME｜チャンダマ",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiMqNrrTsTyfl5F7P1CjAN2FD3eHKorh80coOEeHLlKMY66XZJw6wOO1S8aIP0fAqGC7DoV-a2juI4Y-wKRUzGLjL6SBl0mtsGIXBrb-Wa25LdQOKifArAm74Uy5fUMPe1LKVNx2QQuA==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiMqNrrTsTyfl5F7P1CjAN2FD3eHKorh80coOEeHLlKMY66XZJw6wOO1S8aIP0fAqGC7DoV-a2juI4Y-wKRUzGLjL6SBl0mtsGIXBrb-Wa25LdQOKifArAm74Uy5fUMPe1LKVNx2QQuA=="
 
     },
 
@@ -1572,7 +1572,7 @@
 
       "title": "NAVITIME｜Farm to Table TERRA",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEa58xtbftFeeZigg7GnMYYEiKsL0cpOiIIN20YQl310UK3bHbUjqMpixfRpox6KiUkRpmM3nQG5GxVEfVhklhKZl4Q7Mp4bYL6a6kLzoFtw0xfWfk7Yy8TYD-wgFQh8Ez75ImEwDw1g5TRg==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEa58xtbftFeeZigg7GnMYYEiKsL0cpOiIIN20YQl310UK3bHbUjqMpixfRpox6KiUkRpmM3nQG5GxVEfVhklhKZl4Q7Mp4bYL6a6kLzoFtw0xfWfk7Yy8TYD-wgFQh8Ez75ImEwDw1g5TRg=="
 
     },
 
@@ -1580,7 +1580,7 @@
 
       "title": "洞爺湖溫泉觀光協會｜めぐりや",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnmS73SwJ_7XzKFl9-C1HO1FhUgvpizlLhyOVBjDvYfPitZSWye-iaCZnSuVV1F-_IGS1s4ydwrFLfgohYvPK69I5LM5n8jGbYC3_AeyigMdHOlX1SrpOQdMbC0r_twA==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnmS73SwJ_7XzKFl9-C1HO1FhUgvpizlLhyOVBjDvYfPitZSWye-iaCZnSuVV1F-_IGS1s4ydwrFLfgohYvPK69I5LM5n8jGbYC3_AeyigMdHOlX1SrpOQdMbC0r_twA=="
 
     },
 
@@ -1588,7 +1588,7 @@
 
       "title": "登別溫泉觀光協會｜ゆのまちつけもり六花",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhA_7Yd6KKhzBvvnIN4ph21k8TKHsEx1VeQ-mHoeCa2s_mcWOVt6PQyfpj7DZo36G-QWt9R9xEtUZ1BtPYvcFA8WRvnjGAQu6n4ByLmYNEkmL0m_dHvNaSAqOIzNuqEMMaRFP9
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhA_7Yd6KKhzBvvnIN4ph21k8TKHsEx1VeQ-mHoeCa2s_mcWOVt6PQyfpj7DZo36G-QWt9R9xEtUZ1BtPYvcFA8WRvnjGAQu6n4ByLmYNEkmL0m_dHvNaSAqOIzNuqEMMaRFP9"
 
     },
 
@@ -1596,7 +1596,7 @@
 
       "title": "NAVITIME｜Veggy Way",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdP_XzqDrGqdfanXiGLhG1Nfuw-hizrsNAo0jTVIJtzZ44D-vTMk8BHXjaDTDP2TrqyNrTb3uC5BKh-3nRIRL1QQvf9pJALrS8Wczsb97zZyEFZcaG-Oq0NJY3GUIPnEKUhLetDgc8KW5aJge4yrEIyDhZTswSvJ_gu5p4Cm1QQcloHl_3c7iivbE=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdP_XzqDrGqdfanXiGLhG1Nfuw-hizrsNAo0jTVIJtzZ44D-vTMk8BHXjaDTDP2TrqyNrTb3uC5BKh-3nRIRL1QQvf9pJALrS8Wczsb97zZyEFZcaG-Oq0NJY3GUIPnEKUhLetDgc8KW5aJge4yrEIyDhZTswSvJ_gu5p4Cm1QQcloHl_3c7iivbE="
 
     },
 
@@ -1604,7 +1604,7 @@
 
       "title": "NAVITIME｜一粒庵",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg7ArPgIm6cyJP-qJZO5ca20TiNyRTB_bigROnXyfub0Cxqp2J_IezL6y65nEoJBKLy94gDVpp8IVtstoBcy9G39GlhSNoOLXAL3J-iUgqPofU1x7VxhhEV_jGUIHMWlrr954jLAwmD-XBurPr
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg7ArPgIm6cyJP-qJZO5ca20TiNyRTB_bigROnXyfub0Cxqp2J_IezL6y65nEoJBKLy94gDVpp8IVtstoBcy9G39GlhSNoOLXAL3J-iUgqPofU1x7VxhhEV_jGUIHMWlrr954jLAwmD-XBurPr"
 
     },
 
@@ -1612,7 +1612,7 @@
 
       "title": "NAVITIME｜小樽三角市場",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ1zDhyaAe2rCpN1UXBDnV10HpLL43oqhXbiaX0ax6f3JMm9Kry4u0i6kCf_EXrMNpcjq86GbqdB8psC-w6sMtvouOee3H0gxFK83kjK0jPPAt2fzx9T_eISHqW4ID6fYUV4l0Wrieaveb_IRqEg==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ1zDhyaAe2rCpN1UXBDnV10HpLL43oqhXbiaX0ax6f3JMm9Kry4u0i6kCf_EXrMNpcjq86GbqdB8psC-w6sMtvouOee3H0gxFK83kjK0jPPAt2fzx9T_eISHqW4ID6fYUV4l0Wrieaveb_IRqEg=="
 
     },
 
@@ -1620,7 +1620,7 @@
 
       "title": "NAVITIME｜ルタオ本店",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqInpdKOrqxrczwLjqXphbllmTQPUM-QgZuwzlWUh-6462B9guNQWioBXom8vfGwvOZ0_xSf5mrCeynGgsenUH9ZlJgGYvaGoHW4SStXjADbXRT1Lbnt8v_fCyLyrQuZcz5r1xGxJMdgBxxX4=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqInpdKOrqxrczwLjqXphbllmTQPUM-QgZuwzlWUh-6462B9guNQWioBXom8vfGwvOZ0_xSf5mrCeynGgsenUH9ZlJgGYvaGoHW4SStXjADbXRT1Lbnt8v_fCyLyrQuZcz5r1xGxJMdgBxxX4="
 
     },
 
@@ -1628,7 +1628,7 @@
 
       "title": "NAVITIME｜小樽運河",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF21RVKJuVsCLTXE4xyHFXxP6Iih21LCiW1yakWT3ba-WNPIeN9S1AQV9Etj90jxuMSD5tOl2eeSMyOLBrIt_OClXglJIP-EohX4OAebLibVBk_q_I193UUl-08-tiXL9ZXKA08eDzV6_o_tU8=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF21RVKJuVsCLTXE4xyHFXxP6Iih21LCiW1yakWT3ba-WNPIeN9S1AQV9Etj90jxuMSD5tOl2eeSMyOLBrIt_OClXglJIP-EohX4OAebLibVBk_q_I193UUl-08-tiXL9ZXKA08eDzV6_o_tU8="
 
     },
 
@@ -1636,7 +1636,7 @@
 
       "title": "NAVITIME｜小樽オルゴール堂 本館",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAQayaiJpQbH8toIJMP500mdXMh6_QHOL5euj_ufNnuDnap76C1heuupcPSJzrTTNvq9NrFYjRF-RRegdj6T1vxob_RT86TR4tIQxKTIdu3QUC_X_2Itld6YZa1d0s7q6r9NqfXlXBVcQMk80=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAQayaiJpQbH8toIJMP500mdXMh6_QHOL5euj_ufNnuDnap76C1heuupcPSJzrTTNvq9NrFYjRF-RRegdj6T1vxob_RT86TR4tIQxKTIdu3QUC_X_2Itld6YZa1d0s7q6r9NqfXlXBVcQMk80="
 
     },
 
@@ -1644,7 +1644,7 @@
 
       "title": "NAVITIME｜有珠山ロープウェイ",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uAoTS07xHJuWG_4gUL8-PKRhI6T7LlYhlVAzoX27gvtlnYjYD0oMqN-s_2VARVR98sxH2GRN73PBfVdn894DYgNNirKXL3mnijEwetpaT2wCck302VuHFX28n74MzdlcYV0MnYld
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uAoTS07xHJuWG_4gUL8-PKRhI6T7LlYhlVAzoX27gvtlnYjYD0oMqN-s_2VARVR98sxH2GRN73PBfVdn894DYgNNirKXL3mnijEwetpaT2wCck302VuHFX28n74MzdlcYV0MnYld"
 
     },
 
@@ -1652,7 +1652,7 @@
 
       "title": "NAVITIME｜昭和新山熊牧場",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmFUikHycJHlwqBteari2U64TuQryfmys_e3tj29Ra1TG0bIey7KY2bt4iHGmxDwRJBzazYDF3DGqObeIOiHdj7CITk775RpxxmRO7Db8rKC6a74PShaMuBvq-Ql527PaeSP-i9EcYfgATsvYoKw==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmFUikHycJHlwqBteari2U64TuQryfmys_e3tj29Ra1TG0bIey7KY2bt4iHGmxDwRJBzazYDF3DGqObeIOiHdj7CITk775RpxxmRO7Db8rKC6a74PShaMuBvq-Ql527PaeSP-i9EcYfgATsvYoKw=="
 
     },
 
@@ -1660,7 +1660,7 @@
 
       "title": "NAVITIME｜洞爺湖汽船",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeGlN_RuAfIQx_eALqSKAeqXXqN17FoI_7W-JCrVyVSGQOvyTclu8MDl0Wg9_2PF6rdshLqAyG1vwn_TRS1OfGfqbQaN4kkFlzCwhk3lTODQaKSJ_MLxhjQTb2FCZM92T7q3KlhqLfN_16cA==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeGlN_RuAfIQx_eALqSKAeqXXqN17FoI_7W-JCrVyVSGQOvyTclu8MDl0Wg9_2PF6rdshLqAyG1vwn_TRS1OfGfqbQaN4kkFlzCwhk3lTODQaKSJ_MLxhjQTb2FCZM92T7q3KlhqLfN_16cA=="
 
     },
 
@@ -1668,7 +1668,7 @@
 
       "title": "NAVITIME｜狸小路商店街",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNmMkZk4kRf_Z1RQLlmrrnb1oPkmP8oQ9bl1mLmVApgt9VhyIutLhntwaWQXTifVN6J-r7aeHN915gXOQla8Hfje15EWSBrHKVK6gbQmGzv52knhfNeu3qKfgdaZvHJj9Vo-m3V6XD7kuzaLU=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNmMkZk4kRf_Z1RQLlmrrnb1oPkmP8oQ9bl1mLmVApgt9VhyIutLhntwaWQXTifVN6J-r7aeHN915gXOQla8Hfje15EWSBrHKVK6gbQmGzv52knhfNeu3qKfgdaZvHJj9Vo-m3V6XD7kuzaLU="
 
     },
 
@@ -1676,7 +1676,7 @@
 
       "title": "NAVITIME｜北海道庁旧本庁舎",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOsMROoR37bL-WZXo3ZB75ETJxUNsBJGW-koQF9pJhLtwHWavSJL8Y-ZXBICFq6wky60rUSg0fpHPTfNpphvbctyZUxapGnnUCJSpq_ycohbCUIPz6TxTbAn3fJU5Q_KR1E4qJD4u5mE6xyzc=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOsMROoR37bL-WZXo3ZB75ETJxUNsBJGW-koQF9pJhLtwHWavSJL8Y-ZXBICFq6wky60rUSg0fpHPTfNpphvbctyZUxapGnnUCJSpq_ycohbCUIPz6TxTbAn3fJU5Q_KR1E4qJD4u5mE6xyzc="
 
     },
 
@@ -1684,7 +1684,7 @@
 
       "title": "NAVITIME｜サッポロビール博物館",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrbNcYY-qL3UT0CTAiTSntx7_ab9wmjXvJCyK6kY9UVyFI7CdMmGH5t7ANenOQfFyILX3oLM87As72v2xFyupVg8gpzzS0PFjVP5WAIoErBj6GRSBSQDWpT0AccXubfrVd0_lnFIASzzUXz3J
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrbNcYY-qL3UT0CTAiTSntx7_ab9wmjXvJCyK6kY9UVyFI7CdMmGH5t7ANenOQfFyILX3oLM87As72v2xFyupVg8gpzzS0PFjVP5WAIoErBj6GRSBSQDWpT0AccXubfrVd0_lnFIASzzUXz3J"
 
     },
 
@@ -1692,7 +1692,7 @@
 
       "title": "MapFan｜札幌駅",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
 
     },
 
@@ -1700,7 +1700,7 @@
 
       "title": "NAVITIME｜白老駅",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ1YaArogfTq_unvejcmWuoh5st_OuCrP450uojIvKzMKONIDqKv5LbzJobgTNNdisIukoBadBrzwEZzrDNYHNo0-Vdjq165ECHxpXNH1DkSONTeKYZN3qMp_w8XDHa0IHElsl8ZcB
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ1YaArogfTq_unvejcmWuoh5st_OuCrP450uojIvKzMKONIDqKv5LbzJobgTNNdisIukoBadBrzwEZzrDNYHNo0-Vdjq165ECHxpXNH1DkSONTeKYZN3qMp_w8XDHa0IHElsl8ZcB"
 
     },
 
@@ -1708,7 +1708,7 @@
 
       "title": "MapFan｜洞爺駅",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMiqBK05gfyCNeEXLyQLQOoar5n-zAK5xpgLPHcRvO3TH_VZ23hWZrMozh83PWHWFfFTyAzu2BmmFPGkEK7g0-DOHg9TQCJtRghZR9v0HuREB8E5eM7iQQMbDgzA==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMiqBK05gfyCNeEXLyQLQOoar5n-zAK5xpgLPHcRvO3TH_VZ23hWZrMozh83PWHWFfFTyAzu2BmmFPGkEK7g0-DOHg9TQCJtRghZR9v0HuREB8E5eM7iQQMbDgzA=="
 
     },
 
@@ -1716,7 +1716,7 @@
 
       "title": "MapFan｜新千歳空港駅",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
 
     },
 
@@ -1724,7 +1724,7 @@
 
       "title": "登別Grand Hotel官方｜地址及交通",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbtdyFTfYKBCMe8rphCiPfpIqznByQU_eMKpaq1Eth3VxAe5V8Pan6hGjdbQebN3HUZnd-oUn8Tn8ld1FXnbV_y1V4Hef24VbkTolVX5C8jBLiMm0fcdGqtVuoM7k=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbtdyFTfYKBCMe8rphCiPfpIqznByQU_eMKpaq1Eth3VxAe5V8Pan6hGjdbQebN3HUZnd-oUn8Tn8ld1FXnbV_y1V4Hef24VbkTolVX5C8jBLiMm0fcdGqtVuoM7k="
 
     },
 
@@ -1732,7 +1732,7 @@
 
       "title": "NAVITIME｜登別站座標",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFluoAlfFCcVM8_AsO9fZpizNYcylvFM_dUN5PbnoYBUrlnMQMgFVYjn5bueoqPcQOtBGC6jg3b4s3l3FsWsPalP8dlYR2X2N5kyz2IsfJCcHgK1p5O7ci2mzO2jxchEUq_PCYXhVVj
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFluoAlfFCcVM8_AsO9fZpizNYcylvFM_dUN5PbnoYBUrlnMQMgFVYjn5bueoqPcQOtBGC6jg3b4s3l3FsWsPalP8dlYR2X2N5kyz2IsfJCcHgK1p5O7ci2mzO2jxchEUq_PCYXhVVj"
 
     },
 
@@ -1740,7 +1740,7 @@
 
       "title": "NAVITIME｜大湯沼景點位置",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3IRFiAwbOA4rDehsBtIvhJaEOopdnc0XACim-gcQUfKNoshyh5XYhABGa3n0zZ7vMCnH89xZE8XqO84nh5I0zVzEJ9cSDLMfit1SW9T69hHU07wPCYh77SEoQJ8WpBbRvj0ED30SH5tXY2lg=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3IRFiAwbOA4rDehsBtIvhJaEOopdnc0XACim-gcQUfKNoshyh5XYhABGa3n0zZ7vMCnH89xZE8XqO84nh5I0zVzEJ9cSDLMfit1SW9T69hHU07wPCYh77SEoQJ8WpBbRvj0ED30SH5tXY2lg="
 
     },
 
@@ -1748,7 +1748,7 @@
 
       "title": "自然公園財團｜大湯沼冬季交通資訊",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZiqwbV-6boRUIV9vE7uqEeDFEKp15Xatm1HdpIQiFAbvnsmh6SxYjs-rHlc7ygpidHMpyZLi_faByANuU0PrzaCbA5fzUfc9vJrO7_6qNyQQhfvHHq-Zk1xonKTN3A0tD7Zu13g==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZiqwbV-6boRUIV9vE7uqEeDFEKp15Xatm1HdpIQiFAbvnsmh6SxYjs-rHlc7ygpidHMpyZLi_faByANuU0PrzaCbA5fzUfc9vJrO7_6qNyQQhfvHHq-Zk1xonKTN3A0tD7Zu13g=="
 
     }
 
@@ -1790,7 +1790,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=大湯沼+登別
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼+登別"
 
     },
 
@@ -1818,7 +1818,7 @@
 
       "navigationEnabled": false,
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=大湯沼川天然足湯+登別
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼川天然足湯+登別"
 
     }
 
