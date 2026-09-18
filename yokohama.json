@@ -2,27 +2,289 @@
 
   "schemaVersion": "2.0",
 
-  "planCode": "B",
+  "planCode": "YK-A",
 
-  "tripTitle": "北海道8天7夜｜乃之風2晚→登別Grand Hotel→界ポロト→札幌3晚",
+  "tripTitle": "橫濱5天4夜|希爾頓橫濱連住4晚|K-Arena演唱會＋日光＋富士山",
 
-  "tripDate": "12/24 — 12/31（年份待確認）",
+  "tripDate": "10/28 — 11/1(年份待確認)",
+
+  "year": null,
+
+  "status": "proposal_not_booked",
+
+  "supersedes": "spots_yokohama_1028_1101_v3_karena.json",
+
+  "revisionNote": "v4變更:內容與v3相同,僅將JSON改為展開格式,每個欄位獨立一行,方便逐點修改lat/lng。",
 
   "coordinatePolicy": {
 
     "googleMapsCoordinatesVerified": false,
 
-    "navigationNotice": "座標多來自地圖服務列示值，非入口保證；pending者導航以名稱搜尋。"
+    "navigationNotice": "本檔lat/lng均為null,未查核精確入口座標。集合點與會場入口請以KKday憑證、演唱會票券所附地圖為準。"
 
   },
+
+  "accommodation": {
+
+    "name": "希爾頓橫濱",
+
+    "nights": "10/28, 10/29, 10/30, 10/31(連住4晚)",
+
+    "bookingStatus": "user_confirmed_booked",
+
+    "nearestStation": "港未來線 新高島站 步行約5分鐘(4號出口)",
+
+    "jrYokohamaStation": "JR橫濱站東口 步行約9-11分鐘,可經高島水際線Deck",
+
+    "karenaAccess": "與K-Arena橫濱相鄰,同屬MUSIC TERRAS街區",
+
+    "note": "請確認訂的是「希爾頓橫濱」而非鄰近的「希爾頓花園酒店橫濱港未來」,兩者不同。",
+
+    "sourceRefs": [
+
+      "hilton-access",
+
+      "karena-access"
+
+    ]
+
+  },
+
+  "fixedCommitments": [
+
+    {
+
+      "id": "concert-karena",
+
+      "date": "10/29",
+
+      "title": "K-Arena橫濱 演唱會",
+
+      "venue": "K-Arena橫濱",
+
+      "startTime": "17:00後",
+
+      "endTime": null,
+
+      "source": "user_provided",
+
+      "verified": false,
+
+      "note": "實際開演與結束時間未提供;散場後另有管制退場時間。"
+
+    },
+
+    {
+
+      "id": "kkday-nikko",
+
+      "date": "10/30",
+
+      "title": "KKday 東京日光一日遊",
+
+      "meetingPoint": "東京站 丸之內北口",
+
+      "assemblyTime": "06:45",
+
+      "departureTime": "07:00",
+
+      "arriveBefore": "15分鐘前",
+
+      "targetArrival": "06:30",
+
+      "returnPoint": "東京站(同上車地點)",
+
+      "returnTime": null,
+
+      "source": "user_provided",
+
+      "verified": false
+
+    },
+
+    {
+
+      "id": "kkday-fuji",
+
+      "date": "10/31",
+
+      "title": "KKday 富士山經典一日遊",
+
+      "meetingPoint": "JR上野站 公園口前",
+
+      "assemblyTime": "07:30",
+
+      "departureTime": "07:40",
+
+      "arriveBefore": "10分鐘前",
+
+      "targetArrival": "07:20",
+
+      "returnPoint": "上野站(同上車地點)",
+
+      "returnTime": null,
+
+      "source": "user_provided",
+
+      "verified": false
+
+    }
+
+  ],
+
+  "criticalRisks": [
+
+    {
+
+      "severity": "high",
+
+      "id": "risk-concert-to-nikko",
+
+      "title": "10/29演唱會散場 → 10/30凌晨05:10出發",
+
+      "detail": "K-Arena大型公演採管制退場,全場散完約需40-50分鐘。所幸飯店緊鄰會場,不需前往車站,這是最大優勢。但若演唱會21:00結束、22:00前後回房,扣除盥洗只剩約6小時睡眠,隔天須05:00起床。",
+
+      "mitigation": [
+
+        "演唱會當晚不安排續攤或宵夜。",
+
+        "10/29出發前先把10/30的隨身物品整理好放門邊。",
+
+        "早餐改為前一日買好的麵包,不依賴飯店餐廳。",
+
+        "若演唱會結束時間晚於22:00,應認真考慮放棄日光團。"
+
+      ],
+
+      "sourceRefs": [
+
+        "karena-exit"
+
+      ]
+
+    },
+
+    {
+
+      "severity": "high",
+
+      "id": "risk-nikko-departure",
+
+      "title": "10/30東京站06:30,容錯極低",
+
+      "detail": "05:25橫濱站發車(東海道線)是主要班次,下一班05:53抵東京約06:20,只剩10分鐘找丸之內北口。再錯過就趕不上集合。",
+
+      "mitigation": [
+
+        "設兩個鬧鐘",
+
+        "10/28或10/29白天先走一次飯店到橫濱站的路線",
+
+        "確認夜間可通行的出入口"
+
+      ],
+
+      "sourceRefs": [
+
+        "yokohama-tokyo-rail"
+
+      ]
+
+    },
+
+    {
+
+      "severity": "medium",
+
+      "id": "risk-return-legs",
+
+      "title": "兩天團體返回後仍需回橫濱",
+
+      "detail": "返回地點=上車地點。10/30晚回到東京站後還需約25-30分鐘回橫濱;10/31晚回到上野站後需約40-50分鐘。兩天都是清晨出門、深夜返回。",
+
+      "mitigation": [
+
+        "回程可加購綠色車廂(Suica事前購買50km內750日圓,車站/車內紙票貴260日圓)",
+
+        "尖峰時段綠色車廂仍可能客滿站著,但晚間狀況較佳"
+
+      ],
+
+      "sourceRefs": [
+
+        "green-car"
+
+      ]
+
+    }
+
+  ],
 
   "notes": [
 
     {
 
-      "label": "方案",
+      "label": "為何不建議7:45出發",
 
-      "text": "方案B：12/26預計入住鶴雅休閒渡假溫泉SPA飯店 水之謌，12/27前往白老界ポロト。"
+      "text": "東海道線上行尖峰為7:30-8:30,7:45正好撞進最擠時段;橫濱是中途站非始發站,列車到站時常已近滿載,川崎至品川為最擁擠區間。原05:25那班反而最空。",
+
+      "sourceRefs": [
+
+        "rush-hour"
+
+      ]
+
+    },
+
+    {
+
+      "label": "10/29行程大幅縮減",
+
+      "text": "因演唱會17:00後開始、隔日05:00起床,10/29白天只排半天輕鬆行程,下午提早回飯店休息。原本的山手、元町、中華街完整路線已刪減。"
+
+    },
+
+    {
+
+      "label": "K-Arena散場策略",
+
+      "text": "不必急著往出口衝,在座位等待引導反而較快。飯店就在旁邊,是此行最大便利。",
+
+      "sourceRefs": [
+
+        "karena-exit"
+
+      ]
+
+    },
+
+    {
+
+      "label": "賞楓預期・日光",
+
+      "text": "中禪寺湖與伊呂波坂例年10月中旬至11月上旬為紅葉季,10/30時機相對理想,但各海拔不同步。紅葉季易嚴重塞車,返程可能延後,當晚不要訂餐廳。",
+
+      "sourceRefs": [
+
+        "nikko-autumn",
+
+        "nikko-traffic"
+
+      ]
+
+    },
+
+    {
+
+      "label": "賞楓預期・富士",
+
+      "text": "河口湖例年11月上中旬才是見頃,紅葉迴廊約10月下旬開始轉色。10/31偏早,應以富士山景為主、紅葉為輔,不預期滿紅。山區天候影響能見度。",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ]
 
     },
 
@@ -30,31 +292,23 @@
 
       "label": "尚未成立",
 
-      "text": "素食安排仍須分別確認。"
+      "text": "兩個KKday行程的集合資訊由你提供,我未向KKday核實;演唱會開演與結束時間未提供。車票均未購買。出發前請再對一次官方憑證與時刻表。"
 
     },
 
     {
 
-      "label": "住宿",
+      "label": "飲食",
 
-      "text": "12/24-25乃之風；12/26鶴雅休閒渡假溫泉SPA飯店 水之謌；12/27界ポロト；12/28-30札幌皇冠假日。"
-
-    },
-
-    {
-
-      "label": "素食風險",
-
-      "text": "若四晚均訂含餐方案，涉及三間溫泉旅館：乃之風、水之謌、界ポロト。每間的晚餐與早餐均須確認；不是四家飯店。"
+      "text": "原附件的素食條件不自動套用本次旅行。團體午餐是否含餐、能否配合素食須向KKday確認。"
 
     },
 
     {
 
-      "label": "交通",
+      "label": "年份與航班",
 
-      "text": "12/26需接駁巴士→機場等→接駁巴士巴士二段轉乘，時間長。"
+      "text": "年份、11/1是否搭機及機場皆未確認。"
 
     }
 
@@ -66,9 +320,9 @@
 
       "day": 0,
 
-      "title": "方案B 全行程",
+      "title": "全行程",
 
-      "subtitle": "12/24—12/31｜改住水之謌",
+      "subtitle": "10/28—11/1|希爾頓橫濱連住4晚",
 
       "badge": "ALL",
 
@@ -80,13 +334,13 @@
 
       "day": 1,
 
-      "title": "抵達・前往洞爺湖",
+      "title": "抵達橫濱",
 
-      "subtitle": "12/24｜新千歲→洞爺湖",
+      "subtitle": "10/28|港灣夜景",
 
       "badge": "D1",
 
-      "color": "#c62828"
+      "color": "#1565c0"
 
     },
 
@@ -94,13 +348,13 @@
 
       "day": 2,
 
-      "title": "洞爺湖・有珠山",
+      "title": "半日觀光・K-Arena演唱會",
 
-      "subtitle": "12/25｜乃之風第2晚",
+      "subtitle": "10/29|17:00後演唱會",
 
       "badge": "D2",
 
-      "color": "#2e7d32"
+      "color": "#ad1457"
 
     },
 
@@ -108,13 +362,13 @@
 
       "day": 3,
 
-      "title": "洞爺湖→支笏湖鶴雅水之歌",
+      "title": "日光一日遊",
 
-      "subtitle": "12/26｜支笏湖・溫泉",
+      "subtitle": "10/30|東京站06:30集合",
 
       "badge": "D3",
 
-      "color": "#e65100"
+      "color": "#2e7d32"
 
     },
 
@@ -122,9 +376,9 @@
 
       "day": 4,
 
-      "title": "支笏湖→白老・界ポロト",
+      "title": "富士山一日遊",
 
-      "subtitle": "12/27｜ウポポイ",
+      "subtitle": "10/31|上野站07:20集合",
 
       "badge": "D4",
 
@@ -136,55 +390,13 @@
 
       "day": 5,
 
-      "title": "白老→札幌",
+      "title": "彈性・回程",
 
-      "subtitle": "12/28｜札幌連住第1晚",
+      "subtitle": "11/1|依航班",
 
       "badge": "D5",
 
       "color": "#6a1b9a"
-
-    },
-
-    {
-
-      "day": 6,
-
-      "title": "小樽一日遊",
-
-      "subtitle": "12/29｜札幌連住第2晚",
-
-      "badge": "D6",
-
-      "color": "#00838f"
-
-    },
-
-    {
-
-      "day": 7,
-
-      "title": "札幌自由日",
-
-      "subtitle": "12/30｜札幌連住第3晚",
-
-      "badge": "D7",
-
-      "color": "#1565c0"
-
-    },
-
-    {
-
-      "day": 8,
-
-      "title": "退房・回程",
-
-      "subtitle": "12/31｜新千歲",
-
-      "badge": "D8",
-
-      "color": "#455a64"
 
     }
 
@@ -194,455 +406,31 @@
 
     {
 
-      "id": "b1-airport",
+      "id": "d1-NARITA-narita-airport",
 
       "day": 1,
 
-      "name": "新千歲機場",
+      "name": "成田機場",
 
       "type": "transport",
 
-      "time": "依航班",
+      "time": "依抵達時間",
 
-      "description": "抵達後前往洞爺湖。",
+      "description": "抵達後搭乘JR往橫濱",
 
-      "shuttleNotice": {
+      "lat": 35.77086578260934,
 
-        "title": "接駁車報到注意事項",
+      "lng": 140.38434739932325,
 
-        "ja": [
-
-          "新千歳空港1階到着ロビー、",
-
-          "※4番到着口と5番到着口の間の国内線ツアーデスクで",
-
-          "緑色の「北海道ツアーデスク」と大きな看板がございます。",
-
-          "出発30分前より受付致します。"
-
-        ],
-
-        "zh": [
-
-          "新千歲機場 1 樓抵達大廳",
-
-          "※位於 4 號抵達出口與 5 號抵達出口之間的國內線 Tour Desk（旅遊服務櫃台）",
-
-          "現場有大型綠色「北海道ツアーデスク（Hokkaido Tour Desk）」招牌。",
-
-          "巴士出發前 30 分鐘開始辦理報到。"
-
-        ],
-
-        "images": [
-
-          {
-
-            "src": "./new-chitose-tour-desk.jpg?v=1297x593",
-
-            "alt": "新千歲機場一樓國內線 Tour Desk，位於 4 號與 5 號抵達出口之間",
-
-            "caption": "新千歲機場 1 樓接駁車報到櫃台位置圖",
-
-            "width": 1297,
-
-            "height": 593
-
-          },
-
-          {
-
-            "src": "./new-chitose-desk_detail.jpg?v=1280x853",
-
-            "alt": "綠色北海道ツアーデスク招牌下方的接駁車報到櫃台",
-
-            "caption": "北海道ツアーデスク櫃台外觀",
-
-            "width": 1280,
-
-            "height": 853
-
-          }
-
-        ]
-
-      },
-
-      "lat": 42.7875,
-
-      "lng": 141.6798,
-
-      "coordinateStatus": "area_reference",
+      "coordinateStatus": "building_reference",
 
       "sourceRefs": [
 
-        "sta-chitose"
+        "hilton-access"
 
       ],
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
-
-    },
-
-    {
-
-      "id": "b1-toyasta",
-
-      "day": 1,
-
-      "name": "JR洞爺站",
-
-      "type": "transport",
-
-      "time": "下午",
-
-      "description": "轉巴士或接駁前往溫泉街。",
-
-      "lat": 42.5505,
-
-      "lng": 140.7635,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "sta-toya"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toya+Station+Hokkaido"
-
-    },
-
-    {
-
-      "id": "b1-nonokaze",
-
-      "placeKey": "nonokaze",
-
-      "day": 1,
-
-      "name": "乃之風リゾート",
-
-      "type": "hotel",
-
-      "time": "入住・晚餐",
-
-      "description": "洞爺湖第1晚。",
-
-      "address": "北海道虻田郡洞爺湖町洞爺湖温泉29-1",
-
-      "meat": "一般餐食依訂房方案。",
-
-      "veg": "須取得飯店書面確認。",
-
-      "lat": 42.565785,
-
-      "lng": 140.822304,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "nonokaze"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
-
-    },
-
-    {
-
-      "id": "b1-toyako-illumination",
-
-      "day": 1,
-
-      "name": "洞爺湖溫泉冬季燈飾隧道",
-
-      "type": "sight",
-
-      "time": "晚餐後・夜間",
-
-      "description": "前往溫泉街中心的「にぎわい広場」，欣賞約40萬顆燈泡打造、全長約70公尺的洞爺湖溫泉イルミネーショントンネル。官網目前公布的2025–26季為11/1～4/27，12月點燈時間為17:00～22:00；行程年份待確認，出發前請再查當季公告。雪地夜間步行請注意保暖與防滑。",
-
-      "address": "北海道虻田郡洞爺湖町洞爺湖温泉 にぎわい広場",
-
-      "travelModeFromPrevious": "walking",
-
-      "coordinateStatus": "pending",
-
-      "sourceRefs": [
-
-        "toyako-illumination-official"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=洞爺湖温泉イルミネーショントンネル+にぎわい広場"
-
-    },
-
-    {
-
-      "id": "b2-usuzan",
-
-      "day": 2,
-
-      "name": "有珠山纜車",
-
-      "type": "sight",
-
-      "time": "上午",
-
-      "description": "天候允許時前往。",
-
-      "lat": 42.538962,
-
-      "lng": 140.860076,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "usuzan"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Usuzan+Ropeway"
-
-    },
-
-    {
-
-      "id": "b2-bear",
-
-      "day": 2,
-
-      "name": "昭和新山熊牧場",
-
-      "type": "sight",
-
-      "time": "中午",
-
-      "description": "營業時間須確認。",
-
-      "optional": true,
-
-      "lat": 42.5413,
-
-      "lng": 140.8584,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "bear"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Showa+Shinzan+Bear+Ranch"
-
-    },
-
-    {
-
-      "id": "b2-meguriya",
-
-      "day": 2,
-
-      "name": "めぐりや Meguriya",
-
-      "type": "food",
-
-      "time": "午餐候選",
-
-      "description": "洞爺湖溫泉街Vegan對應咖啡廳。",
-
-      "address": "北海道虻田郡洞爺湖町洞爺湖温泉40-11 LESTEL TOYA 1F",
-
-      "meat": "未確認有葷食選項。",
-
-      "veg": "有Vegan餐點資訊。",
-
-      "lat": 42.56546490660434,
-
-      "lng": 140.82160755767225,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "meguriya"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Meguriya+LESTEL+TOYA"
-
-    },
-
-    {
-
-      "id": "b2-cruise",
-
-      "day": 2,
-
-      "name": "洞爺湖汽船",
-
-      "type": "sight",
-
-      "time": "下午備選",
-
-      "description": "冬季班次須確認。",
-
-      "optional": true,
-
-      "lat": 42.5639,
-
-      "lng": 140.8151,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "cruise"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toyako+Kisen"
-
-    },
-
-    {
-
-      "id": "b2-nonokaze",
-
-      "placeKey": "nonokaze",
-
-      "day": 2,
-
-      "name": "乃之風リゾート",
-
-      "type": "hotel",
-
-      "time": "住宿",
-
-      "description": "洞爺湖第2晚。",
-
-      "lat": 42.565785,
-
-      "lng": 140.822304,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "nonokaze"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Lake+View+Toya+Nonokaze+Resort"
-
-    },
-
-    {
-
-      "id": "b3-toyasta",
-
-      "day": 3,
-
-      "name": "新千歲機場",
-
-      "type": "transport",
-
-      "time": "上午",
-
-      "description": "乃之風退房後，搭乘飯店接駁前往新千歲機場，再轉乘水之謌接駁車。",
-
-      "shuttleNotice": {
-
-        "title": "新千歲機場 → 水之謌接駁車 / New Chitose Airport → MIZU NO UTA Shuttle",
-
-        "zh": [
-
-          "1. 由於國內線航廈的建築動線，從國內線 1、2、3 號抵達口無法直接前往南側。請先前往國內線 2 樓出發大廳，再搭乘 C 出發口附近的手扶梯，下至 1 樓國內線 4、5 號抵達口。",
-
-          "2. 請在國內線航廈 1 樓外的接駁車乘車處等候。從國內線 11 號出入口走出後，乘車處就在左手邊。",
-
-          "3. 水之謌接駁車會停靠在警察駐所旁的指定巴士停車區（1～10 號）內任何可用車位。"
-
-        ],
-
-        "en": [
-
-          "1. Due to the architectural layout of the Domestic Terminal Building, guests cannot access the south side directly from Domestic Arrival Gates 1, 2, or 3. Please proceed to the 2nd-floor Domestic Departure Lobby first, then take the escalator near Departure Gate C down to the 1st-floor Domestic Arrival Gates 4 and 5.",
-
-          "2. Please wait at the shuttle bus stop located outside the Domestic Terminal Building on the 1st floor. The bus stop is immediately on the left after exiting through Entrance No. 11 of the Domestic Terminal.",
-
-          "3. Our shuttle bus will stop at any available space within the designated bus parking area (No. 1–10) located next to the police station."
-
-        ],
-
-        "images": [
-
-          {
-
-            "src": "./mizunouta-new-chitose-shuttle-map.png?v=676x308",
-
-            "alt": "新千歲機場國內線航廈與水之謌接駁車乘車處位置圖",
-
-            "caption": "新千歲機場接駁車乘車處地圖 / New Chitose Airport shuttle bus stop map",
-
-            "width": 676,
-
-            "height": 308
-
-          },
-
-          {
-
-            "src": "./mizunouta-new-chitose-route.jpg?v=400x245",
-
-            "alt": "從國內線航廈 11 號出入口前往接駁車乘車處的方向",
-
-            "caption": "前往 1 樓南側抵達大廳的警察駐所 / Proceed toward the police substation in the South Arrival Lobby",
-
-            "width": 400,
-
-            "height": 245
-
-          },
-
-          {
-
-            "src": "./mizunouta-new-chitose-bus-stop.jpg?v=400x245",
-
-            "alt": "警察駐所旁的特許車輛乘降區與接駁車停靠位置",
-
-            "caption": "警察駐所旁的指定乘降區 / Designated pick-up area next to the police substation",
-
-            "width": 400,
-
-            "height": 245
-
-          }
-
-        ]
-
-      },
-
-      "lat": 42.7875,
-
-      "lng": 141.6798,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "sta-chitose"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Narita+airport
 
     },
 
@@ -650,179 +438,253 @@
 
     {
 
-    "id": "b3-mizunouta-luggage",
+      "id": "d1-yokohama",
 
-    "day": 3,
+      "day": 1,
 
-    "name": "支笏湖鶴雅休閒渡假溫泉SPA飯店 水之謌・寄放行李",
-
-    "type": "hotel",
-
-    "time": "抵達溫泉街後",
-
-    "description": "先詢問是否可於入住前寄放行李，再外出用餐與散步。寄放服務及正式入住時間須以飯店回覆為準。",
-
-    "placeKey": "shikotsuko-mizunouta",
-
-    "address": "北海道千歳市支笏湖温泉",
-
-    "lat": 42.77413642040781,
-
-    "lng": 141.4036734,
-
-    "coordinateStatus": "source_listed",
-
-    "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
-
-    "coordinateCheckedOn": "2026-09-13",
-
-    "sourceRefs": [
-
-      "mizunouta-official"
-
-    ],
-
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
-
-    "bookingStatus": "user_planned_not_verified"
-
-  },
-
-    {
-
-    "id": "b3-hekisui",
-
-    "day": 3,
-
-    "name": "食事處 碧水",
-
-    "type": "food",
-
-    "time": "午餐候選",
-
-    "description": "前往湖畔步道前的午餐候選，以支笏湖名產姬鱒（紅鮭）料理與日式定食為主。須先確認當日營業狀況；未確認前另備午餐方案。",
-
-    "address": "北海道千歳市支笏湖温泉",
-
-    "meat": "姬鱒料理、日式定食依當日菜單。",
-
-    "veg": "素食餐點及飲食限制須向店家確認。",
-
-    "lat": 42.77413642040781,
-
-    "lng": 141.4036734,
-
-    "coordinateStatus": "source_listed",
-
-    "sourceRefs": [
-
-      "hekisui"
-
-    ],
-
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hekisui+Shikotsuko"
-
-  },
-
-  {
-
-    "id": "b3-shikotsuko-sight",
-
-    "day": 3,
-
-    "name": "支笏湖遊客中心與山線鐵橋",
-
-    "type": "sight",
-
-    "time": "下午",
-
-    "description": "造訪遊客中心了解支笏湖火山與生態背景，並沿湖畔步道散步至紅色的歷史建築山線鐵橋觀賞湖景。",
-
-    "lat": 42.77288652168302,
-
-    "lng": 141.40417711534286,
-
-    "coordinateStatus": "source_listed",
-
-    "coordinateNote": "尚未核實遊客中心或鐵橋入口的精確座標。",
-
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsuko+Visitor+Center"
-
-  },
-
-  {
-
-    "id": "b3-mizunouta-stay",
-
-    "day": 3,
-
-    "name": "支笏湖鶴雅休閒渡假溫泉SPA飯店 水之謌・入住與泡湯",
-
-    "type": "hotel",
-
-    "time": "下午返回・晚餐・住宿",
-
-    "description": "Day 3最後一站，供Day 4跨日導航使用。入住、晚餐及早餐是否包含，依實際訂房方案。目前僅記錄預計入住，未核實訂房已完成。",
-
-    "meat": "一般餐食依已購買的住宿方案（如自助餐或和風懷石）。",
-
-    "veg": "須確認晚餐與翌日早餐的素食供應；不能僅憑自助餐有蔬菜便視為已安排。",
-
-    "placeKey": "shikotsuko-mizunouta",
-
-    "address": "北海道千歳市支笏湖温泉",
-
-    "lat": 42.77413642040781,
-
-    "lng": 141.4036734,
-
-    "coordinateStatus": "source_listed",
-
-    "coordinateNote": "地址已核實，精確飯店圖釘尚未完成核對。",
-
-    "coordinateCheckedOn": "2026-09-13",
-
-    "sourceRefs": [
-
-      "mizunouta-official"
-
-    ],
-
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Shikotsu+Tsuruga+Resort+Spa+MIZU+NO+UTA",
-
-    "bookingStatus": "user_planned_not_verified"
-
-  },
-
-    {
-
-      "id": "b4-nobosta",
-
-      "day": 4,
-
-      "name": "JR千歳駅",
+      "name": "橫濱站／新高島站",
 
       "type": "transport",
 
-      "time": "上午",
+      "time": "依抵達時間",
 
-      "description": "從水之謌退房後搭接駁車至千歳駅。",
+      "description": "抵達後入住希爾頓橫濱。新高島站4號出口步行約5分鐘。",
 
-      "lat": 42.82853429286917,
+      "lat": 35.46224335772571,
 
-      "lng": 141.65186219957715,
+      "lng": 139.626731,
 
-      "coordinateStatus": "source_listed",
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chitose+Station+Hokkaido",
-
-      "coordinateNote": "地圖來源列示的車站位置，非特定出口。",
-
-      "coordinateCheckedOn": "2026-09-08",
+      "coordinateStatus": "building_reference",
 
       "sourceRefs": [
 
-        "noboribetsu-station-location"
+        "hilton-access"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama
+
+    },
+
+    {
+
+      "id": "d1-hilton-in",
+
+      "placeKey": "hilton-yokohama",
+
+      "day": 1,
+
+      "name": "希爾頓橫濱・入住",
+
+      "type": "hotel",
+
+      "time": "下午",
+
+      "description": "連住4晚第1晚。放行李後再出門。",
+
+      "lat": 35.46443672030357,
+
+      "lng": 139.6293702935549,
+
+      "coordinateStatus": "source_listed",     
+
+      "sourceRefs": [
+
+        "hilton-access"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama
+
+ 
+
+    },
+
+    {
+
+      "id": "d1-walkcheck",
+
+      "day": 1,
+
+      "name": "【任務】確認往橫濱站步行路線",
+
+      "type": "task",
+
+      "time": "傍晚",
+
+      "description": "實際走一次飯店→JR橫濱站東口(經高島水際線Deck,約9-11分鐘),記錄夜間可通行的出入口。10/30清晨要用。",
+
+      "lat": null,
+
+      "lng": null,
+
+      "coordinateStatus": "pending",
+
+      "critical": true,
+
+      "sourceRefs": [
+
+        "hilton-access"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Station+East+Exit
+
+    },
+
+    {
+
+      "id": "d1-redbrick",
+
+      "day": 1,
+
+      "name": "紅磚倉庫・大棧橋",
+
+      "type": "sight",
+
+      "time": "傍晚至晚上",
+
+      "description": "港灣散步與晚餐;抵達太晚則取消。",
+
+      "optional": true,
+
+      "lat": 35.452793783538255,
+
+      "lng": 139.6428944,
+
+      "coordinateStatus": "source_listed",
+
+      "sourceRefs": [
+
+        "yokohama-route"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Red+Brick+Warehouse
+
+    },
+
+    {
+
+      "id": "d2-morning",
+
+      "day": 2,
+
+      "name": "山手西洋館 或 中華街(擇一)",
+
+      "type": "sight",
+
+      "time": "上午至下午14:00前",
+
+      "description": "因晚上有演唱會、隔天05:00起床,今天只選一區,不跑完整路線。建議擇一即可。",
+
+      "optional": true,
+
+      "lat": null,
+
+      "lng": null,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "yokohama-route"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Chinatown
+
+    },
+
+    {
+
+      "id": "d2-rest",
+
+      "day": 2,
+
+      "name": "回飯店休息・準備",
+
+      "type": "task",
+
+      "time": "15:00前後",
+
+      "description": "演唱會前先回房休息。同時完成:(1)整理10/30隨身物品放門邊 (2)買好隔天早餐 (3)設好鬧鐘。",
+
+      "lat": 35.46443672030357,
+
+      "lng": 139.6293702935549,
+
+      "coordinateStatus": "source_listed",     
+
+      "sourceRefs": [
+
+        "hilton-access"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama,
+
+ 
+
+      "critical": true
+
+    },
+
+    {
+
+      "id": "d2-karena",
+
+      "day": 2,
+
+      "name": "【演唱會】K-Arena橫濱",
+
+      "type": "event",
+
+      "time": "17:00後開演",
+
+      "description": "與飯店相鄰,步行即達。實際開演與結束時間依票券。建議提早入場避開人潮。",
+
+      "lat": 35.46472442119904,
+
+      "lng": 139.63063572883559,
+
+      "coordinateStatus": "source_listed",
+
+      "critical": true,
+
+      "sourceRefs": [
+
+        "karena-access"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=K+Arena+Yokohama
+
+    },
+
+    {
+
+      "id": "d2-exit",
+
+      "day": 2,
+
+      "name": "散場・返回飯店",
+
+      "type": "transport",
+
+      "time": "散場後",
+
+      "description": "採管制退場,全場散完約40-50分鐘。不必急著衝出口,在座位等引導較快。飯店就在旁邊,不需搭車。回房後直接就寢,不安排宵夜。",
+
+      "lat": 35.46443672030357,
+
+      "lng": 139.6293702935549,
+
+      "coordinateStatus": "source_listed",
+
+      "sourceRefs": [
+
+        "karena-exit"
 
       ]
 
@@ -830,661 +692,367 @@
 
     {
 
-      "id": "b4-shiraoi",
+      "id": "d3-wake",
 
-      "day": 4,
+      "day": 3,
 
-      "name": "JR白老站",
+      "name": "起床・出發",
+
+      "type": "task",
+
+      "time": "05:00起床／05:10離開飯店",
+
+      "description": "步行約11分鐘至JR橫濱站東口。早餐吃前一晚買的,飯店餐廳此時未開。",
+
+      "lat": 35.46443672030357,
+
+      "lng": 139.6293702935549,
+
+      "coordinateStatus": "source_listed",
+
+      "critical": true
+
+    },
+
+    {
+
+      "id": "d3-train",
+
+      "day": 3,
+
+      "name": "橫濱站 05:25 東海道線",
 
       "type": "transport",
 
-      "time": "中午",
+      "time": "05:25發車",
 
-      "description": "千歳至白老特急約40分鐘（概略值）。 但坐不到45分",
+      "description": "約25-28分鐘,05:53前後抵東京站。此時段車廂很空,無通勤人潮。備援班次05:53(約06:20抵達,僅剩10分鐘,風險高)。",
 
-      "lat": 42.5546,
+      "lat": 35.46609770366774,
 
-      "lng": 141.36,
+      "lng": 139.622064425412,
 
-      "coordinateStatus": "area_reference",
+      "coordinateStatus": "source_listed",
+
+      "critical": true,
 
       "sourceRefs": [
 
-        "sta-shiraoi"
+        "yokohama-tokyo-rail"
 
       ],
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shiraoi+Station+Hokkaido"
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Station+Japan
 
     },
 
     {
 
-      "id": "b4-upopoy",
+      "id": "d3-meet",
 
-      "day": 4,
+      "day": 3,
 
-      "name": "ウポポイ 民族共生象徴空間",
+      "name": "【集合】東京站 丸之內北口",
+
+      "type": "meeting",
+
+      "time": "06:30抵達／06:45集合／07:00出發",
+
+      "description": "KKday東京日光一日遊。丸之內側與八重洲側不同,走錯需繞遠路,務必由丸之內北口出站。",
+
+      "lat": 35.68225274655951,
+
+      "lng": 139.76615160480904,
+
+      "coordinateStatus": "pending",
+
+      "critical": true,
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Tokyo+Station+Marunouchi+North+Exit
+
+    },
+
+    {
+
+      "id": "d3-nikko",
+
+      "day": 3,
+
+      "name": "日光一日遊(行程依方案)",
 
       "type": "sight",
 
-      "time": "下午候選",
+      "time": "全日",
 
-      "description": "ポロト湖畔、鄰近飯店。冬季開館時間與年末休館須先查官網。",
+      "description": "造訪景點與停留時間依KKday方案,我未核實該團內容。紅葉季可能塞車延誤。",
 
-      "optional": true,
+      "lat": null,
 
-      "lat": 42.557943304659005,
+      "lng": null,
 
-      "lng": 141.3635170288739,
-
-      "coordinateStatus": "source_listed",
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Upopoy+National+Ainu+Museum+Shiraoi"
-
-    },
-
-    {
-
-      "id": "b4-poroto",
-
-      "placeKey": "poroto",
-
-      "day": 4,
-
-      "name": "星野集團 界 ポロト",
-
-      "type": "hotel",
-
-      "time": "入住・晚餐",
-
-      "description": "白老町。素食會席需事前申請並取得確認。",
-
-      "address": "北海道白老郡白老町若草町1-1018-94",
-
-      "meat": "一般會席料理依方案。",
-
-      "veg": "官方有素食會席與早餐申請；須於期限前完成。",
-
-      "lat": 42.560247,
-
-      "lng": 141.361886,
-
-      "coordinateStatus": "source_listed",
+      "coordinateStatus": "pending",
 
       "sourceRefs": [
 
-        "poroto",
+        "nikko-autumn",
 
-        "poroto-dining"
+        "nikko-traffic"
 
       ],
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Nikko+Tochigi+Japan
 
     },
 
     {
 
-      "id": "b5-poroto-out",
+      "id": "d3-return",
 
-      "placeKey": "poroto",
+      "day": 3,
 
-      "day": 5,
-
-      "name": "界 ポロト 早餐・退房",
-
-      "type": "onsen",
-
-      "time": "上午",
-
-      "description": "泡湯早餐後退房，返回札幌。",
-
-      "lat": 42.560247,
-
-      "lng": 141.361886,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "poroto"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hoshino+Resorts+KAI+Poroto"
-
-    },
-
-    {
-
-      "id": "b5-crowne",
-
-      "placeKey": "crowne",
-
-      "day": 5,
-
-      "name": "ANA札幌皇冠假日酒店",
-
-      "type": "hotel",
-
-      "time": "下午入住",
-
-      "description": "12/28-30連住第1晚。",
-
-      "address": "北海道札幌市中央区北3条西1丁目2-9",
-
-      "lat": 43.065797,
-
-      "lng": 141.355064,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "crowne"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
-
-    },
-
-    {
-
-      "id": "b5-chandama",
-
-      "placeKey": "chandama",
-
-      "day": 5,
-
-      "name": "Spice Dining Chandama",
-
-      "type": "food",
-
-      "time": "晚餐候選",
-
-      "description": "印度料理，地址為北3條西7丁目。",
-
-      "address": "北海道札幌市中央区北3条西7丁目1-1 緑苑ビルB1F",
-
-      "meat": "一般咖哩及肉類餐點。",
-
-      "veg": "素食選項須確認高湯、乳製品與五辛。",
-
-      "lat": 43.0639,
-
-      "lng": 141.345181,
-
-      "coordinateStatus": "building_reference",
-
-      "sourceRefs": [
-
-        "chandama"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spice+Dining+Chandama+Sapporo"
-
-    },
-
-    {
-
-      "id": "b5-terra",
-
-      "placeKey": "terra",
-
-      "day": 5,
-
-      "name": "Farm to Table TERRA",
-
-      "type": "food",
-
-      "time": "晚餐備案",
-
-      "description": "位於飯店1樓。",
-
-      "address": "北海道札幌市中央区南9条西2丁目2-10 1F",
-
-      "meat": "一般餐點依當日菜單。",
-
-      "veg": "需確認當日素食選項。",
-
-      "lat": 43.049421,
-
-      "lng": 141.356766,
-
-      "coordinateStatus": "building_reference",
-
-      "sourceRefs": [
-
-        "terra"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farm+to+Table+TERRA+Sapporo"
-
-    },
-
-    {
-
-      "id": "b6-canal",
-
-      "day": 6,
-
-      "name": "小樽運河",
-
-      "type": "sight",
-
-      "time": "上午",
-
-      "description": "札幌往返小樽一日遊。",
-
-      "lat": 43.199446,
-
-      "lng": 141.001838,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "canal"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Canal"
-
-    },
-
-    {
-
-      "id": "b6-sankaku",
-
-      "day": 6,
-
-      "name": "小樽三角市場",
-
-      "type": "food",
-
-      "time": "午餐候選",
-
-      "description": "市場非單一餐廳，未核實可提供完整素食正餐。",
-
-      "address": "北海道小樽市稲穂3-10-16",
-
-      "meat": "海鮮餐點依各攤商。",
-
-      "veg": "不可假定蕎麥麵或漬物為素食。",
-
-      "lat": 43.199033,
-
-      "lng": 140.993877,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "sankaku"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Sankaku+Market"
-
-    },
-
-    {
-
-      "id": "b6-musicbox",
-
-      "day": 6,
-
-      "name": "小樽音樂盒堂 本館",
-
-      "type": "sight",
-
-      "time": "下午",
-
-      "description": "堺町一帶散策。",
-
-      "lat": 43.190591,
-
-      "lng": 141.007674,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "musicbox"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Otaru+Music+Box+Museum"
-
-    },
-
-    {
-
-      "id": "b6-letao",
-
-      "day": 6,
-
-      "name": "LeTAO 本店",
-
-      "type": "food",
-
-      "time": "下午茶",
-
-      "description": "甜點店，非素食正餐選項。",
-
-      "address": "北海道小樽市堺町7-16",
-
-      "meat": "一般甜點。",
-
-      "veg": "須確認蛋奶、明膠等成分。",
-
-      "lat": 43.191224,
-
-      "lng": 141.007369,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "letao"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=LeTAO+Main+Store+Otaru"
-
-    },
-
-    {
-
-      "id": "b6-veggy",
-
-      "day": 6,
-
-      "name": "Holistic Bio Cafe Veggy Way",
-
-      "type": "food",
-
-      "time": "下午餐候選",
-
-      "description": "全植物性咖啡廳；查得傍晚結束營業。精確座標待確認。",
-
-      "address": "北海道札幌市中央区大通西27丁目2-3 円山桂和West27 1F",
-
-      "meat": "不提供葷食。",
-
-      "veg": "Vegan餐點；忌五辛者須另問。",
-
-      "lat": 43.056374249752196,
-
-      "lng": 141.31677437116386,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "veggy"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Holistic+Bio+Cafe+Veggy+Way+Sapporo"
-
-    },
-
-    {
-
-      "id": "b6-crowne",
-
-      "placeKey": "crowne",
-
-      "day": 6,
-
-      "name": "ANA札幌皇冠假日酒店",
-
-      "type": "hotel",
-
-      "time": "住宿",
-
-      "description": "連住第2晚。",
-
-      "lat": 43.065797,
-
-      "lng": 141.355064,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "crowne"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
-
-    },
-
-    {
-
-      "id": "b7-ichiryuan",
-
-      "day": 7,
-
-      "name": "らーめん札幌一粒庵",
-
-      "type": "food",
-
-      "time": "午餐候選",
-
-      "description": "ホクレンビル地下1樓；素食餐點是否供應與需否預約須確認。",
-
-      "address": "北海道札幌市中央区北4条西1丁目 ホクレンビルB1F",
-
-      "meat": "一般拉麵。",
-
-      "veg": "須確認無肉無魚介高湯。",
-
-      "lat": 43.06688,
-
-      "lng": 141.35399,
-
-      "coordinateStatus": "building_reference",
-
-      "sourceRefs": [
-
-        "ichiryuan"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ramen+Sapporo+Ichiryuan"
-
-    },
-
-    {
-
-      "id": "b7-redbrick",
-
-      "day": 7,
-
-      "name": "北海道廳舊本廳舍",
-
-      "type": "sight",
-
-      "time": "上午候選",
-
-      "description": "開放狀態與年末休館須確認。",
-
-      "optional": true,
-
-      "lat": 43.063941,
-
-      "lng": 141.347961,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "redbrick"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Former+Hokkaido+Government+Office"
-
-    },
-
-    {
-
-      "id": "b7-beer",
-
-      "day": 7,
-
-      "name": "札幌啤酒博物館",
-
-      "type": "sight",
-
-      "time": "室內備案",
-
-      "description": "年末休館可能。",
-
-      "optional": true,
-
-      "lat": 43.07157,
-
-      "lng": 141.368686,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "beer"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Beer+Museum"
-
-    },
-
-    {
-
-      "id": "b7-tanuki",
-
-      "day": 7,
-
-      "name": "狸小路・伴手禮",
-
-      "type": "sight",
-
-      "time": "下午",
-
-      "description": "最後採買。",
-
-      "lat": 43.057256,
-
-      "lng": 141.353104,
-
-      "coordinateStatus": "area_reference",
-
-      "sourceRefs": [
-
-        "tanuki"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tanukikoji+Shopping+Street"
-
-    },
-
-    {
-
-      "id": "b7-crowne",
-
-      "placeKey": "crowne",
-
-      "day": 7,
-
-      "name": "ANA札幌皇冠假日酒店",
-
-      "type": "hotel",
-
-      "time": "住宿",
-
-      "description": "連住第3晚。",
-
-      "lat": 43.065797,
-
-      "lng": 141.355064,
-
-      "coordinateStatus": "source_listed",
-
-      "sourceRefs": [
-
-        "crowne"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ANA+Crowne+Plaza+Sapporo"
-
-    },
-
-    {
-
-      "id": "b8-sapsta",
-
-      "day": 8,
-
-      "name": "JR札幌站",
+      "name": "東京站 → 橫濱",
 
       "type": "transport",
 
-      "time": "上午",
+      "time": "團體返回後",
 
-      "description": "退房後前往車站，預留冬季延誤時間。",
+      "description": "約25-30分鐘。可考慮加購綠色車廂(Suica事前750日圓)。晚餐建議在東京站或車上解決,不預訂。",
 
-      "lat": 43.0685,
+      "lat": 35.46443672030357,
 
-      "lng": 141.3507,
+      "lng": 139.6293702935549,
 
-      "coordinateStatus": "area_reference",
+      "coordinateStatus": "source_listed",
 
       "sourceRefs": [
 
-        "sta-sapporo"
+        "green-car"
 
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sapporo+Station"
+      ]
 
     },
 
     {
 
-      "id": "b8-airport",
+      "id": "d4-wake",
 
-      "day": 8,
+      "day": 4,
 
-      "name": "新千歲機場・回程",
+      "name": "起床・出發",
+
+      "type": "task",
+
+      "time": "05:50起床／06:05離開飯店",
+
+      "description": "比前一天寬鬆。步行至橫濱站。",
+
+      "lat": 35.46609770366774,
+
+      "lng": 139.622064425412,
+
+      "coordinateStatus": "source_listed"
+
+    },
+
+    {
+
+      "id": "d4-train",
+
+      "day": 4,
+
+      "name": "橫濱站 → 上野(上野東京線直達)",
 
       "type": "transport",
+
+      "time": "06:20前後發車",
+
+      "description": "建議搭上野東京線直達,不在東京站換車。約07:10前後抵上野。此時段為尖峰前緣,尚未最擠;想更舒服可再提早15分鐘。",
+
+      "lat": 35.71418897790338,
+
+      "lng": 139.77716233678146,
+
+      "coordinateStatus": "source_listed",
+
+      "sourceRefs": [
+
+        "rush-hour"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Ueno+Station+Tokyo
+
+    },
+
+    {
+
+      "id": "d4-meet",
+
+      "day": 4,
+
+      "name": "【集合】JR上野站 公園口前",
+
+      "type": "meeting",
+
+      "time": "07:20抵達／07:30集合／07:40出發",
+
+      "description": "KKday富士山經典一日遊。上野站沒有統一的旅遊巴士總站,集合點可能在路邊臨停區、公園停車場或不同出口側,務必依憑證地圖確認並備妥緊急聯絡電話。",
+
+      "lat": 35.71467484467116,
+
+      "lng": 139.77626072883558,
+
+      "coordinateStatus": "source_listed",
+
+      "critical": true,
+
+      "sourceRefs": [
+
+        "ueno-meeting"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Ueno+Station+Park+Exit
+
+    },
+
+    {
+
+      "id": "d4-fuji",
+
+      "day": 4,
+
+      "name": "富士山一日遊(行程依方案)",
+
+      "type": "sight",
+
+      "time": "全日",
+
+      "description": "造訪點依KKday方案,我未核實。河口湖紅葉此時多為初期,主看富士山景。",
+
+      "lat": null,
+
+      "lng": null,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ],
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchiko+Fuji
+
+    },
+
+    {
+
+      "id": "d4-return",
+
+      "day": 4,
+
+      "name": "上野站 → 橫濱",
+
+      "type": "transport",
+
+      "time": "團體返回後",
+
+      "description": "約40-50分鐘,比前一天更遠。建議加購綠色車廂。連續兩天疲勞,回飯店直接休息。",
+
+      "lat": null,
+
+      "lng": null,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "green-car"
+
+      ]
+
+    },
+
+    {
+
+      "id": "d5-checkout",
+
+      "day": 5,
+
+      "name": "希爾頓橫濱・退房",
+
+      "type": "hotel",
 
       "time": "依航班",
 
-      "description": "建議起飛前3小時抵達航廈。",
+      "description": "第4晚後退房。可寄放行李。",
 
-      "lat": 42.7875,
+      "lat": null,
 
-      "lng": 141.6798,
+      "lng": null,
 
-      "coordinateStatus": "area_reference",
+      "coordinateStatus": "pending",
 
-      "sourceRefs": [
+      "navigationEnabled": false
 
-        "sta-chitose"
+    },
 
-      ],
+    {
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=New+Chitose+Airport+Japan"
+      "id": "d5-free",
+
+      "day": 5,
+
+      "name": "11/1 彈性時間",
+
+      "type": "sight",
+
+      "time": "依航班",
+
+      "description": "連兩天長程巴士後建議輕鬆安排:港未來一帶、紅磚倉庫或三溪園皆可。有航班則以機場交通為優先。",
+
+      "optional": true,
+
+      "lat": null,
+
+      "lng": null,
+
+      "coordinateStatus": "pending",
+
+      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Minato+Mirai+Yokohama
+
+    }
+
+  ],
+
+  "contingencyPlans": [
+
+    {
+
+      "id": "plan-drop-nikko",
+
+      "title": "若演唱會結束過晚,放棄10/30日光團",
+
+      "trigger": "演唱會22:00後才結束,或散場嚴重延誤。",
+
+      "action": "10/30改為橫濱市區休息日(三溪園、山下公園、港未來),10/31維持富士山團。",
+
+      "note": "睡眠不足下連續兩天長程巴士,體驗會大打折扣。日光團費是否可退依KKday條款。"
+
+    },
+
+    {
+
+      "id": "plan-taxi-backup",
+
+      "title": "10/30錯過05:25班次的備援",
+
+      "trigger": "睡過頭或步行延誤。",
+
+      "action": "改搭05:53(約06:20抵東京,僅剩10分鐘);若連這班也錯過,直接改搭計程車前往東京站,費用較高但為唯一選項。",
+
+      "note": "深夜至清晨計程車車資較高,且不保證準時。"
 
     }
 
@@ -1494,334 +1062,140 @@
 
     {
 
-      "name": "Vegetable Cafe Lyra",
+      "name": "移住上野",
 
-      "reason": "查得已閉店。"
-
-    },
-
-    {
-
-      "name": "12/26 札幌皇冠假日",
-
-      "reason": "方案B需取消該晚，取消費依訂房條件。"
+      "reason": "希爾頓橫濱已訂4晚,不搬家。"
 
     },
 
     {
 
-      "name": "乃之風接駁車",
+      "name": "箱根仙石原過夜",
 
-      "reason": "方案B改走巴士＋JR＋巴士，不使用接駁。"
+      "reason": "10/31已排富士山團。"
+
+    },
+
+    {
+
+      "name": "10/29完整市區路線",
+
+      "reason": "演唱會與隔日清晨行程,白天須縮減。"
+
+    },
+
+    {
+
+      "name": "7:45出發選項",
+
+      "reason": "撞進7:30-8:30尖峰,比05:25更擠且趕不上集合。"
 
     }
 
   ],
 
+  "pendingQuestions": [
+
+    "演唱會實際開演與預計結束時間?(決定10/30是否可行)",
+
+    "兩個KKday行程的預估返回時間?",
+
+    "11/1是否搭機?機場與起飛時間?",
+
+    "團體午餐是否需要素食安排?"
+
+  ],
+
   "sources": {
 
-    "toyako-illumination-official": {
+    "hilton-access": {
 
-      "title": "洞爺湖溫泉觀光協會｜洞爺湖温泉イルミネーショントンネル",
+      "title": "希爾頓橫濱官方|交通資訊",
 
-      "url": "https://www.laketoya.com/event/illumination/"
-
-    },
-
-    "nonokaze": {
-
-      "title": "NAVITIME｜乃の風リゾート",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-jBahJOOPLJZ8EyT7LRX8BRDAm3KPlkM0vpsr9FSeA_qmIiuCo1zWQcwzrToqxtoAyZTMaKVgeojrDpVR-JC0C1CHLR-8FOv9wMjf35rZayEfYTjdkKWouSPdyhg5JhfTm1z6wJdZUmENOjU="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7Cv3GyMyEjCbIQLzfkyaeBu4Kyb9cWRSKKblN1wjmDYCGP42UUN4LfDYPPYAICPbvTPatE_wJS2lx6fAvqtgYmflSLbqgyIBmS-36JBBJGZ7KykpUQ0kiuowG0w==
 
     },
 
-    "crowne": {
+    "karena-access": {
 
-      "title": "NAVITIME｜ANAクラウンプラザホテル札幌",
+      "title": "K-Arena橫濱|交通與周邊",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJmaR390Em6dNX7YuOr9aoRCG7b0ph7_eSV6CzNiy0LDzSDzJ_Q583pwBvUOkXIHbgOQCynCNfVxMYdpM5W8Ejda0EZfvemfBXvVG1-9V7FNuiN3E6pnyvbkU96z4cEY4W3Y8kVCPh9LMh"
-
-    },
-
-    "poroto": {
-
-      "title": "NAVITIME｜界 ポロト",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQESaMPGaYJar42oT1qRnLXFIrFMY1lW66dItcVPPbNTVh_Moo6ZLFewlzkqeVINpp-oBcPyEeq4lE4Gy2juqTBJK8X8jOHwa8Skvz0ZrA2KA0VsZGYnlTarxdNemcXqUySxEiOIK5fOsJpaWTQuAw=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDansotgyYE-gXudzexrHOkxsFVmlu4z2Q9ElrD1auGCezCmCI9x-KEWWH9asR-sIiFP1QJhKIpNUUOah2lr6B1tyssI79TAk27mC08Eo9XbtH6JslPHzMzqClGY9-DZK2Gl6LF-Zktys59Vn4wluI5YcSgGLCHCzfDA==
 
     },
 
-    "poroto-dining": {
+    "karena-exit": {
 
-      "title": "星野リゾート｜界 ポロト餐食",
+      "title": "K-Arena橫濱|管制退場與散場混雜",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQXdQp1P34Hj3g0Rn3vJg50grSJivz7YgQUwBX1MSQrASDzqV0ZO5XXnPasgqgimaUg3s5tLPOEAEG_3-DHECHpPjnEdduxwBa5-OvzgXOI_mck64HNbM2IOLFF20N5TgXYaKaWNgaY0FgQImJDPo="
-
-    },
-
-    "chandama": {
-
-      "title": "NAVITIME｜チャンダマ",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiMqNrrTsTyfl5F7P1CjAN2FD3eHKorh80coOEeHLlKMY66XZJw6wOO1S8aIP0fAqGC7DoV-a2juI4Y-wKRUzGLjL6SBl0mtsGIXBrb-Wa25LdQOKifArAm74Uy5fUMPe1LKVNx2QQuA=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_4-ygz6dJ2zkVDVsG3dr7b8Z39DbyGPwaztyrreV9dLp8vxQT5v38O0MfH0nmAzewIWQTytbkfr6VKIdAEqu2AkGnQ76VI0g25O1LhMmFT0QxeS-HYnHrWPRkX63CnbqnL0YzdL-_37u8tO2sOIajFU44A4U=
 
     },
 
-    "terra": {
+    "yokohama-tokyo-rail": {
 
-      "title": "NAVITIME｜Farm to Table TERRA",
+      "title": "NAVITIME／Jorudan|橫濱—東京清晨班次",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEa58xtbftFeeZigg7GnMYYEiKsL0cpOiIIN20YQl310UK3bHbUjqMpixfRpox6KiUkRpmM3nQG5GxVEfVhklhKZl4Q7Mp4bYL6a6kLzoFtw0xfWfk7Yy8TYD-wgFQh8Ez75ImEwDw1g5TRg=="
-
-    },
-
-    "meguriya": {
-
-      "title": "洞爺湖溫泉觀光協會｜めぐりや",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnmS73SwJ_7XzKFl9-C1HO1FhUgvpizlLhyOVBjDvYfPitZSWye-iaCZnSuVV1F-_IGS1s4ydwrFLfgohYvPK69I5LM5n8jGbYC3_AeyigMdHOlX1SrpOQdMbC0r_twA=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk5PT0w7VEJRq-KZLvoSMvsZYtaS_388tUK5Puqy6FchXyL3nzane-4n0g9QMp6wuPA5Jx1F2OKx7iGz26Lor7F0l7tfeFD9avEDmOeAjMZPuD5dLabUHVAwXhB6gSxhvk7FrqSFndsyKPkMKI1XeQr8jqID9t0uZrQ6U3AiPPC9DwopoGYcGhY_ttjYzX
 
     },
 
-    "rikka": {
+    "rush-hour": {
 
-      "title": "登別溫泉觀光協會｜ゆのまちつけもり六花",
+      "title": "東海道線上行|朝ラッシュ混雑時間帶",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhA_7Yd6KKhzBvvnIN4ph21k8TKHsEx1VeQ-mHoeCa2s_mcWOVt6PQyfpj7DZo36G-QWt9R9xEtUZ1BtPYvcFA8WRvnjGAQu6n4ByLmYNEkmL0m_dHvNaSAqOIzNuqEMMaRFP9"
-
-    },
-
-    "veggy": {
-
-      "title": "NAVITIME｜Veggy Way",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdP_XzqDrGqdfanXiGLhG1Nfuw-hizrsNAo0jTVIJtzZ44D-vTMk8BHXjaDTDP2TrqyNrTb3uC5BKh-3nRIRL1QQvf9pJALrS8Wczsb97zZyEFZcaG-Oq0NJY3GUIPnEKUhLetDgc8KW5aJge4yrEIyDhZTswSvJ_gu5p4Cm1QQcloHl_3c7iivbE="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVbkyBhAYdz7sxqwkcX3QHARJLi_xWOzzAwcgYm0LoGyeqKf0zmDIQA2znUyRDJk1y5GSga67o2SOldEIRNYr7fSXlGnmTYZpj2b5GLcv9-xMtpwZhcJCeE7MV543gVTfvdN3hVkrZtmQ=
 
     },
 
-    "ichiryuan": {
+    "green-car": {
 
-      "title": "NAVITIME｜一粒庵",
+      "title": "JR東日本|普通列車綠色車廂料金",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg7ArPgIm6cyJP-qJZO5ca20TiNyRTB_bigROnXyfub0Cxqp2J_IezL6y65nEoJBKLy94gDVpp8IVtstoBcy9G39GlhSNoOLXAL3J-iUgqPofU1x7VxhhEV_jGUIHMWlrr954jLAwmD-XBurPr"
-
-    },
-
-    "sankaku": {
-
-      "title": "NAVITIME｜小樽三角市場",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEQ1zDhyaAe2rCpN1UXBDnV10HpLL43oqhXbiaX0ax6f3JMm9Kry4u0i6kCf_EXrMNpcjq86GbqdB8psC-w6sMtvouOee3H0gxFK83kjK0jPPAt2fzx9T_eISHqW4ID6fYUV4l0Wrieaveb_IRqEg=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8abmN18gjHXCZdsKOeDhoo7ZDNvviAPtrfsJj3-R2PAqQzd65LFTQOs_LTPcT_N1H_YG6cRxJ_W4Ge32XbAV9oVkKTfCFp9hZ5KyPhqPudXFs6_cthlY0Nc8bG0YmAgDKZxgmbmAY-D4FZ1NTw==
 
     },
 
-    "letao": {
+    "ueno-meeting": {
 
-      "title": "NAVITIME｜ルタオ本店",
+      "title": "上野站公園口周邊旅遊巴士集合點說明",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqInpdKOrqxrczwLjqXphbllmTQPUM-QgZuwzlWUh-6462B9guNQWioBXom8vfGwvOZ0_xSf5mrCeynGgsenUH9ZlJgGYvaGoHW4SStXjADbXRT1Lbnt8v_fCyLyrQuZcz5r1xGxJMdgBxxX4="
-
-    },
-
-    "canal": {
-
-      "title": "NAVITIME｜小樽運河",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF21RVKJuVsCLTXE4xyHFXxP6Iih21LCiW1yakWT3ba-WNPIeN9S1AQV9Etj90jxuMSD5tOl2eeSMyOLBrIt_OClXglJIP-EohX4OAebLibVBk_q_I193UUl-08-tiXL9ZXKA08eDzV6_o_tU8="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhvnxa6A87B2Ape1I3vgGW-i0ws7J8V5jGNP377maNqTAFGX7X1y8lRZE_TeiWWUXkw2_3gMsv2rUKswON1Fpcfd4rAq1_gClmn8iSokLVjkRd9pwW5rZw3AmZsf1WFpDVEI2HIML_aQlYkBlREN-uPpluUqX-kf-XBw4=
 
     },
 
-    "musicbox": {
+    "nikko-autumn": {
 
-      "title": "NAVITIME｜小樽オルゴール堂 本館",
+      "title": "日光・中禪寺湖紅葉見頃",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGAQayaiJpQbH8toIJMP500mdXMh6_QHOL5euj_ufNnuDnap76C1heuupcPSJzrTTNvq9NrFYjRF-RRegdj6T1vxob_RT86TR4tIQxKTIdu3QUC_X_2Itld6YZa1d0s7q6r9NqfXlXBVcQMk80="
-
-    },
-
-    "usuzan": {
-
-      "title": "NAVITIME｜有珠山ロープウェイ",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6uAoTS07xHJuWG_4gUL8-PKRhI6T7LlYhlVAzoX27gvtlnYjYD0oMqN-s_2VARVR98sxH2GRN73PBfVdn894DYgNNirKXL3mnijEwetpaT2wCck302VuHFX28n74MzdlcYV0MnYld"
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtTy8AQCnckmkhs3O76OzTLqywUSEscKUT2_LYD9b1L5-uU1qx6n4I5blF3lXjHbW6VS1V6_IO9DYw5sWWX0Kwtr1dRFaj2QRIdUhjghUX08_ol--FEKb4rApRJDhNoNiqhSueLfkm26rFoyRz2BcamCvNwHLBoB8=
 
     },
 
-    "bear": {
+    "nikko-traffic": {
 
-      "title": "NAVITIME｜昭和新山熊牧場",
+      "title": "日光觀光協會|紅葉季塞車資訊",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEmFUikHycJHlwqBteari2U64TuQryfmys_e3tj29Ra1TG0bIey7KY2bt4iHGmxDwRJBzazYDF3DGqObeIOiHdj7CITk775RpxxmRO7Db8rKC6a74PShaMuBvq-Ql527PaeSP-i9EcYfgATsvYoKw=="
-
-    },
-
-    "cruise": {
-
-      "title": "NAVITIME｜洞爺湖汽船",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFeGlN_RuAfIQx_eALqSKAeqXXqN17FoI_7W-JCrVyVSGQOvyTclu8MDl0Wg9_2PF6rdshLqAyG1vwn_TRS1OfGfqbQaN4kkFlzCwhk3lTODQaKSJ_MLxhjQTb2FCZM92T7q3KlhqLfN_16cA=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvUVOlBp_cde33rh6-3lbwF5Lc00p-uEzBHVHNMJYfZ3M9QZgiFGqNSL8wCc1OED2G-oJgs-NjlG-tmI7Gs-j12HORvrSWqv7XBTLKciRw2K4LpQCnuroBybIl_rZ2BW3uNhs=
 
     },
 
-    "tanuki": {
+    "kawaguchiko-autumn": {
 
-      "title": "NAVITIME｜狸小路商店街",
+      "title": "河口湖・紅葉迴廊見頃",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNmMkZk4kRf_Z1RQLlmrrnb1oPkmP8oQ9bl1mLmVApgt9VhyIutLhntwaWQXTifVN6J-r7aeHN915gXOQla8Hfje15EWSBrHKVK6gbQmGzv52knhfNeu3qKfgdaZvHJj9Vo-m3V6XD7kuzaLU="
-
-    },
-
-    "redbrick": {
-
-      "title": "NAVITIME｜北海道庁旧本庁舎",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOsMROoR37bL-WZXo3ZB75ETJxUNsBJGW-koQF9pJhLtwHWavSJL8Y-ZXBICFq6wky60rUSg0fpHPTfNpphvbctyZUxapGnnUCJSpq_ycohbCUIPz6TxTbAn3fJU5Q_KR1E4qJD4u5mE6xyzc="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaY3oE03Q8xVEYiSZMMCa44W660yX-EnWo4U0Zsj9LXPIgztAYM9lmsehFgxE-VLAcF7WprGXfOxI4sLDi2DH2nJfXKWBIatbWXZSVjwIEJnRz833inzRQoTMgzG94yGfWqDiomgZzSYn3
 
     },
 
-    "beer": {
+    "yokohama-route": {
 
-      "title": "NAVITIME｜サッポロビール博物館",
+      "title": "yokohamajapan.com|橫濱市區路線",
 
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxrbNcYY-qL3UT0CTAiTSntx7_ab9wmjXvJCyK6kY9UVyFI7CdMmGH5t7ANenOQfFyILX3oLM87As72v2xFyupVg8gpzzS0PFjVP5WAIoErBj6GRSBSQDWpT0AccXubfrVd0_lnFIASzzUXz3J"
-
-    },
-
-    "sta-sapporo": {
-
-      "title": "MapFan｜札幌駅",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
-
-    },
-
-    "sta-shiraoi": {
-
-      "title": "NAVITIME｜白老駅",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQ1YaArogfTq_unvejcmWuoh5st_OuCrP450uojIvKzMKONIDqKv5LbzJobgTNNdisIukoBadBrzwEZzrDNYHNo0-Vdjq165ECHxpXNH1DkSONTeKYZN3qMp_w8XDHa0IHElsl8ZcB"
-
-    },
-
-    "sta-toya": {
-
-      "title": "MapFan｜洞爺駅",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMiqBK05gfyCNeEXLyQLQOoar5n-zAK5xpgLPHcRvO3TH_VZ23hWZrMozh83PWHWFfFTyAzu2BmmFPGkEK7g0-DOHg9TQCJtRghZR9v0HuREB8E5eM7iQQMbDgzA=="
-
-    },
-
-    "sta-chitose": {
-
-      "title": "MapFan｜新千歳空港駅",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZA7elyqq5rDcOvGOOhqU__jupN4ntnrPQsPtE5U-ZAqL40gOvn7Y0nlSfEs0TkJtIVPxUwgCi-sM8FernIYFeH4SD4NRvcJclPEM5qqA5nlhHetTwSeb7YH4rZw=="
-
-    },
-
-    "noboribetsu-grand-official": {
-
-      "title": "登別Grand Hotel官方｜地址及交通",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbtdyFTfYKBCMe8rphCiPfpIqznByQU_eMKpaq1Eth3VxAe5V8Pan6hGjdbQebN3HUZnd-oUn8Tn8ld1FXnbV_y1V4Hef24VbkTolVX5C8jBLiMm0fcdGqtVuoM7k="
-
-    },
-
-    "noboribetsu-station-location": {
-
-      "title": "NAVITIME｜登別站座標",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFluoAlfFCcVM8_AsO9fZpizNYcylvFM_dUN5PbnoYBUrlnMQMgFVYjn5bueoqPcQOtBGC6jg3b4s3l3FsWsPalP8dlYR2X2N5kyz2IsfJCcHgK1p5O7ci2mzO2jxchEUq_PCYXhVVj"
-
-    },
-
-    "oyunuma-location": {
-
-      "title": "NAVITIME｜大湯沼景點位置",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE3IRFiAwbOA4rDehsBtIvhJaEOopdnc0XACim-gcQUfKNoshyh5XYhABGa3n0zZ7vMCnH89xZE8XqO84nh5I0zVzEJ9cSDLMfit1SW9T69hHU07wPCYh77SEoQJ8WpBbRvj0ED30SH5tXY2lg="
-
-    },
-
-    "oyunuma-winter": {
-
-      "title": "自然公園財團｜大湯沼冬季交通資訊",
-
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZiqwbV-6boRUIV9vE7uqEeDFEKp15Xatm1HdpIQiFAbvnsmh6SxYjs-rHlc7ygpidHMpyZLi_faByANuU0PrzaCbA5fzUfc9vJrO7_6qNyQQhfvHHq-Zk1xonKTN3A0tD7Zu13g=="
+      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKtS4VMK_M3_N0EMn4f2IRX1KOHCkaTBBGyaRSjKzI53qwwdSGE3AbecNp6lX-h1L9ZcUMtgGNAhioMbCpRYq27GH-cLWCyEWJSigADIjnoc7JBkkPrManoM1561wWvTxMQEcO36hzYz7kq9XYhDyHaNmHSbWANAVNig==
 
     }
 
-  },
-
-  "coordinateUpdateDate": "2026-09-08",
-
-  "optionalExcursions": [
-
-    {
-
-      "id": "b3-oyunuma",
-
-      "day": 3,
-
-      "name": "大湯沼",
-
-      "type": "sight",
-
-      "time": "非固定行程",
-
-      "optional": true,
-
-      "description": "景點位置已取得，但不是步道入口或足湯。冬季道路及停車場可能封閉；未確認當日合法開放動線前，不加入導航。",
-
-      "lat": 42.502537,
-
-      "lng": 141.147624,
-
-      "coordinateStatus": "area_reference",
-
-      "navigationEnabled": false,
-
-      "sourceRefs": [
-
-        "oyunuma-location",
-
-        "oyunuma-winter"
-
-      ],
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼+登別"
-
-    },
-
-    {
-
-      "id": "b3-footbath",
-
-      "day": 3,
-
-      "name": "大湯沼川天然足湯",
-
-      "type": "onsen",
-
-      "time": "非固定行程",
-
-      "optional": true,
-
-      "description": "與大湯沼不同地點，不能共用座標。足湯位置及冬季可通行步道尚待核實。",
-
-      "lat": null,
-
-      "lng": null,
-
-      "coordinateStatus": "pending",
-
-      "navigationEnabled": false,
-
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=大湯沼川天然足湯+登別"
-
-    }
-
-  ]
+  }
 
 }
