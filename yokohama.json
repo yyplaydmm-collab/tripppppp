@@ -430,7 +430,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Narita+airport
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Narita+airport"
 
     },
 
@@ -462,7 +462,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama"
 
     },
 
@@ -494,7 +494,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama"
 
  
 
@@ -528,7 +528,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Station+East+Exit
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Station+East+Exit"
 
     },
 
@@ -560,7 +560,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Red+Brick+Warehouse
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Red+Brick+Warehouse"
 
     },
 
@@ -592,7 +592,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Chinatown
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Chinatown"
 
     },
 
@@ -622,7 +622,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shintakashima+Station+Yokohama",
 
  
 
@@ -658,7 +658,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=K+Arena+Yokohama
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=K+Arena+Yokohama"
 
     },
 
@@ -742,7 +742,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Yokohama+Station+Japan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Station+Japan"
 
     },
 
@@ -768,7 +768,7 @@
 
       "critical": true,
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Tokyo+Station+Marunouchi+North+Exit
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station+Marunouchi+North+Exit"
 
     },
 
@@ -800,7 +800,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Nikko+Tochigi+Japan
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+Tochigi+Japan"
 
     },
 
@@ -880,7 +880,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Ueno+Station+Tokyo
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ueno+Station+Tokyo"
 
     },
 
@@ -912,7 +912,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Ueno+Station+Park+Exit
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ueno+Station+Park+Exit"
 
     },
 
@@ -942,7 +942,7 @@
 
       ],
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchiko+Fuji
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchiko+Fuji"
 
     },
 
@@ -1020,7 +1020,7 @@
 
       "coordinateStatus": "pending",
 
-      "googleMapsUrl": https://www.google.com/maps/search/?api=1&query=Minato+Mirai+Yokohama
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Minato+Mirai+Yokohama"
 
     }
 
@@ -1112,7 +1112,7 @@
 
       "title": "希爾頓橫濱官方|交通資訊",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7Cv3GyMyEjCbIQLzfkyaeBu4Kyb9cWRSKKblN1wjmDYCGP42UUN4LfDYPPYAICPbvTPatE_wJS2lx6fAvqtgYmflSLbqgyIBmS-36JBBJGZ7KykpUQ0kiuowG0w==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7Cv3GyMyEjCbIQLzfkyaeBu4Kyb9cWRSKKblN1wjmDYCGP42UUN4LfDYPPYAICPbvTPatE_wJS2lx6fAvqtgYmflSLbqgyIBmS-36JBBJGZ7KykpUQ0kiuowG0w=="
 
     },
 
@@ -1120,7 +1120,7 @@
 
       "title": "K-Arena橫濱|交通與周邊",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDansotgyYE-gXudzexrHOkxsFVmlu4z2Q9ElrD1auGCezCmCI9x-KEWWH9asR-sIiFP1QJhKIpNUUOah2lr6B1tyssI79TAk27mC08Eo9XbtH6JslPHzMzqClGY9-DZK2Gl6LF-Zktys59Vn4wluI5YcSgGLCHCzfDA==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDansotgyYE-gXudzexrHOkxsFVmlu4z2Q9ElrD1auGCezCmCI9x-KEWWH9asR-sIiFP1QJhKIpNUUOah2lr6B1tyssI79TAk27mC08Eo9XbtH6JslPHzMzqClGY9-DZK2Gl6LF-Zktys59Vn4wluI5YcSgGLCHCzfDA=="
 
     },
 
@@ -1128,7 +1128,7 @@
 
       "title": "K-Arena橫濱|管制退場與散場混雜",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_4-ygz6dJ2zkVDVsG3dr7b8Z39DbyGPwaztyrreV9dLp8vxQT5v38O0MfH0nmAzewIWQTytbkfr6VKIdAEqu2AkGnQ76VI0g25O1LhMmFT0QxeS-HYnHrWPRkX63CnbqnL0YzdL-_37u8tO2sOIajFU44A4U=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_4-ygz6dJ2zkVDVsG3dr7b8Z39DbyGPwaztyrreV9dLp8vxQT5v38O0MfH0nmAzewIWQTytbkfr6VKIdAEqu2AkGnQ76VI0g25O1LhMmFT0QxeS-HYnHrWPRkX63CnbqnL0YzdL-_37u8tO2sOIajFU44A4U="
 
     },
 
@@ -1136,7 +1136,7 @@
 
       "title": "NAVITIME／Jorudan|橫濱—東京清晨班次",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk5PT0w7VEJRq-KZLvoSMvsZYtaS_388tUK5Puqy6FchXyL3nzane-4n0g9QMp6wuPA5Jx1F2OKx7iGz26Lor7F0l7tfeFD9avEDmOeAjMZPuD5dLabUHVAwXhB6gSxhvk7FrqSFndsyKPkMKI1XeQr8jqID9t0uZrQ6U3AiPPC9DwopoGYcGhY_ttjYzX
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEk5PT0w7VEJRq-KZLvoSMvsZYtaS_388tUK5Puqy6FchXyL3nzane-4n0g9QMp6wuPA5Jx1F2OKx7iGz26Lor7F0l7tfeFD9avEDmOeAjMZPuD5dLabUHVAwXhB6gSxhvk7FrqSFndsyKPkMKI1XeQr8jqID9t0uZrQ6U3AiPPC9DwopoGYcGhY_ttjYzX"
 
     },
 
@@ -1144,7 +1144,7 @@
 
       "title": "東海道線上行|朝ラッシュ混雑時間帶",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVbkyBhAYdz7sxqwkcX3QHARJLi_xWOzzAwcgYm0LoGyeqKf0zmDIQA2znUyRDJk1y5GSga67o2SOldEIRNYr7fSXlGnmTYZpj2b5GLcv9-xMtpwZhcJCeE7MV543gVTfvdN3hVkrZtmQ=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVbkyBhAYdz7sxqwkcX3QHARJLi_xWOzzAwcgYm0LoGyeqKf0zmDIQA2znUyRDJk1y5GSga67o2SOldEIRNYr7fSXlGnmTYZpj2b5GLcv9-xMtpwZhcJCeE7MV543gVTfvdN3hVkrZtmQ="
 
     },
 
@@ -1152,7 +1152,7 @@
 
       "title": "JR東日本|普通列車綠色車廂料金",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8abmN18gjHXCZdsKOeDhoo7ZDNvviAPtrfsJj3-R2PAqQzd65LFTQOs_LTPcT_N1H_YG6cRxJ_W4Ge32XbAV9oVkKTfCFp9hZ5KyPhqPudXFs6_cthlY0Nc8bG0YmAgDKZxgmbmAY-D4FZ1NTw==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ8abmN18gjHXCZdsKOeDhoo7ZDNvviAPtrfsJj3-R2PAqQzd65LFTQOs_LTPcT_N1H_YG6cRxJ_W4Ge32XbAV9oVkKTfCFp9hZ5KyPhqPudXFs6_cthlY0Nc8bG0YmAgDKZxgmbmAY-D4FZ1NTw=="
 
     },
 
@@ -1160,7 +1160,7 @@
 
       "title": "上野站公園口周邊旅遊巴士集合點說明",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhvnxa6A87B2Ape1I3vgGW-i0ws7J8V5jGNP377maNqTAFGX7X1y8lRZE_TeiWWUXkw2_3gMsv2rUKswON1Fpcfd4rAq1_gClmn8iSokLVjkRd9pwW5rZw3AmZsf1WFpDVEI2HIML_aQlYkBlREN-uPpluUqX-kf-XBw4=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhvnxa6A87B2Ape1I3vgGW-i0ws7J8V5jGNP377maNqTAFGX7X1y8lRZE_TeiWWUXkw2_3gMsv2rUKswON1Fpcfd4rAq1_gClmn8iSokLVjkRd9pwW5rZw3AmZsf1WFpDVEI2HIML_aQlYkBlREN-uPpluUqX-kf-XBw4="
 
     },
 
@@ -1168,7 +1168,7 @@
 
       "title": "日光・中禪寺湖紅葉見頃",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtTy8AQCnckmkhs3O76OzTLqywUSEscKUT2_LYD9b1L5-uU1qx6n4I5blF3lXjHbW6VS1V6_IO9DYw5sWWX0Kwtr1dRFaj2QRIdUhjghUX08_ol--FEKb4rApRJDhNoNiqhSueLfkm26rFoyRz2BcamCvNwHLBoB8=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtTy8AQCnckmkhs3O76OzTLqywUSEscKUT2_LYD9b1L5-uU1qx6n4I5blF3lXjHbW6VS1V6_IO9DYw5sWWX0Kwtr1dRFaj2QRIdUhjghUX08_ol--FEKb4rApRJDhNoNiqhSueLfkm26rFoyRz2BcamCvNwHLBoB8="
 
     },
 
@@ -1176,7 +1176,7 @@
 
       "title": "日光觀光協會|紅葉季塞車資訊",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvUVOlBp_cde33rh6-3lbwF5Lc00p-uEzBHVHNMJYfZ3M9QZgiFGqNSL8wCc1OED2G-oJgs-NjlG-tmI7Gs-j12HORvrSWqv7XBTLKciRw2K4LpQCnuroBybIl_rZ2BW3uNhs=
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvUVOlBp_cde33rh6-3lbwF5Lc00p-uEzBHVHNMJYfZ3M9QZgiFGqNSL8wCc1OED2G-oJgs-NjlG-tmI7Gs-j12HORvrSWqv7XBTLKciRw2K4LpQCnuroBybIl_rZ2BW3uNhs="
 
     },
 
@@ -1184,7 +1184,7 @@
 
       "title": "河口湖・紅葉迴廊見頃",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaY3oE03Q8xVEYiSZMMCa44W660yX-EnWo4U0Zsj9LXPIgztAYM9lmsehFgxE-VLAcF7WprGXfOxI4sLDi2DH2nJfXKWBIatbWXZSVjwIEJnRz833inzRQoTMgzG94yGfWqDiomgZzSYn3
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaY3oE03Q8xVEYiSZMMCa44W660yX-EnWo4U0Zsj9LXPIgztAYM9lmsehFgxE-VLAcF7WprGXfOxI4sLDi2DH2nJfXKWBIatbWXZSVjwIEJnRz833inzRQoTMgzG94yGfWqDiomgZzSYn3"
 
     },
 
@@ -1192,7 +1192,7 @@
 
       "title": "yokohamajapan.com|橫濱市區路線",
 
-      "url": https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKtS4VMK_M3_N0EMn4f2IRX1KOHCkaTBBGyaRSjKzI53qwwdSGE3AbecNp6lX-h1L9ZcUMtgGNAhioMbCpRYq27GH-cLWCyEWJSigADIjnoc7JBkkPrManoM1561wWvTxMQEcO36hzYz7kq9XYhDyHaNmHSbWANAVNig==
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKtS4VMK_M3_N0EMn4f2IRX1KOHCkaTBBGyaRSjKzI53qwwdSGE3AbecNp6lX-h1L9ZcUMtgGNAhioMbCpRYq27GH-cLWCyEWJSigADIjnoc7JBkkPrManoM1561wWvTxMQEcO36hzYz7kq9XYhDyHaNmHSbWANAVNig=="
 
     }
 
