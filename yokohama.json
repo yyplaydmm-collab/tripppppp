@@ -768,7 +768,25 @@
 
       "critical": true,
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station+Marunouchi+North+Exit"
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station+Marunouchi+North+Exit",
+	  "images": [
+
+          {
+
+            "src": "./marunouchi.jpg?v=1297x593",
+
+            "alt": "東京車站外丸之內北口",
+
+            "caption": "丸之內北口報到位置圖",
+
+            "width": 1297,
+
+            "height": 593
+
+          }
+          
+
+        ]
 
     },
 
