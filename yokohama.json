@@ -796,7 +796,7 @@
 
       "day": 3,
 
-      "name": "日光一日遊(行程依方案)",
+      "name": "日光一日遊(行程依kkday方案)",
 
       "type": "sight",
 
@@ -821,7 +821,131 @@
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+Tochigi+Japan"
 
     },
+	{
 
+      "id": "d3-nikko日光東照宮",
+
+      "day": 3,
+
+      "name": "日光東照宮",
+
+      "type": "sight",
+
+      "time": "09:40-12:40",
+
+      "description": "東照宮：有著豐富的歷史古蹟，東照宮每個角落都有背後的故事，非常有趣",
+
+      "lat": 36.75811407425176,
+
+      "lng": 139.59873857342964,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "nikko-autumn",
+
+        "nikko-traffic"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+日光東照宮"
+
+    },
+	{
+
+      "id": "d3-nikko伊呂波山道",
+
+      "day": 3,
+
+      "name": "伊呂波山道",
+
+      "type": "sight",
+
+      "time": "13:00",
+
+      "description": "東全長15.8公里，共48個彎道的著名山岳道路（車覽不下車） ●日本百選道路之一 ●秋季紅葉景觀尤為著名 ●可遠眺奧日光山景與自然風光",
+
+      "lat": 36.73950314385422,
+
+      "lng":  139.49868945767142,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "nikko-autumn",
+
+        "nikko-traffic"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+第二いろは坂(上り)"
+
+    },
+		{
+
+      "id": "d3-nikko中禪寺湖",
+
+      "day": 3,
+
+      "name": "中禪寺湖",
+
+      "type": "sight",
+
+      "time": "14:00",
+
+      "description": "日本海拔最高天然湖泊之一 ●四季景色豐富（春杜鵑、夏綠、秋楓、冬雪） ●湖光山色交融，風景優美 秋日下的中禪寺湖，紅葉如火，秋風輕拂倒映著斑斕的山林",
+
+      "lat": 36.74405093496121, 
+
+      "lng":  139.45970409891484,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "nikko-autumn",
+
+        "nikko-traffic"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+中禅寺湖"
+
+    },
+	},
+		{
+
+      "id": "d3-nikko華嚴瀑布",
+
+      "day": 3,
+
+      "name": "華嚴瀑布",
+
+      "type": "sight",
+
+      "time": "14:40",
+
+      "description": "華嚴瀑布：日本三大名瀑布之一，著名遊覽地(電梯費用自理) 日本三大名瀑之一，高99米 ●由中禪寺湖水流形成 ●四周山景與瀑布交融 ●秋季紅葉景觀尤為壯觀",
+
+      "lat": 36.73851757319658,
+
+      "lng":  139.5035435670305,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "nikko-autumn",
+
+        "nikko-traffic"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nikko+華厳滝 無料観瀑台"
+
+    },
     {
 
       "id": "d3-return",
@@ -930,7 +1054,25 @@
 
       ],
 
-      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ueno+Station+Park+Exit"
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ueno+Station+Park+Exit",
+	  "images": [
+
+          {
+
+            "src": "./ueno.jpg?v=1297x593",
+
+            "alt": "JR上野車站公園口前",
+
+            "caption": "上野車站公園口位置圖",
+
+            "width": 1297,
+
+            "height": 593
+
+          }
+          
+
+        ]
 
     },
 
@@ -946,7 +1088,7 @@
 
       "time": "全日",
 
-      "description": "造訪點依KKday方案,我未核實。河口湖紅葉此時多為初期,主看富士山景。",
+      "description": "造訪點依KKday方案。河口湖紅葉此時多為初期,主看富士山景。",
 
       "lat": null,
 
@@ -963,7 +1105,122 @@
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake+Kawaguchiko+Fuji"
 
     },
+	{
 
+      "id": "d4-fuji富士山五合目",
+
+      "day": 4,
+
+      "name": "富士山五合目",
+
+      "type": "sight",
+
+      "time": "11:00-11:40",
+
+      "description": "位於海拔約2,300公尺，是車輛可抵達的最高觀景點，近距離感受富士山的壯麗氣勢。天氣良好時可俯瞰壯觀雲海，設有小御嶽神社，商店街可選購限定紀念品與伴手禮。 (若五合目因交通管制無法通行，將改為前往「北口本宮富士淺間神社」)",
+
+      "lat": 35.39394940960089,
+
+      "lng":  138.73378355767144,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=35.3937964%2C138.7337581&query_place_id=ChIJLZeiTABjGWARohUe3F14iBo"
+
+    },
+	{
+
+      "id": "d4-fuji富士山河口湖",
+
+      "day": 4,
+
+      "name": "富士山河口湖",
+
+      "type": "sight",
+
+      "time": "12:30-13:30",
+
+      "description": "位於富士五湖之一的河口湖，是欣賞富士山最具代表性的地點，湖面倒影與四季景色相互交織，風景如畫。春季櫻花、秋季紅葉，四季皆美，天氣晴朗時可拍攝「逆富士」倒影。鄰近Craft Park，可用餐、購物與體驗手作。",
+
+      "lat": 35.516193419396124,
+
+      "lng":  138.75996163932226,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=35.5170946%2C138.7517787&query_place_id=ChIJTz8EpbRfGWARR30zHkuyyyk"
+
+    },
+	{
+
+      "id": "d4-fuji忍野八海",
+
+      "day": 4,
+
+      "name": "忍野八海",
+
+      "type": "sight",
+
+      "time": "14:00-14:50",
+
+      "description": "由富士山雪水融化後經地層過濾形成的八大湧泉，被列為日本「名水百選」，擁有純淨透明的自然景觀與濃厚日式鄉村風情。",
+
+      "lat": 35.46021159092643,
+
+      "lng": 138.83250708650715,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=35.4600675%2C138.8324741&query_place_id=ChIJK4SZn4VmGWARcZ-vsGukOhY"
+
+    },
+		{
+
+      "id": "d4-御殿場Premium Outlets",
+
+      "day": 4,
+
+      "name": "御殿場Premium Outlets",
+
+      "type": "sight",
+
+      "time": "15:30-17:00",
+
+      "description": "日本最大級的Outlet之一，匯集約290家國內外品牌，在開放式園區中一邊購物、一邊欣賞壯麗富士山景觀。",
+
+      "lat": 35.46021159092643,
+
+      "lng": 138.83250708650715,
+
+      "coordinateStatus": "pending",
+
+      "sourceRefs": [
+
+        "kawaguchiko-autumn"
+
+      ],
+
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=35.307271%2C138.9656467&query_place_id=ChIJ1xlIF991GWARhCPTCES1sFA"
+
+    },
     {
 
       "id": "d4-return",
