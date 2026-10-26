@@ -606,7 +606,7 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
     "images": [
       {
-        "src": "https://www.gransta.jp/gr_cswp/wp-content/uploads/2020/11/202608_heremap_1F_gransta-tokyo_Sabrina.jpg",
+        "src": "./sabrina.jpg?v=838x838",
         "alt": "改札內",
         "caption": "東京車站 1F圖",
         "width": 838,
