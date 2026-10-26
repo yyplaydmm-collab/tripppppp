@@ -564,82 +564,27 @@
 
     },
 
-    
   {
-    "id": "d2-01-yokohama-dept",
+    "id": "d2-01-brunch-hilton",
     "day": 2,
-    "name": "【交通】橫濱車站出發 ➔ 東京車站",
-    "type": "transit",
-    "time": "07:15 出發 / 07:42 抵達",
-    "description": "搭乘 JR 東海道線（往東京方向），約 27 分鐘直達東京車站。",
-    "lat": 35.465786,
-    "lng": 139.622313,
-    "coordinateStatus": "success",
-    "critical": false,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Station",
-    "images": []
-  },
-  {
-    "id": "d2-02-tokyo-sabrina",
-    "day": 2,
-    "name": "【購物】東京車站 1F 剪票口內 Sabrina 搶購",
-    "type": "shopping",
-    "time": "07:50 抵達 / 08:00 開門 / 08:20 離開",
-    "description": "抵達東京車站，1F 剪票口內 Sabrina 櫃位排隊。08:00 準時開門，此時品項最齊全。買完後立刻原路折返。",
-    "lat": 35.681236,
-    "lng": 139.767125,
-    "coordinateStatus": "success",
-    "critical": true,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
-    "images": [ {
-
-            "src": "https://www.gransta.jp/gr_cswp/wp-content/uploads/2020/11/202608_heremap_1F_gransta-tokyo_Sabrina.jpg",
-
-            "alt": "改札內",
-
-            "caption": "東京車站 1F圖",
-
-            "width": 838,
-
-            "height": 838
-
-          }]
-  },
-  {
-    "id": "d2-03-tokyo-return",
-    "day": 2,
-    "name": "【交通】東京車站搭車返回橫濱",
-    "type": "transit",
-    "time": "08:24 出發 / 08:52 抵達",
-    "description": "同樣搭乘 JR 東海道線回到橫濱車站（約 08:52 抵達）。",
-    "lat": 35.681236,
-    "lng": 139.767125,
-    "coordinateStatus": "success",
-    "critical": false,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
-    "images": []
-  },
-  {
-    "id": "d2-04-hilton-drop",
-    "day": 2,
-    "name": "【飯店】快閃橫濱希爾頓放東西",
-    "type": "hotel",
-    "time": "09:00 - 09:30",
-    "description": "從橫濱車站東口步行約 9–11 分鐘抵達橫濱希爾頓酒店。將 Sabrina 寄放在前台（Front Desk）或直接拿回房內，隨即輕裝出發。",
-    "lat": 35.462712,
-    "lng": 139.629851,
+    "name": "【餐飲】飯店周邊葷素共食早午餐",
+    "type": "dining",
+    "time": "07:30 - 08:30",
+    "description": "於希爾頓橫濱周邊享用早午餐。推薦 Rport 或 bills 橫濱紅磚倉庫店（有純素/蔬食及一般肉類餐點）。",
+    "lat": 35.4644367,
+    "lng": 139.6293702,
     "coordinateStatus": "success",
     "critical": false,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hilton+Yokohama",
     "images": []
   },
   {
-    "id": "d2-05-transit-machida",
+    "id": "d2-02-yokohama-dept",
     "day": 2,
-    "name": "【交通】橫濱車站 ➔ 南町田 Grandberry Park",
+    "name": "【交通】橫濱車站出發 ➔ 東京車站",
     "type": "transit",
-    "time": "09:50 出發 / 10:30 抵達",
-    "description": "在橫濱站搭乘 JR 橫濱線至「長津田站」，轉東急田園都市線至「南町田 Grandberry Park 站」。",
+    "time": "08:45 出發 / 09:12 抵達",
+    "description": "搭乘 JR 東海道線（往東京方向），避開 07:30-08:30 上行最擁擠尖峰時段。",
     "lat": 35.465786,
     "lng": 139.622313,
     "coordinateStatus": "success",
@@ -648,45 +593,67 @@
     "images": []
   },
   {
-    "id": "d2-06-montbell-shopping",
+    "id": "d2-03-tokyo-sabrina",
     "day": 2,
-    "name": "【購物】南町田 Mont-bell 關東最大店",
+    "name": "【購物】東京車站 1F 剪票口內 Sabrina 購買",
     "type": "shopping",
-    "time": "10:30 - 12:00",
-    "description": "商場剛開門半小時，人潮最少，試穿衣服和結帳都最快。結帳提醒：預留 15 分鐘在店內使用 PIE VAT APP 手機辦理退稅。",
-    "lat": 35.512684,
-    "lng": 139.470553,
+    "time": "09:12 抵達 / 09:40 離開",
+    "description": "抵達東京車站，前往 1F 剪票口內 Sabrina 櫃位購買伴手禮（避開開門排隊人潮）。",
+    "lat": 35.681236,
+    "lng": 139.767125,
+    "coordinateStatus": "success",
+    "critical": false,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tokyo+Station",
+    "images": [
+      {
+        "src": "https://www.gransta.jp/gr_cswp/wp-content/uploads/2020/11/202608_heremap_1F_gransta-tokyo_Sabrina.jpg",
+        "alt": "改札內",
+        "caption": "東京車站 1F圖",
+        "width": 838,
+        "height": 838
+      }
+    ]
+  },
+  {
+    "id": "d2-04-transit-shinyamashita",
+    "day": 2,
+    "name": "【交通】東京車站 ➔ 元町・中華街站",
+    "type": "transit",
+    "time": "09:40 出發 / 10:25 抵達",
+    "description": "搭乘 JR 線返回橫濱轉乘港未來線，或搭乘直通列車至「元町・中華街站」。",
+    "lat": 35.681236,
+    "lng": 139.767125,
+    "coordinateStatus": "success",
+    "critical": false,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Motomachi-Chukagai+Station",
+    "images": []
+  },
+  {
+    "id": "d2-05-montbell-shinyamashita",
+    "day": 2,
+    "name": "【購物】Mont-bell 橫濱新山下店",
+    "type": "shopping",
+    "time": "10:35 - 12:30",
+    "description": "關東大型門市，商品齊全。從元町・中華街站步行約 8-10 分鐘即達，預留時間辦理退稅。",
+    "lat": 35.441113,
+    "lng": 139.654823,
     "coordinateStatus": "success",
     "critical": true,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Montbell+Minami+Machida+Grandberry+Park",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=montbell+Yokohama+Shin-Yamashita",
     "images": []
   },
   {
-    "id": "d2-07-brunch",
+    "id": "d2-06-return-hilton",
     "day": 2,
-    "name": "【餐飲】南町田園區早午餐",
-    "type": "dining",
-    "time": "12:00 - 13:50",
-    "description": "園區內享用葷素共存的早午餐。推薦 UMAMI BURGER（11:00 營業，有純素植物肉漢堡與美式牛肉堡）或 CRISP SALAD WORKS（客製化肉類/純素沙拉盆）。",
-    "lat": 35.512684,
-    "lng": 139.470553,
-    "coordinateStatus": "success",
-    "critical": false,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Minami+Machida+Grandberry+Park",
-    "images": []
-  },
-  {
-    "id": "d2-08-return-transit",
-    "day": 2,
-    "name": "【交通】南町田 ➔ 橫濱車站",
+    "name": "【交通】新山下 ➔ 希爾頓橫濱",
     "type": "transit",
-    "time": "13:50 出發 / 14:35 抵達",
-    "description": "搭乘東急田園都市線至長津田站，轉乘 JR 橫濱線。順利回到橫濱車站，符合在下午 3:00 前返回的目標！",
-    "lat": 35.512684,
-    "lng": 139.470553,
+    "time": "13:40 出發 / 14:10 抵達",
+    "description": "從元町・中華街站搭乘港未來線至「新高島站」，出站步行 5 分鐘順利回到飯店。",
+    "lat": 35.442812,
+    "lng": 139.650211,
     "coordinateStatus": "success",
     "critical": false,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Minami+Machida+Grandberry+Park+Station",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hilton+Yokohama",
     "images": []
   },
 
