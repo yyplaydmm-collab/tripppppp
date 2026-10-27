@@ -531,7 +531,48 @@
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yokohama+Station+East+Exit"
 
     },
-
+	{
+    "id": "d1-01-dinner-kiseki",
+    "day": 1,
+    "name": "【餐飲】第一攤：Kiseki no Shokutaku（奇蹟食堂）",
+    "type": "dining",
+    "time": "18:00 - 19:15",
+    "description": "位於元町商店街的有機定食店。蔬食者可享用植物性定食（如炸車麩），吃肉者可點烤雞或魚類定食（留胃給第二攤）。請務必於 19:15 前結帳離開。",
+    "lat": 35.439812,
+    "lng": 139.648211,
+    "coordinateStatus": "success",
+    "critical": false,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kiseki+no+Shokutaku+Yokohama",
+    "images": []
+  },
+  {
+    "id": "d1-02-transit-yokohama-west",
+    "day": 1,
+    "name": "【交通】元町・中華街 ➔ 橫濱站西口",
+    "type": "transit",
+    "time": "19:15 - 19:40",
+    "description": "步行3分鐘至元町・中華街站（5號口），搭乘港未來線至橫濱站（8-10分）。從「北西口（きた西口）」出站，過鶴屋橋步行2分鐘至 CRANE YOKOHAMA 大樓 5F。",
+    "lat": 35.441812,
+    "lng": 139.650811,
+    "coordinateStatus": "success",
+    "critical": false,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Motomachi-Chukagai+Station",
+    "images": []
+  },
+  {
+    "id": "d1-03-dinner-ushigoro",
+    "day": 1,
+    "name": "【餐飲】第二攤：燒肉 牛五郎 橫濱店",
+    "type": "dining",
+    "time": "19:45 入座",
+    "description": "建議預約 19:45 或 20:00。吃肉者主攻 A5 黑毛和牛、生牛肉韃靼與牛舌；蔬食者可享用番茄羅勒冷麵、包肉生菜、特製大蒜拌飯及季節雪酪甜點。",
+    "lat": 35.467812,
+    "lng": 139.620811,
+    "coordinateStatus": "success",
+    "critical": true,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yakiniku+Ushigoro+Yokohama",
+    "images": []
+  },
     {
 
       "id": "d1-redbrick",
